@@ -1,10 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#29B67F</color>
+    <color name="colorPrimaryDark">#29B67F</color>
+    <color name="colorAccent">#29B67F</color>
+    <color name="green_light">#8029B67F</color>
+    <color name="green_dark">#325044</color>
+    <color name="green_dark_trans">#80325044</color>
+    <color name="green_light_trans">#e1f0ea</color>
+
+    <color name="color_back_12">#fef7ec</color>
+
+    <!-- grayscale -->
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#DBDBDB</color>
+    <color name="gray_light_x">#EBEAEA</color>
+    <color name="gray_light_y">#bebebe</color>
+    <color name="gray_light_z">#f3f3f3</color>
+    <color name="gray">#939393</color>
+    <color name="gray_dark">#5F5F5F</color>
+    <color name="black">#323232</color>
+    <color name="black_transparent">#A1323232</color>
+    <color name="black_trans">#86C1C1C1</color>
+    <color name="gray_bg_home">#fbfafa</color>
+    <color name="gray_bg_light">#fffefe</color>
+    <color name="gray_edit_border">#ebebeb</color>
+    <!-- tranparent grayscale-->
+    <color name="grey_309">#ededed</color>
+    <color name="transparent_white_light">#c3ffffff</color>
+    <color name="transparent_black_light">#C3515151</color>
+    <color name="layout_header_background">#e4ece4</color>
+    <color name="color_backgroun1">#edf4ff</color>
+    <!-- basic colors your app using. ask designer to provide this pallet-->
+    <color name="green">#27D34D</color>
+    <color name="blue">#2A91BD</color>
+    <color name="blue_light">#3EADB6BB</color>
+    <color name="orange">#FF9D2F</color>
+    <color name="red">#FF432F</color>
+    <color name="indicator_orange">#ff8017</color>
+    <color name="transparent">#0000</color>
+    <color name="orange_1">#e7aa1b</color>
+
+    <color name="selected">#201a33</color>
+    <color name="unselected">#c3c2cc</color>
+    <color name="unselected1">#737380</color>
+    <color name="label_tab_text_color">#110a33</color>
+    <color name="ride_confirmation_done">#0c1caa</color>
+    <color name="ride_confirmation_title">#181326</color>
+    <color name="check_box_color">#29B67F</color>
+    <color name="check_box_unselected_color">#757380</color>
+    <color name="ride_summary_tips_label">#555266</color>
+    <color name="ride_summary_label">#141433</color>
+    <color name="ride_summary_label1">#03031a</color>
+    <color name="ride_summary_tips_image">#EFEBFD</color>
+    <color name="see_all_label_color">#2a01f5</color>
+    <color name="button_bg">#3d18f5</color>
+    <color name="filter_bg">#f7f7f9</color>
+    <color name="grey_login_new_inside_edit">#e9e9e9</color>
+    <color name="review_card_layout_back">#2d3935</color>
+    <color name="grey87">#c4c4c4</color>
+
+
+
+
+    <!--Gradient start color-->
+    <color name="grad_start_color1">#3d18f5</color>
+    <color name="grad_ens_color1">#3de2a5</color>
+    <color name="grad_start_color">#3e01f5</color>
+    <color name="grad_ens_color">#2ee699</color>
+    <color name="charcoal_grey">#3b364d</color>
+
+
+    <!--Leader board-->
+    <color name="leader_board_user_color">#dbd3ff</color>
+    <color name="leader_board_user_txt_color">#1f1f37</color>
+
+    <color name="splash_screen_bg">#080826</color>
+    <color name="color_aqua_green">#18f2aa</color>
+    <color name="color_blue_zodiac">#0f0f4d</color>
+    <color name="color_gun_powder">#3a3a53</color>
+    <color name="color_mischka">#dcdce6</color>
+    <color name="color_trout">#525566</color>
+    <color name="color_mirage">#1a1a33</color>
+    <color name="color_blue">#1919ff</color>
+    <color name="color_athens_gray">#f0f0f2</color>
+    <color name="color_athens_gray1">#F4F4F7</color>
+    <color name="color_mischka_1">#dfdfe6</color>
+    <color name="color_scarpa">#585766</color>
+    <color name="color_pale_lavender">#eeedf2</color>
+    <color name="color_caribbean_green">#0bdb96</color>
+    <color name="color_minsk">#48397D</color>
+    <color name="upload_bg">#e1e1ff</color>
+
+    <color name="black_text_color">#393737</color>
+
+
+    <!--Welcome screen-->
+    <color name="black_shade_one">#212121</color>
+    <color name="black_shade_two">#424242</color>
+
+    <!-- Intro swipe layout colors-->
+    <color name="bg_screen1">#EC407A</color>
+    <color name="bg_screen2">#AB47BC</color>
+    <color name="bg_screen3">#F44336</color>
+    <color name="bg_screen4">#D500F9</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#3700B3</color>
+    <color name="dot_dark_screen2">#3700B3</color>
+    <color name="dot_dark_screen3">#3700B3</color>
+    <color name="dot_dark_screen4">#3700B3</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#BB86FC</color>
+    <color name="dot_light_screen2">#BB86FC</color>
+    <color name="dot_light_screen3">#BB86FC</color>
+    <color name="dot_light_screen4">#BB86FC</color>
+    <color name="green_category">#29B67F</color>
+    <color name="reminder_category_text">#282828</color>
+    <color name="bg_reminder_top_today">#4d29b67f</color>
+    <color name="reminder_type_text">#e7aa1b</color>
+    <color name="reminder_date_color">#747474</color>
+    <color name="subheading_reminder">#9b9b9b</color>
+    <color name="upcoming_reminder">#e7aa1b</color>
+    <color name="gray_filled_box">#f6f6f6</color>
+    <color name="gray_hint">#d8d8d8</color>
+    <color name="cancel_reminder">#ec2f15</color>
+    <color name="complete_reminder">#2e4939</color>
+    <color name="pending_reminder">#ebc03d</color>
+    <color name="bike_health_selected_gray">#9b9b9b</color>
+
+    <color name="yellow">#f1c51b</color>
+
+    <color name="yellow_600">#FFD600</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="emi_bg_color">#F7F7F9</color>
+
+    <color name="emi_paid_bg_color">#29B67F</color>
+    <color name="emi_default_bg_color">#d7273c</color>
+    <color name="emi_pending_bg_color">#e8b344</color>
+    <color name="emi_text_color">#e1e1e1</color>
+
+    <color name="white_bg_color">#ffffff</color>
+    <color name="dark_green_color">#1d3a29</color>
+    <color name="light_green_color">#29b67f</color>
+    <color name="light_green100_color">#6ca639</color>
+    <color name="black100_color">#32433d</color>
+    <color name="yellow100_color">#d8b13b</color>
+    <color name="black200_color">#cc000000</color>
+    <color name="black300_color">#1b1b1b</color>
+    <color name="hint_color">#29B67F</color>
+    <color name="green_300">#2e513c</color>
+    <color name="green_400">#2bb780</color>
+    <color name="black_500">#4a4a4a</color>
+    <color name="red_100">#fd4755</color>
+    <color name="red_400">#f0481e</color>
+    <color name="white_trans">#fcfbfb</color>
+    <color name="black600">#1b1a19</color>
+    <color name="gray_100">#EEEEEE</color>
+    <color name="grey_400">#9a9a9a</color>
+    <color name="black_700">#313131</color>
+    <color name="black_800">#2a2a2a</color>
+
+    <color name="green_1_shade">#29B67F</color>
+    <color name="dark_green_shade">#2e513c</color>
+    <color name="light_gray">#c8dfb4</color>
+    <color name="light_gray100">#636170</color>
+    <color name="red_200">#f35c23</color>
+    <color name="green_200">#2D4938</color>
+    <color name="grey_300">#F3F4F1</color>
+    <color name="black_600">#2d4938</color>
+    <color name="gray_400">#787878</color>
+    <color name="gray_50">#e5e5e5</color>
+    <color name="light_gray_300">#1d747474</color>
+    <color name="red_300">#cd1d1d</color>
+    <color name="trans">#00000000</color>
+    <color name="black2">#000000</color>
+    <color name="shimmer_color">#B3B3B3</color>
+    <color name="gray_210">#ececed</color>
+    <color name="grey_login_new">#585858</color>
+    <color name="grey_medium">#767474</color>
+
+    <color name="intro_header">#FFB1E5D0</color>
+    <array name="array_dot_active">
+        <item>@color/green_category</item>
+        <item>@color/green_category</item>
+        <item>@color/green_category</item>
+        <item>@color/green_category</item>
+        <item>@color/green_category</item>
+        <item>@color/green_category</item>
+    </array>
+    <array name="array_dot_active2">
+        <item>@color/green</item>
+        <item>@color/green</item>
+        <item>@color/green</item>
+        <item>@color/green</item>
+        <item>@color/green</item>
+        <item>@color/green</item>
+    </array>
+    <array name="array_dot_active1">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+    <color name="inactive_color">#e3e3e3</color>
+    <color name="gray_201">#888888</color>
+    <color name="gray_101">#888888</color>
+    <color name="red_001">#ff0000</color>
+    <array name="array_dot_inactive">
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+    </array>
+
 </resources>
