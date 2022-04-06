@@ -1,0 +1,7 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_action_radio_btn_unchecked"
+        android:width="25dp"
+        android:height="25dp">
+    </item>
+</layer-list>

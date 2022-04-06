@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item> <!--Your outer blue border shape-->
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+
+            <size
+                android:width="40dp"
+                android:height="40dp" />
+
+<!--            <stroke-->
+<!--                android:width="2dp"-->
+<!--                android:color="#75ae42"-->
+<!--/>-->
+        </shape>
+    </item>
+    <!--Your inner blue Solid circle shape-->
+    <item android:bottom="6dp"
+        android:left="6dp"
+        android:right="6dp"
+        android:top="6dp">
+        <shape android:shape="oval">
+            <solid android:color="#29B67F" />
+        </shape>
+    </item>
+</layer-list>
