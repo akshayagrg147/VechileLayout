@@ -1,3 +1,1764 @@
 <resources>
-    <string name="app_name">VechileLayout</string>
+    <string name="app_name">OTO</string>
+    <string name="xiaomi_app_key">5511896685616</string>
+    <string name="xiaomi_app_id">2882303761518966616</string>
+    <string name="default_lat">12.990019</string>
+    <string name="default_lng">77.557084</string>
+    <string name="enable_gps" translatable="false">Enable GPS</string>
+    <string name="required_for_this_app">Permission required to proceed</string>
+    <string name="enable_now">Enable now</string>
+    <string name="location_permission_not_granted">Location permission not granted</string>
+
+    <string name="flyy_sdk_partner_key">02479576d7213af7a056</string>
+    <string name="flyy_sdk_partner_key_release">fcaf40f43480ae6c6aea</string>
+
+    <string name="launch_activity">Launch activity</string>
+    <string name="location_unknown">Location Unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+
+    <string name="permission_rationale">Location permission needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="permission_denied">Please, allow permissions for correct app works</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+
+    <string name="start_location_updates_button_text">Start receiving location updates</string>
+    <string name="stop_location_updates_button_text">Stop receiving location updates</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="preference_file_key">com.example.android.while_in_use_location.PREFERENCE_FILE_KEY</string>
+    <string name="no_location_text">No current location</string>
+    <string name="location">Background Location access required</string>
+    <string name="contnue">Continue</string>
+    <string name="location_text">The accessibility of our services like Rides, Challenges and Goals are dependent on your geographic location. Hence, we collect and monitor your location in background there by helping us in getting your driving behaviour and providing you the drive rating and driving tips. This permission is required to access location even when the app is closed or not in use.</string>
+    <!-- Activity detection strings -->
+    <string name="in_vehicle">In a vehicle</string>
+    <string name="on_bicycle">On a bicycle</string>
+    <string name="on_foot">On foot</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown activity</string>
+    <string name="running">Running</string>
+    <string name="walking">Walking</string>
+    <string name="unidentifiable_activity">Unidentifiable activity: %1$d</string>
+    <string name="detected_activities_title">Detected Activities</string>
+    <string name="request_activity_updates">Start</string>
+    <string name="remove_activity_updates">Stop</string>
+    <string name="activity_updates_enabled">Activity updates enabled</string>
+    <string name="activity_updates_not_enabled">Failed to enable activity updates</string>
+    <string name="activity_updates_removed">Activity updates removed</string>
+    <string name="activity_updates_not_removed">Failed to remove activity updates</string>
+    <string name="percent">%1$d%%</string>
+    <string name="oto_capital">OTO Capital</string>
+    <string name="login">Login</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="password_label">Password</string>
+    <string name="registration">Registration</string>
+    <string name="register">Sign Up</string>
+    <string name="conf_password_label">Confirm Password</string>
+    <string name="user_name_label">User Name</string>
+    <string name="user_email_label">Email</string>
+    <string name="otp_label">Please enter the verification code sent to your registered mobile number</string>
+    <string name="msg_notification_service_desc">Background Data Collection is Active</string>
+    <string name="title_foreground_service_notification">OTO Service</string>
+    <string name="lbl_btn_sticky_notification_open_app">Open Application</string>
+    <string name="title_gen_notification">OTO Service</string>
+    <string name="description_gen_notification">Click here to open in App</string>
+
+
+    <!--AWARENESS API-->
+    <string name="snapshot_title">Snapshot</string>
+    <string name="snapshot_subtitle">Click for check</string>
+
+    <string name="headphones_state">Headphones are %s</string>
+    <string name="headphones_state_connect">connected</string>
+    <string name="headphones_state_disconnected">disconnected</string>
+
+    <string name="user_location">Latitude : %f\nLongitude : %f\nAltitude : %f\nAccuracy : %f</string>
+
+    <string name="user_activity">Activity: \nConfidence:</string>
+
+    <string name="fence_title">Fence</string>
+    <string name="fence_subtitle">Tracking: %s</string>
+
+    <string name="start_tracking">Start tracking</string>
+    <string name="stop_tracking">Stop tracking</string>
+
+    <string name="fence_headphones_connect">Headphones connect</string>
+    <string name="fence_headphones_disconnect">Headphones disconnect</string>
+    <string name="fence_user_idle">User nothing doing</string>
+    <string name="fence_user_walking">User walking</string>
+    <string name="fence_user_start_walking">User start walking</string>
+    <string name="fence_user_stop_walking">User stop walking</string>
+    <string name="fence_user_in_car">In car</string>
+    <string name="fence_user_start_ride_on_car">User start ride on car</string>
+    <string name="fence_user_stop_ride_on_car">User stop ride on car</string>
+    <string name="fence_start_">Headphone disconnect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Feed</string>
+    <string name="ride">Ride</string>
+    <string name="goal">Goal</string>
+    <string name="done">Done</string>
+    <string name="confirm_your_all_ride">Confirm your all Ride</string>
+    <string name="start">Start</string>
+    <string name="stop">STOP</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="skip">Skip</string>
+    <string name="goals">Goals</string>
+
+    <!--Filter-->
+    <string name="filter_today">Today</string>
+    <string name="filter_yesterday">Yesterday</string>
+    <string name="filter_week">Last Week</string>
+    <string name="filter_month">Last Month</string>
+    <string name="filter_any_date">Any Date</string>
+    <string name="latest">Latest</string>
+    <string name="all_badges">All Badges</string>
+    <string name="level">Level</string>
+    <string name="details">Details</string>
+    <string name="leaf_level_goals">Solo Skill Goal</string>
+    <string name="view_all">View All</string>
+    <string name="outocme_based_goals">Multi Skill Goal</string>
+    <string name="completed_goals">Completed goals</string>
+    <string name="completed_goals1">Goals you aced</string>
+    <string name="completed_feed">Completed Challenges</string>
+    <string name="completed_feed1">Challenges won</string>
+    <string name="failed_goals">Failed goals</string>
+    <string name="failed_goals1">Goals you crashed</string>
+    <string name="failed_feed">Failed Challenges</string>
+    <string name="failed_feed1">Challenges lost</string>
+    <string name="image">image</string>
+    <string name="hard_braking">HARD BRAKING</string>
+    <string name="advanced">ADVANCED</string>
+    <string name="locked">LOCKED</string>
+    <string name="focus_the_ride_no_plans_no_maps">Focus the Ride No Plans No Maps</string>
+    <string name="score">Score</string>
+    <string name="duration">Duration</string>
+    <string name="hard_braking_low">Hard Braking</string>
+    <string name="overview_data">Lorem ipsum dolor sit amet, consectetur and adicing elit. Nulla feugiat mattis justo necurid. Suspendisse venenatis bibendum.</string>
+    <string name="rewards">Rewards</string>
+    <string name="rules">Rules</string>
+    <string name="start_goal">Start now</string>
+    <string name="need_to_achieve_the_score">Need to Achieve</string>
+    <string name="completed">Completed</string>
+    <string name="got_it">Got it!</string>
+    <string name="requied_score">"Score required is "</string>
+    <string name="detail">Detail</string>
+    <string name="featured_challenges">Featured Challenges</string>
+    <string name="recommended">Recommended</string>
+    <string name="open_challenge">Active Challenges</string>
+    <string name="all_challenges">Challenges</string>
+    <string name="filter">filter</string>
+    <string name="invite">INVITE</string>
+    <string name="view_leaderboard">View Leaderboard</string>
+    <string name="share_now">Share now!</string>
+    <string name="all">All</string>
+
+    <string name="new_label">New</string>
+    <string name="riders_participating">Riders participating.</string>
+    <string name="share_with_your_friends">Share with your friends</string>
+    <string name="invite_your_friends_to_this_nchallenge">Invite your friends to this..\nChallenge</string>
+
+    <string name="floating_widget_details">OTO App for Bike Riders</string>
+    <string name="floating_widget_label">OTO Riding App</string>
+    <string name="draw_other_app_permission_denied">Draw over other app permission not available. App won\'t work without permission. Please try again.</string>
+    <string name="view">VIEW</string>
+
+
+    <!--    OnBoarding Screen-->
+    <string name="oto">OTO</string>
+    <string name="onboard_message">Take the ride \nLive the Experience \nFind your Passion</string>
+    <string name="get_start">Get Started</string>
+
+
+    <!--    Register Screen-->
+    <string name="login_acc">Login to your account</string>
+    <string name="mob_no_hint">Enter your mobile number</string>
+    <string name="sign_in">Sign In</string>
+    <string name="ent_code">OTP Verification</string>
+    <string name="verify_num">We’ve sent an OTP to the mobile number (+91-{mob_num}). Please enter it to complete verification</string>
+    <string name="confirm">Confirm</string>
+    <string name="resend_otp">Don\'t receive it? Resend OTP</string>
+    <string name="ent_veh_det">Select the type of Vehicle you own</string>
+    <string name="next">Next</string>
+
+    <!--    PRofile Screen-->
+    <string name="profile">Profile</string>
+    <string name="badges">Badges</string>
+    <string name="coins">Coins</string>
+    <string name="your_det">Your Details</string>
+    <string name="veh_det">Vehicle Details</string>
+    <string name="faq">FAQ</string>
+    <string name="refer_earn">Refer &amp; Earn</string>
+    <string name="logout">Logout</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="ph_no">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">Date of Birth</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="pin_code">Pincode</string>
+    <string name="upd_now">Update Now</string>
+    <string name="city">City</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="variant">Variant</string>
+
+    <!--    Feed tab-->
+    <string name="weekly_upd">Weekly Updates</string>
+    <string name="cur_score">Current Score</string>
+    <string name="rides">Rides</string>
+    <string name="challenges">Challenges</string>
+    <string name="dream_bike">Your Dream\nBike </string>
+    <string name="emi_label">Buy at Lowest EMI</string>
+    <string name="try_now">Try now</string>
+
+    <string name="ride_per">You are Better\nthan 76%\nRiders</string>
+
+
+    <!--    OMI-->
+    <string name="omi_plan">My OMI Plan</string>
+    <string name="omi_header">Redefine The Future of Vehicle Ownership Experience</string>
+    <string name="apply_now">Apply Now!</string>
+    <string name="apply_now1">Apply Now</string>
+    <string name="y_oto">Why OTO?</string>
+    <string name="pay_les">Pay Lesser</string>
+    <string name="buy_eas">Buy Easier</string>
+    <string name="quick_app">Quick Approval</string>
+    <string name="keep_flex">Keep It Flexible</string>
+    <string name="how_works">How it Works ?</string>
+    <string name="how_works_desc">Get your dream vehicle in 48 hours</string>
+    <string name="omi_apply">OMI Apply</string>
+
+    <string name="default_des">Get 30% Lower EMIs than other Options</string>
+
+    <string name="pay_less_des">Get 30% Lower EMIs than other Options</string>
+    <string name="buy_easier_des">Get 100%&#160;funds released in less than 36 hours</string>
+    <string name="quick_approval_des">Get approval within hours</string>
+    <string name="keep_flex_des">Hassle-Free return at up to 50%&#160;assured resale value</string>
+
+
+    <string name="ent_det">Enter Details</string>
+    <string name="tenure">Tenure</string>
+    <string name="one_year">1 Year</string>
+    <string name="two_year">2 Year</string>
+    <string name="three_year">3 Year</string>
+    <string name="ten_des">In case your choice of Bike is not available in the above list, please call us on 9372081131</string>
+    <string name="save">Save</string>
+    <string name="on_road_price">On Road Price*</string>
+    <string name="omi_instal">OTO Monthly Installment (OMI)</string>
+    <string name="insu">Insurance</string>
+    <string name="final_omi">Final OMI (including Insurance)</string>
+
+    <string name="pan_card">Pan Card</string>
+    <string name="address">Address</string>
+    <string name="income_det">Income Details</string>
+    <string name="salaried">Salaried</string>
+    <string name="self_emp">Self Employed</string>
+    <string name="comp">Company</string>
+    <string name="month_inc">Monthly Income</string>
+    <string name="month_exist_emi_amt">Monthly Existing EMI\'s Amount</string>
+    <string name="monthly_rent">Monthly Rent</string>
+    <string name="omi_terms_cond">I agree to Terms and Conditions</string>
+    <string name="riders_got_same_score">Riders got same score</string>
+    <string name="see_all">See all</string>
+    <string name="upl_docs">Upload Documents</string>
+    <string name="upl_doc">Upload Document</string>
+    <string name="add_prof">Address Proof</string>
+    <string name="img_size_lim">Note: Make sure the image is completely in the frame, image max size 1MB.</string>
+    <string name="sal_slips">Salary Slips</string>
+    <string name="bank_stat">Bank Statement</string>
+    <string name="submit">Submit</string>
+    <string name="thank_u">Thank You</string>
+    <string name="step_3_mes">Please upload the rest of the \ndocuments to get approval \nat the earliest!</string>
+    <string name="your_new_bike_omi_status">Your New Bike OMI Status .</string>
+    <string name="approved">APPROVED</string>
+    <string name="view_details">View Details</string>
+    <string name="step_one">Fill out the application digitally or walk into any OTO partner showroom.</string>
+    <string name="one">One</string>
+    <string name="close">close</string>
+    <string name="please_upload_the_rest_of_the_documents_to_get_approval_at_the_earliest">Please upload the rest of the documents to get approval at the earliest!</string>
+    <string name="thank_you">Thank You</string>
+    <string name="owned">Owned</string>
+    <string name="rented">Rented</string>
+    <string name="married">Married</string>
+    <string name="single">Single</string>
+    <string name="application_incomplete">Your Application is Incomplete</string>
+    <string name="complete_now">Complete Now</string>
+    <string name="team_checking">Team is accessing your application</string>
+    <string name="application_approved">Your Application has been Approved now</string>
+    <string name="processing">PROCESSING</string>
+
+    <string name="call_us">Call us</string>
+    <string name="call_us_number">9372081131</string>
+    <string name="zero">0</string>
+    <string name="bike_health">Bike Health</string>
+    <string name="challenge_accepted">Challenge Accepted</string>
+    <string name="overview">Overview</string>
+    <string name="sort">sort</string>
+    <string name="bank_password">Bank Statement Password</string>
+    <string name="end_of_tenure">End of Tenure</string>
+    <string name="add_prof_types">   (Aadhaar Card / Electricity Bill / Passport)</string>
+
+
+    <string-array name="filter">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last Week</item>
+        <item>Last Month</item>
+        <item>Any Date</item>
+    </string-array>
+
+
+    <array name="image_rides">
+        <item>@drawable/icon_ride_1</item>
+        <item>@drawable/icon_ride_2</item>
+        <item>@drawable/icon_ride_3</item>
+        <item>@drawable/icon_ride_4</item>
+        <item>@drawable/icon_ride_5</item>
+        <item>@drawable/icon_ride_6</item>
+
+    </array>
+
+    <string name="hyperlink">Learn more about Android app development at\n<a href="https://learntodroid.com">LearnToDroid.com</a></string>
+    <string name="accept">Accept</string>
+    <string name="need_to_achieve_the_qualify">Need To Qualify</string>
+    <string name="choose_file">File Upload</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="pdf">PDF</string>
+    <string name="my_goals">My Goals</string>
+
+    <!--FACEBOOK-->
+    <string name="facebook_app_id1">671265337106071</string>
+    <string name="facebook_application_id">390318941970944</string>
+    <string name="fb_login_protocol_scheme">fb390318941970944</string>
+
+
+    <!--Welcome screen-->
+    <!--Swipe intro strings-->
+    <string name="next1">NEXT" "</string>
+    <string name="skip1">SKIP</string>
+    <string name="start1">GET STARTED</string>
+    <string name="back">Back</string>
+    <string name="slide_1_title">Here is Slider 1 Title</string>
+    <string name="slide_1_desc">Gear up for better Bike Health</string>
+    <string name="slide_2_title">Here is Slider 2 Title</string>
+    <string name="slide_2_desc">Gear up to become a Pro Rider</string>
+    <string name="slide_3_desc">Making riding rewarding, fun and safe! Let\'s go</string>
+    <string name="slide_3_title">Here is Slider 3 Title</string>
+    <string name="slide_4_title">Here is Slider 4 Title</string>
+    <string name="slide_4_desc">Own Your Dream Bike at Lowest EMI</string>
+    <string name="driving_score">Driving score will get calculated from 0 to 10. 0 being lowest and 10 being highest.</string>
+
+    <string name="share_with_friends">Your friend has invited you for a ride challenge on OTO app. Accept now and participate to earn rewards.</string>
+    <string name="info">Info</string>
+    <string name="what_does_it_mean">What does it mean:</string>
+    <string name="effect_on_vehicle">Effect on vehicle:</string>
+    <string name="how_we_detect_the_event">How we detect the event:</string>
+    <string name="how_does_it_impact_the_score">How does it impact the score:</string>
+    <string name="coins_till_now">coins till now</string>
+    <string name="congrats_you_ve_earned">Congrats! You,ve earned</string>
+    <string name="earn_now">Earn Now</string>
+    <string name="rewards_are_coming_soon_where_you_redeem_coins_so_keep_earning_coins">Rewards are coming soon where you can redeem coins so keep earning coins</string>
+    <string name="dialog_battery_title">Battery Optimization Permission</string>
+    <string name="dialog_battery_message">We need permission to modify your battery optiomization settings</string>
+    <string name="dialog_battery_button_negative">Deny</string>
+    <string name="dialog_battery_button_positive">Allow</string>
+    <string name="notification_message">Tap for more app information</string>
+    <string name="notification_title">OTO</string>
+    <string name="ticker_text">Tap for more app information</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminders">Reminders</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_amount"><font size="14">Enter Amount</font></string>
+    <string name="enter_petrol"><font size="14">Enter Quantity</font></string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="term_condition_text">I agree to the <u>Terms &amp; Conditions and Privacy policy</u>. and would like to receive notifications Via WhatsApp/Sms</string>
+    <string name="truecaller_text">Login with TrueCaller</string>
+    <string name="personal_care_fitness"><![CDATA[PERSONAL CARE & FITNESS]]></string>
+    <string name="client_id_debug">43228914</string>
+    <string name="client_secret_debug">h06hcs8SeqVzRxdOZZP38f4FE9uaiZkD</string>
+    <string name="client_id">68927640</string>
+    <string name="client_secret">MDbCPgAopC9PkYkA8mfXOG124zs8HyMg</string>
+    <string name="app_domain_name">.otocapital.in</string>
+    <string name="access_token_key">access=</string>
+    <string name="refres_token_key">refresh=</string>
+    <string name="contact_number_key">contact_number=</string>
+    <string name="is_verified_key">is_verified=</string>
+
+
+    // Adding string for SplashScreenActivity
+    <string name="test_app">https://testapp.otocapital.in/userservice</string>
+    <string name="app">https://app.otocapital.in/userservice</string>
+    <string name="service_name_url">userservice</string>
+    <string name="remote_message">remoteMessage</string>
+    <string name="phone">phone</string>
+    <string name="screen_link">screen_link</string>
+    <string name="screen_name">screen_name</string>
+    <string name="ct_objectId">ct_objectId</string>
+    <string name="url_123">https://otocapital.in</string>
+    <string name="oto_android_app">OTO_ANDROID_APP</string>
+    <string name="stage_deeplink">mobilewebapp-stage.otocapital.in/</string>
+    <string name="live_plans_deeplink">https://www.otocapital.in/plans</string>
+    <string name="live_application_deeplink">https://www.otocapital.in/application</string>
+    <string name="play_store">playstore</string>
+    <string name="id">id</string>
+    <string name="challenge_detail">challenge_detail</string>
+    <string name="contact_number">contact_number</string>
+    <string name="http">https://</string>
+    <string name="url_lead_existing">/app-lead-existing/v1/</string>
+    <string name="approved_1">Approved</string>
+    <string name="meta">meta</string>
+    <string name="status_api_success">status</string>
+    <string name="data">data</string>
+    <string name="lead_status">lead_status</string>
+    <string name="redirect_url">redirect_url</string>
+    <string name="lead_uuid">lead_uuid</string>
+    <string name="lead_exists">lead_exists</string>
+    <string name="fresh">Fresh</string>
+    <string name="booked">Booked</string>
+    <string name="Hot_Application">Hot_Application</string>
+    <string name="converted">Converted</string>
+    <string name="credit_review">Credit Review</string>
+    <string name="application_in_progress">Application in Progress</string>
+    <string name="decision_engine_called">Decision Engine Called</string>
+    <string name="lead_booked">Lead Booked</string>
+    <string name="lead_complete">Lead Complete</string>
+    <string name="rejected">Rejected</string>
+    <string name="form_pending">Form_Pending</string>
+    <string name="doc_pending">Doc_Pending</string>
+    <string name="reassign_doc_pending">Reassign_Doc_Pending</string>
+    <string name="personal_income_detail">Personal and Income Details Complete</string>
+    <string name="document_upload_complete">Documents Upload Complete</string>
+    <string name="authorization">Authorization</string>
+    <string name="guid">guid</string>
+    <string name="name1">name</string>
+    <string name="slug">slug</string>
+    <string name="utm_source">utm_source</string>
+    <string name="utm_medium">utm_medium</string>
+    <string name="utm_campaign">utm_campaign</string>
+    <string name="utm_link">utm_link</string>
+    <string name="redirect_link">redirect_link</string>
+    <string name="redirect_status">redirect_status</string>
+    <string name="clevertap_event_name">clevertap_event_name</string>
+    <string name="loan_journey_links">loan_journey_links</string>
+    <string name="plan_page">Plans_Page</string>
+    <string name="access_token">access_token</string>
+    <string name="refresh_token">refresh_token</string>
+    <string name="loan_journey">loan-journey</string>
+    <string name="mobile_number_splash">Mobile Number</string>
+    <string name="utm_source_1">utm source</string>
+    <string name="utm_medium1">utm medium</string>
+    <string name="utm_campaign1">utm campaign</string>
+    <string name="cta_location">CTA Location</string>
+    <string name="lower_start">start</string>
+    <string name="firebaseDylink1">https://firebasedynamiclinks.googleapis.com/v1/shortLinks?key=AIzaSyC-gyz48hQgp3Lc77SertxGoTEo0HgUevs</string>
+    <string name="domainUriPrefix">domainUriPrefix</string>
+    <string name="page_link1">https://otocapital.page.link</string>
+    <string name="android_package_text">androidPackageName</string>
+    <string name="package_name">com.oto.android.app</string>
+    <string name="android_info">androidInfo</string>
+    <string name="option_text">option</string>
+    <string name="short_text">SHORT</string>
+    <string name="dynamicLinkInfo_text">dynamicLinkInfo</string>
+    <string name="suffix_text">suffix</string>
+    <string name="shortLink_text">shortLink</string>
+    <string name="fresh_text">Fresh</string>
+    <string name="user_id_text">User ID</string>
+    <string name="session_id_text">Session ID</string>
+    <string name="owns_vehicle_text">Owns Vehicle</string>
+    <string name="application_id_text">Application ID</string>
+    <string name="application_status_text">Application Status</string>
+    <string name="application_url_text">Application Url</string>
+    <string name="plan_url_text">Plan url</string>
+    <string name="from_pending_url_text">Form_pending url</string>
+    <string name="document_pending_url">Document_pending url</string>
+    <string name="short_url_text">Short Url</string>
+    <string name="token_space">Token" "</string>
+    <string name="otocapital_link_con">/app-user-tokens/?contact_number=</string>
+    <string name="loan_application_update_text">Loan application update</string>
+    <string name="personal_income_detail_text">Personal and Income Details Initiation</string>
+    <string name="upload_document_text">Upload Document Initiation</string>
+    <string name="upload_complete_text">Upload Document Complete</string>
+
+
+    //Login Activity
+    <string name="enter_valid_mobile_number">Enter Valid Mobile Number</string>
+    <string name="test_desc_text">TEST DESC</string>
+    <string name="permission_denied1">Permission Denied</string>
+    <string name="phone_p_cap">Phone</string>
+    <string name="status_s_cap">Status</string>
+    <string name="method_used_text">Method Used</string>
+    <string name="success_c_cap">Success</string>
+    <string name="Log_in">Log-In</string>
+    <string name="invalid_contact_number">Invalid contact number</string>
+    <string name="url_privacy_policy">https://user-documents-data.s3.ap-south-1.amazonaws.com/assets/Privacy_Policy.html</string>
+    <string name="failure_text">Failure</string>
+    <string name="failure_truecaller">Unable to reach TrueCaller!</string>
+
+    // NewAppUserActivity
+    <string name="loan_text">loan</string>
+    <string name="configs_text">configs</string>
+    <string name="explore_bike_link_text">explore_bike_link</string>
+    <string name="install_text">install</string>
+    <string name="firstInstall_text">firstInstall</string>
+    <string name="screen_1_text">Screen 1</string>
+    <string name="screen_2_text">Screen 2</string>
+    <string name="screen_3_text">Screen 3</string>
+    <string name="screen_4_text">Screen 4</string>
+    <string name="next_text">Next</string>
+    <string name="introduction_screen">Introduction Screens</string>
+    <string name="home_flow">home</string>
+
+
+    //UtmSourceWebActivity
+    <string name="live_domain_name_url">.otocapital.in</string>
+    <string name="loading_text">Loading...</string>
+    <string name="access_text">access=</string>
+    <string name="refresh_text">refresh=</string>
+    <string name="contact_number_text12">contact_number=</string>
+    <string name="personal_detail_text12">personal-details</string>
+    <string name="photoPath">PhotoPath</string>
+    <string name="fileChooser_text">File chooser</string>
+    <string name="click_back_again_text">Please click BACK again to exit</string>
+    <string name="android_app_redirect">android-app-redirect</string>
+
+
+    // Vehicle Activity
+    <string name="vehicle_selection">Vehicle Selection</string>
+    <string name="vehicle_type_text">Vehicle Type</string>
+    <string name="no_vehicle_text">no_vehicle</string>
+    <string name="Unsuccessful_text">Unsuccessful</string>
+    <string name="vehicle_type_text1">vehicle_type</string>
+    <string name="please_choose_vehicle_info_text">Please choose Vehicle Info</string>
+    <string name="glide_vehicle_activity_url_1">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_mv_selected.png?alt=media&amp;token=a6c006f0-e2c1-4daa-bc6f-dda95c8303f1</string>
+    <string name="glide_url_vehicle_activity_2">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_bike.png?alt=media&amp;token=a25bd44d-dfb9-45e7-a78d-df65ffde726f</string>
+    <string name="glide_url_vehicle_activity_3">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_scooter.png?alt=media&amp;token=8d331446-b9a0-4b5e-b33d-bf24847201ee</string>
+    <string name="electric_vehicle_text">Electric Vehicles</string>
+    <string name="Motorcycle_text">Motorcycle</string>
+    <string name="scooter_text">Scooter</string>
+    <string name="glide_url_vehicle_activity_4">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_mv_selected.png?alt=media&amp;token=a6c006f0-e2c1-4daa-bc6f-dda95c8303f1</string>
+    <string name="glide_url_vehicle_activity_5">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_bike.png?alt=media&amp;token=a25bd44d-dfb9-45e7-a78d-df65ffde726f</string>
+    <string name="glide_url_vehicle_activity_6">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_scooter.png?alt=media&amp;token=8d331446-b9a0-4b5e-b33d-bf24847201ee</string>
+    <string name="glide_url_vehicle_activity_7">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_mv_selected.png?alt=media&amp;token=a6c006f0-e2c1-4daa-bc6f-dda95c8303f1</string>
+    <string name="glide_url_vehicle_activity_8">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_bike.png?alt=media&amp;token=a25bd44d-dfb9-45e7-a78d-df65ffde726f</string>
+    <string name="glide_url_vehicle_activity_9">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_scooter.png?alt=media&amp;token=8d331446-b9a0-4b5e-b33d-bf24847201ee</string>
+
+
+    // Vehicle Activity First
+    <string name="cta">cta</string>
+    <string name="please_select_make_first">Please select Make first</string>
+    <string name="please_select_make_text">Please select Make</string>
+    <string name="please_select_model_text">Please select Model</string>
+    <string name="make_text_s_small">make</string>
+    <string name="model_text_s_small">model</string>
+    <string name="vehicle_brand_text">Vehicle Brand</string>
+    <string name="vehicle_make_text">Vehicle Make</string>
+    <string name="Successful_text">Successful</string>
+    <string name="select_model_text">Select Model</string>
+    <string name="select_make_text">Select Make</string>
+    <string name="id_text">id</string>
+    <string name="vehicle_type_url">/catalogue/model/?vehicle_type=</string>
+    <string name="user_service_vehicle_url">/vehicle/</string>
+    <string name="from_text">from</string>
+    <string name="vehicle_form_text">vehicle_form</string>
+    <string name="make_type_text">make_type</string>
+    <string name="model_type_text">model_type</string>
+    <string name="mileage_text">mileage</string>
+    <string name="display_text">display_text</string>
+    <string name="unit_text">unit</string>
+    <string name="glide_url_vehicle_activity_first1">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_scooter.png?alt=media&amp;token=8d331446-b9a0-4b5e-b33d-bf24847201ee</string>
+    <string name="glide_url_vehicle_activity_first2">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_bike.png?alt=media&amp;token=a25bd44d-dfb9-45e7-a78d-df65ffde726f</string>
+    <string name="glide_url_vehicle_activity_first3">https://firebasestorage.googleapis.com/v0/b/otoandroidapp-f0bad.appspot.com/o/vehicle_screen_images%2Fic_mv_selected.png?alt=media&amp;token=a6c006f0-e2c1-4daa-bc6f-dda95c8303f1</string>
+
+
+    // Vehicle Activity Second
+    <string name="avg_charge_cost_text">Average Charge Cost</string>
+    <string name="Daily_text">Daily</string>
+    <string name="Weekly_text">Weekly</string>
+    <string name="Monthly_text">Monthly</string>
+    <string name="km_text">km</string>
+    <string name="days_text">days</string>
+    <string name="odometer_reading_text">Odometer Readings</string>
+    <string name="Period_text">Period</string>
+    <string name="Kms_text">Kms</string>
+    <string name="fuel_cost_text">Fuel Cost</string>
+    <string name="last_serviced_days_text">Last Serviced Days ago</string>
+    <string name="last_serviced_kms_text">Last Serviced Kms</string>
+    <string name="skip_unsuccessful_text">Skip-UnSuccessful</string>
+    <string name="complete_text">Complete</string>
+    <string name="bike_health_info_text">Bike Health Information</string>
+    <string name="please_fill_any_one_field_text">Please fill any one field</string>
+    <string name="please_select_type_of_last_service_text">Please Select Type of Last Service</string>
+    <string name="total_kms_driven">total_kms_driven</string>
+    <string name="average_mileage_text">average_mileage</string>
+    <string name="average_travel_text">average_travel</string>
+    <string name="average_charge_cost_text">average_charge_cost</string>
+    <string name="key_text">key</string>
+    <string name="value_text">value</string>
+    <string name="last_serviced_cost_text">last_serviced_cost</string>
+    <string name="last_serviced_at_text">last_serviced_at</string>
+    <string name="not_filled_text">Not filled</string>
+    <string name="please_select_avg_travel_type">Please select Average Travel type</string>
+    <string name="detail_updated_successfully">Details Updated Successfully</string>
+    <string name="bike_health_cta">bike_health</string>
+    <string name="opted_flow_name">Flow Opted</string>
+    <string name="opted_flow_name_intent">flow_opted</string>
+    <string name="opted_flow_name_first">First flow_opted</string>
+    <string name="go_to_home_event">Go to Home CTA</string>
+    <string name="flow_screen">Flow_Screen</string>
+    <string name="dynamic_link_screen">Dynamic Link</string>
+    <string name="explore_bike_slug">explore-bike</string>
+    <string name="utm_source_caps">UTM Source</string>
+    <string name="user_opted_flow_event_name">Flow Opted by User</string>
+    <string name="amount">Amount Entered</string>
+    <string name="date_of_service">Date of Service</string>
+
+
+    //Profile Activity
+    <string name="profile_text">profile</string>
+
+    //Profile Detail Fragment
+
+    <string name="screen_text">Screen</string>
+    <string name="my_profile">My Profile</string>
+    <string name="navigation_bar">Navigation bar</string>
+    <string name="gender">Gender</string>
+    <string name="dob_text">DOB</string>
+    <string name="phone_iso_text">+91</string>
+    <string name="personal_details_incomplete_text">Profile Details Incomplete</string>
+    <string name="personal_details_complete_text">Profile Details Completion</string>
+    <string name="choose_action">Choose an action</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="view_text">View</string>
+    <string name="image_type">image/*</string>
+    <string name="city_id">CityId</string>
+    <string name="enter_vallid_pincode_text">Enter Valid Pincode</string>
+    <string name="get_pincode_url">/geography/pincode/?pincode=</string>
+    <string name="file_provider">.fileProvider</string>
+    <string name="yyyyMMdd_HHmmss_pattern">yyyyMMdd_HHmmss</string>
+    <string name="image_storage_path">/OtoCapital/images/</string>
+    <string name="jpeg_">JPEG_</string>
+    <string name="karnataka">Karnataka</string>
+    <string name="yyyy_mm_dd">yyyy-M-d</string>
+    <string name="dd_mmm_yyyy">dd MMM, yyyy</string>
+    <string name="bg_color">#f7f7f7</string>
+    <string name="utc">UTC</string>
+
+
+    //VehicleDetailFragment
+    <string name="bike_detail">Bike detail</string>
+    <string name="select_variant">Select Variant</string>
+    <string name="select_city_text">Select city</string>
+    <string name="make_id">Make ID</string>
+    <string name="variant_id">Variant ID</string>
+    <string name="vehicle_details_incomplete">Vehicle Details Update Incomplete</string>
+    <string name="vehicle_details_complete">Vehicle Details Update complete</string>
+
+
+    // OTP VerificationActivity
+
+    <string name="resendOtp_text">Resend OTP</string>
+    <string name="sec_left_text">seconds left</string>
+    <string name="existing_user_text">Existing User</string>
+    <string name="invalid_text">Invalid</string>
+    <string name="invalid_otp_text">Invalid OTP</string>
+    <string name="userservice_dynamic_links">/dynamic-links/</string>
+
+
+    // Register Activity
+    <string name="warning_text">Warning.!!</string>
+    <string name="accelerometer_sensor_text">Accelerometer sensor is unavailable. Hence cannot proceed</string>
+    <string name="megnetometer_sensor_text">Magnetometer sensor is unavailable. Hence cannot proceed</string>
+    <string name="attention_text">Attention</string>
+    <string name="gyroscpoe_text">Gyroscope sensor is unavailable</string>
+    <string name="continue_text">Continue</string>
+
+
+    // Home activity
+    <string name="oppo_text">oppo</string>
+    <string name="vivo_text">vivo</string>
+    <string name="xiaomi_text">xiaomi</string>
+    <string name="OnePlus_text">OnePlus</string>
+    <string name="new_app_is_ready_text">New app is ready!</string>
+    <string name="oto_cap_img_loc">/OtoCapital/images/</string>
+    <string name="service_is_not_yet_started">Service is not yet started</string>
+    <string name="vehicle_model_text">Vehicle Model</string>
+    <string name="switch_to_loan_text">Switched to Loan</string>
+    <string name="goals_page_viewed_text">Goals page viewed</string>
+    <string name="owns_bike_text">Owns Bike</string>
+    <string name="call_for_support_clicked">Call for Support Clicked</string>
+    <string name="choose_an_action">Choose an action</string>
+    <string name="take_photo_text">Take Photo</string>
+    <string name="select_from_gallery_text">Select from Gallery</string>
+    <string name="badges_text">Badges</string>
+    <string name="coins_text">Coins</string>
+    <string name="clicked_on_logout">Click on logOut</string>
+    <string name="cta_cap">CTA</string>
+    <string name="hamburger_text">hamburger</string>
+    <string name="profile_logged_out_text">Profile logged out</string>
+    <string name="file_not_found_text">file not found</string>
+    <string name="fuel_tracker_text">Fuel Tracker</string>
+    <string name="apply_for_loan_text">Apply for loan</string>
+    <string name="explore_Bikes_text">Explore Bikes</string>
+    <string name="bike_text">bike</string>
+    <string name="feature_challenges_text1">Featured Challenge</string>
+    <string name="upload_successfully_text">upload successfully</string>
+    <string name="upload_failed_text">upload failed</string>
+    <string name="goal_detail_text">goal_detail</string>
+    <string name="uuid_text">uuid</string>
+    <string name="isCompleted_text">isCompleted</string>
+    <string name="challenge_detail_text">challenge_detail</string>
+    <string name="challenge_cap">CHALLENGE</string>
+    <string name="goal_list_text">goal_list</string>
+    <string name="challenge_list_text">challenge_list</string>
+    <string name="weekly_report_text">weekly_report</string>
+    <string name="my_report_text">my_report</string>
+    <string name="badge_text">badge</string>
+    <string name="start_ride_text">start_ride</string>
+    <string name="goal_success_text">goal_success</string>
+    <string name="challenge_success_text">challenge_success</string>
+    <string name="participated_goal_detail_text">participated_goal_detail</string>
+    <string name="participated_challenge_detail_text">participated_challenge_detail</string>
+    <string name="OMI_text">OMI</string>
+    <string name="profile_p_small">profile</string>
+    <string name="reminders_r_small">reminders</string>
+    <string name="mark_complete_text">mark_complete</string>
+    <string name="open_game_text">open_game</string>
+    <string name="plans_page_text">plans_page</string>
+    <string name="personal_income_details_form_text">personal_income_details_form</string>
+    <string name="document_upload_form_text">document_upload_form</string>
+    <string name="loan_journey_text">loan_journey</string>
+    <string name="add_reminder_text">add_reminder</string>
+    <string name="upcoming_reminder_text">upcoming_reminder</string>
+    <string name="pending_reminders_text">pending_reminders</string>
+    <string name="add_expense_text">add_expense</string>
+    <string name="monthly_expenses_listings_text">monthly_expenses_listings</string>
+    <string name="category_text">category</string>
+    <string name="monthly_m_small_text">monthly</string>
+    <string name="all_expenses_listings_text">all_expenses_listings</string>
+    <string name="add_fuel_log_text">add_fuel_log</string>
+    <string name="all_fuel_listings_text">all_fuel_listings</string>
+    <string name="monthly_fuel_listings_text">monthly_fuel_listings</string>
+    <string name="app_update_text">app_update</string>
+    <string name="monthly_ride_report_text">monthly_ride_report</string>
+    <string name="feed_f_small">feed</string>
+    <string name="AddReminder_text">AddReminder</string>
+    <string name="normal_text">normal</string>
+    <string name="report_text">Report</string>
+    <string name="game_text">game</string>
+    <string name="sport_text">sport</string>
+    <string name="view_all_reminders_text">view_all_reminders</string>
+    <string name="type_text">type</string>
+    <string name="Ride_text">Ride</string>
+    <string name="RideSummaryFragment_text">RideSummaryFragment</string>
+    <string name="SeeAllReportsFragment_text">SeeAllReportsFragment</string>
+    <string name="EventReportFragment_text">EventReportFragment</string>
+    <string name="DashboardGoalComplFragment_text">DashboardGoalComplFragment</string>
+    <string name="CompletedGoalFragment_text">CompletedGoalFragment</string>
+    <string name="GoalCompletedCopy2_text">GoalCompletedCopy2</string>
+    <string name="message_text">message</string>
+    <string name="url_user_dashboard">/user-dashboard/?contact_number=</string>
+    <string name="force_update_text">force_update</string>
+    <string name="expense_tracker_text">Expense Tracker</string>
+    <string name="Game_text_g_cap">Game</string>
+    <string name="reminder_page_text">reminder_page</string>
+    <string name="add_reminder_initation_text">Add Reminder Initiation</string>
+    <string name="add_reminder_incomplete_text">Add Reminder Incomplete</string>
+    <string name="failed_getting_current_text">Failed on getting current location</string>
+    <string name="please_fill_km_driven_text">Please fill Any one of Km Driven Or Duration</string>
+    <string name="please_enter_reminder_text">Please enter reminder type</string>
+    <string name="please_select_reminder_text">Please select Reminder Date</string>
+    <string name="please_select_type_reminder_text">Please select Type of Reminder</string>
+    <string name="object_id_text">object_id</string>
+    <string name="reminder_type_text">reminder_type</string>
+    <string name="reminder_date_text">reminder_date</string>
+    <string name="reminder_time_text">reminder_time</string>
+    <string name="notes_text">notes</string>
+    <string name="shop_name_text">shop_name</string>
+    <string name="address_text">address</string>
+    <string name="latitude_text">latitude</string>
+    <string name="longitude_text">longitude</string>
+    <string name="location_details_text">location_details</string>
+    <string name="frequency_type_text">frequency_type</string>
+    <string name="frequency_value_text">frequency_value</string>
+    <string name="kms_text_k_small">kms</string>
+    <string name="frequency_small">frequency</string>
+    <string name="kms_driven_small">kms_driven</string>
+    <string name="repeat_reminder_details_text">repeat_reminder_details</string>
+    <string name="Protto_text">Protto</string>
+    <string name="OWN_text_all_cap">OWN</string>
+    <string name="service_station_text">service_station</string>
+    <string name="add_reminder_successful_text">Add Reminder Successful</string>
+    <string name="type_of_reminder_text">Type of Reminder</string>
+    <string name="Date_d_cap_text">Date</string>
+    <string name="Time_text">Time</string>
+    <string name="repeat_every_text">Repeat Every</string>
+    <string name="service_center_text">Service Center Name</string>
+    <string name="location_selected_text">Location Selected</string>
+    <string name="opt_for_protto_text">Opted for Protto Service</string>
+    <string name="custom_text">custom</string>
+
+
+    // Add Reminder
+    <string name="url_reminder_type">/reminder-types/</string>
+    <string name="standard_text">standard</string>
+    <string name="standard_s_cap_text">Standard</string>
+    <string name="repeat_reminder_text">repeat_reminder</string>
+    <string name="frequency_text">frequency</string>
+    <string name="url_user_service_reminder">/reminders/</string>
+    <string name="add_reminder_reminder">AddReminder</string>
+    <string name="reminder_r_small">reminder</string>
+    <string name="service_station_text_1">service_station_text</string>
+    <string name="own_text_all_small">own</string>
+    <string name="protto_all_small">protto</string>
+    <string name="Other_text">Other</string>
+    <string name="week_text">week</string>
+    <string name="weeks_text">weeks</string>
+    <string name="months_text">months</string>
+
+
+    // Ride Section
+    <string name="user_info_text">user_info</string>
+    <string name="ride_badge_text">Ride_badge {Zeplin}</string>
+    <string name="screen_desc_text">screen_desc</string>
+    <string name="opened_badge_text">Opened Badge screen</string>
+    <string name="hall_of_fame_text">hall_of_fame</string>
+    <string name="physical_activity_text">Physical Activity</string>
+    <string name="location_text1">Location</string>
+    <string name="media_and_storage_text">Media and Storage</string>
+    <string name="auto_starts_text">Auto Starts</string>
+    <string name="battery_optimisation_text">Battery Optimisation</string>
+    <string name="permission_granted_text">Permission Granted</string>
+    <string name="resume_text">resume</string>
+    <string name="participated_text">Participated</string>
+    <string name="manual_ride_text">manual_ride</string>
+    <string name="manual_ride_type_text">manual_ride_type</string>
+    <string name="manual_timer_text">manual_timer</string>
+    <string name="manual_ride_file_text">manual_ride_file</string>
+    <string name="Y_cap_text">Y</string>
+    <string name="N_cap_text">N</string>
+    <string name="ride_1_zeplin_text">Ride 1 {Zeplin}</string>
+    <string name="clicked_on_start_ride_text">Clicked on Start Ride button</string>
+    <string name="ride_km_text">Ride km</string>
+    <string name="bike_ride_score_text">Bike Ride Score</string>
+    <string name="ride_unchecked_text">Ride Unchecked</string>
+    <string name="total_rides_recorded_text">Total rides recorded</string>
+    <string name="number_of_rides_checked_text">Number of rides checked</string>
+    <string name="number_of_rides_unchecked_text">Number of rides unchecked</string>
+    <string name="ride_submit_text">Ride submit</string>
+    <string name="userGuid_text">userGuid</string>
+    <string name="fetching_ride_detail_text">Fetching Ride details</string>
+    <string name="capturing_ride_text">Capturing Ride</string>
+    <string name="issue_in_parse_text">Issue in parse response</string>
+    <string name="hard_braking_text">hard_braking</string>
+    <string name="hard_braking_cap_text">Hard Braking</string>
+    <string name="rash_acceleration_text">rash_acceleration</string>
+    <string name="rash_acceleration_cap_text">Rash Acceleration</string>
+    <string name="over_speeding_text">over_speeding</string>
+    <string name="over_speeding_cap_text">Over Speeding</string>
+    <string name="rough_patches_text">rough_patches</string>
+    <string name="rough_patches_cap_text">Rough Patches</string>
+    <string name="speed_breaker_text">speed_breaker</string>
+    <string name="speed_breaker_cap_text">Speed Breaker</string>
+    <string name="non_economy_speed_text">non_economy_speed</string>
+    <string name="non_economy_speed_cap_text">Non Economic Speed</string>
+    <string name="speed_variance_text">speed_variance</string>
+    <string name="speed_variance_cap_text">Speed Variation</string>
+    <string name="ditch_text">ditch</string>
+    <string name="pothole_damage_text">Pothole Damage</string>
+
+
+    // Report Module/ Package
+
+    <string name="total_score_text">totalScore</string>
+    <string name="total_percentage_text">totalPercentage</string>
+    <string name="resourceId_text">resourceId</string>
+    <string name="eventKeyName_text">eventKeyName</string>
+    <string name="eventLabelName_text">eventLabelName</string>
+    <string name="eventDate_text">eventDate</string>
+    <string name="driving_behavior_report_text">driving_behavior_report</string>
+    <string name="today_text">today</string>
+    <string name="ride_list_4_text">Ride_list 4 {Zeplin}</string>
+    <string name="clicked_on_view_text">Clicked on View All button</string>
+    <string name="turbulent_text">Turbulent Speed</string>
+    <string name="bike_type_text">Bike Type</string>
+    <string name="bike_brand_text">Bike Brand</string>
+    <string name="no_ride1_text">Number of rides</string>
+    <string name="report_viewed_text">Report Viewed</string>
+    <string name="bike_model_text">Bike Model</string>
+    <string name="ride_parameter_text">Ride Parameter</string>
+    <string name="ride_parameter_viewed_text">Ride Parameter Viewed</string>
+    <string name="date_text">date</string>
+    <string name="date_text1">Date</string>
+
+
+    // Feed Fragment
+    <string name="Home_text">Home</string>
+    <string name="bottom_menu_text">Bottom Menu</string>
+    <string name="add_detail_text">Add Details</string>
+    <string name="main_text">main</string>
+    <string name="Loan_Journey_Tracker_text">Loan_Journey_Tracker</string>
+    <string name="complete_now_text">complete_now</string>
+    <string name="view_more_text">view_more</string>
+    <string name="deposit_has_been_text">Deposit has been adjusted in this amount</string>
+    <string name="type_text1">type</string>
+    <string name="goal_small_text1">goal</string>
+    <string name="resp_text1">resp</string>
+    <string name="challenge_small_text">challenge</string>
+    <string name="log_text">log</string>
+    <string name="home_page_button_text">home_page_button</string>
+    <string name="add_expense_intiation_text">Add Expense Initiation</string>
+    <string name="home_page_text">home_page</string>
+    <string name="switched_to_bike_text">Switched to Bike Health</string>
+    <string name="bike_score_text">Bike Score</string>
+    <string name="switch_to_driving_text">Switched to Driving Behaviour Report</string>
+    <string name="banner_text">banner</string>
+    <string name="home_page_visit_text">Home Screen Visited</string>
+    <string name="game_intiated_text">Game Initiated</string>
+    <string name="web_text">web</string>
+    <string name="Loan_Journey_Banner_text">Loan_Journey_Banner</string>
+    <string name="app_text">app</string>
+    <string name="Bangalore_text">Bangalore</string>
+    <string name="Bike_service_intiation_text">Bike Service Initiation</string>
+    <string name="selected_name_text">Selected Name</string>
+    <string name="selected_number_text">Selected Number</string>
+    <string name="selected_location_text">Selected Location</string>
+    <string name="selected_date_text">Service Date</string>
+    <string name="bike_service_incomp_text">Bike Service Incomplete</string>
+    <string name="take_action_text">take_action</string>
+    <string name="please_select_service_text">Please select service type</string>
+    <string name="location_required_text">Location Required</string>
+    <string name="please_select_date_text">Please select Date</string>
+    <string name="service_report_id_text">service_report_id</string>
+    <string name="number_text">number</string>
+    <string name="service_date_text">service_date</string>
+    <string name="source_text">source</string>
+    <string name="service_types_text">service_types</string>
+    <string name="selected_service_text">Selected Service</string>
+    <string name="bike_service_unsuccessfully_text">Bike Service UnSuccessful</string>
+    <string name="bike_service_successfully_text">Bike Service Successful</string>
+    <string name="dialog_canceled_text">Dialog canceled!</string>
+    <string name="url_catalogue_make_text">/catalogue/make/</string>
+    <string name="url_model_vehicle_type_text">/catalogue/model/?vehicle_type=</string>
+    <string name="cc_text">cc</string>
+    <string name="url_catalogue_variant">/catalogue/variant/</string>
+    <string name="model_guid_text">model_guid</string>
+    <string name="variant_text">Variant</string>
+    <string name="url_protto_service">/provider/protto-service/</string>
+    <string name="protto_service_success">Protto Service Successfully Booked</string>
+    <string name="url_short_links">https://firebasedynamiclinks.googleapis.com/v1/shortLinks?key=AIzaSyC-gyz48hQgp3Lc77SertxGoTEo0HgUevs</string>
+    <string name="link_text">link</string>
+    <string name="Banner_text_cap">Banner</string>
+    <string name="incurred_cost_text">incurred_cost</string>
+    <string name="estimated_cost_text">estimated_cost</string>
+    <string name="Upcoming_text">Upcoming</string>
+    <string name="url_userservice_config">/config/v1/</string>
+    <string name="results_config">results</string>
+    <string name="banner_name_text">banner_name</string>
+    <string name="banner_slug_text">banner_slug</string>
+    <string name="banner_status_text">banner_status</string>
+    <string name="banner_type_text">banner_type</string>
+    <string name="header_text">header</string>
+    <string name="image_url_text">image_url</string>
+    <string name="buttons_text">buttons</string>
+    <string name="url_userservice_config_2">/config/</string>
+    <string name="section_slug_text">section_slug</string>
+    <string name="add_bike_details_to_text">add_bike_details_to</string>
+    <string name="detail_d_small_text">detail</string>
+    <string name="visibility_text">visibility</string>
+    <string name="static_data_1_text">static_data_1</string>
+    <string name="static_data_2_text">static_data_2</string>
+    <string name="expense_logs_text">expense_logs</string>
+    <string name="games_text">games</string>
+    <string name="loan_dashboard_text">loan_dashboard</string>
+    <string name="explore_text">explore</string>
+    <string name="explore_bike_text">explore_bike</string>
+    <string name="vehicle_image_text">vehicle_image</string>
+    <string name="In_Progress_text">In Progress</string>
+    <string name="add_fuel_initation_text">Add Fuel Initiation</string>
+    <string name="no_file_attached_text">No file attached</string>
+    <string name="expense_amount_text">Expense Amount</string>
+    <string name="location_name_text">Location Name</string>
+    <string name="petrol_quantity_text">Petrol Quantity</string>
+    <string name="file_type_text">File Type</string>
+    <string name="fuel_log_incomplete_text">Fuel log Incomplete</string>
+    <string name="maximum_four_document_text">Maximum four documents are allowed</string>
+    <string name="documents_saved_text">Documents Saved</string>
+    <string name="please_wait_preparing_document_text">Please wait..Preparing Documents to upload</string>
+    <string name="fuel_unit_text">fuel_unit</string>
+    <string name="in_rupee_text">In Rupees</string>
+    <string name="expense_date_text">expense_date</string>
+    <string name="amount_text">amount</string>
+    <string name="fuel_cost_text1">fuel_cost</string>
+    <string name="total_ltr_text">total_ltr</string>
+    <string name="documents_list_text">documents_list</string>
+    <string name="Notes_text">Notes</string>
+    <string name="add_fuel_success_text">Add Fuel Successful</string>
+    <string name="url_expense_fuel_price_text">/expenses/fuel-price/</string>
+    <string name="fuel_range_text">fuel_range</string>
+    <string name="min_text">min</string>
+    <string name="max_text">max</string>
+    <string name="fuel_data_text">fuel_data</string>
+    <string name="price_text">price</string>
+
+
+    // Fuel Log
+    <string name="fuel_expense_added_text">Fuel Expense Added</string>
+    <string name="url_userservice_expense__text">/expenses/fuel-logs/</string>
+    <string name="please_wait_uploading_document_text">Please wait..Uploading Documents</string>
+    <string name="edit_fuel_log_text">Edit Fuel Log</string>
+    <string name="document_guid_text">document_guid</string>
+    <string name="fuel_expense_updated_text">Fuel Expense Updated</string>
+    <string name="all_time_text">All Time</string>
+    <string name="last_days_text">Last 30 Days</string>
+    <string name="monthly_text">monthly</string>
+    <string name="fuel_log_text">fuel_log</string>
+    <string name="all_a_small_text">all</string>
+    <string name="fuel_tracker_viewed_text">Fuel Tracker Viewed</string>
+    <string name="filter_by_text">filter_by</string>
+    <string name="summary_text">summary</string>
+    <string name="items_text">items</string>
+    <string name="delete_success_text">Deleted Successfully</string>
+
+
+    // Adapters
+    <string name="upcoming_u_cap_text">upcoming</string>
+    <string name="tyre_change_cap_text">Tyre Change</string>
+    <string name="battery_change_cap_text">Battery Change</string>
+    <string name="engine_oil_cap_text">Engine Oil</string>
+    <string name="bike_wash_text">Bike Wash</string>
+    <string name="regular_service_text">Regular Service</string>
+    <string name="removed_text">removed</string>
+    <string name="select_text">select</string>
+    <string name="complete_c_small_text">complete</string>
+    <string name="Pending_p_cap_text">Pending</string>
+    <string name="customised_list_text">Customised List</string>
+    <string name="are_you_sure_text">Are you sure you want to delete the Log</string>
+    <string name="Fuel_text">Fuel</string>
+    <string name="Fine_text">Fine</string>
+    <string name="Parking_text">Parking</string>
+    <string name="financing_text">Financing (EMI)</string>
+    <string name="Toll_text">Toll</string>
+    <string name="no_action_needed_text">No action needed</string>
+    <string name="action_needed_text">Action Needed</string>
+    <string name="filter_check_text">Filter Check</string>
+    <string name="tyre_pressure_text">Tyre Pressure</string>
+    <string name="battery_check_text">Battery Check</string>
+    <string name="chain_lubing_text">Chain Lubing</string>
+    <string name="Greasing_text">Greasing</string>
+    <string name="brake_pads_text">Brake Pads</string>
+    <string name="carburetor_text">Carburetor</string>
+    <string name="oil_change_text">Oil Change</string>
+    <string name="pcb_fitting_text">PCB Fitting</string>
+    <string name="service_parameter_text">Service Parameter</string>
+    <string name="take_action_inti_text">Take Action Initiated</string>
+    <string name="action_text1">action</string>
+    //UserDashboardLoanActivity
+    <string name="userId">User_ID</string>
+    <string name="session_id">Session_ID</string>
+    <string name="cta_text">CTA</string>
+    <string name="hamburgermenu">hamburger_menu</string>
+    <string name="user_dashboard_viewed">User Dashboard Viewed</string>
+    <string name="emi_listing_viewed">EMI Listings Viewed</string>
+    <string name="tel_initial">tel:</string>
+    <string name="get_userdashboard_details">/user-dashboard/?contact_number=</string>
+    <string name="customer_name">customer_name</string>
+    <string name="lease_id">lease_id</string>
+    <string name="tenure_text">tenure</string>
+    <string name="rv">rv</string>
+    <string name="pay_lumpsum_date">pay_lumpsum_date</string>
+    <string name="call_for_support">call_for_support</string>
+    <string name="vehicle">vehicle</string>
+    <string name="on_road_price_field">on_road_price</string>
+
+    <string name="amount_field">amount</string>
+    <string name="img_url_text">img_url</string>
+    <string name="display_slug">display_slug</string>
+    <string name="product_type">product_type</string>
+    <string name="cash_down_pay">cash-down-pay</string>
+    <string name="refund_deposit">refund-deposit</string>
+    <string name="lease">Lease</string>
+    <string name="deposit_adjusted_text">Deposit has been adjusted in this amount</string>
+    <string name="Loan">Loan</string>
+
+    <string name="omi_summary">omi_summary</string>
+    <string name="omi_date">omi_date</string>
+    <string name="omi_details">omi_details</string>
+    <string name="last_installment_plans">last_installment_plans</string>
+    <string name="header">header</string>
+    <string name="paid_text">PAID</string>
+    <string name="default_text">DEFAULT</string>
+    <string name="pending_text">PENDING</string>
+    <string name="upcoming_text">UPCOMING</string>
+    <string name="rupee">₹ </string>
+
+    // Application tracker
+    <string name="menu_text">menu</string>
+    <string name="application_tracker">Application Tracker</string>
+    <string name="loan_journey_tracker">Loan_Journey_Tracker</string>
+    <string name="switched_to_loan">Switched to Loan</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="onRoadPrice">On-Road Price</string>
+    <string name="make_payment_cta">Make Payment CTA</string>
+    <string name="app_tracker_url">/app-user-tokens/?contact_number=</string>
+    <string name="loan_dashboard_url">/loan-dashboard/?contact_number=</string>
+    <string name="application_id">application_id</string>
+    <string name="status_text">status_text</string>
+    <string name="contact_us">contact_us</string>
+    <string name="vehicle_field">vehicle_name</string>
+    <string name="total_amount_field">total_amount</string>
+    <string name="payment_note">payment_note</string>
+    <string name="reapply_text">re_apply_text</string>
+    <string name="vehicle_image">vehicle_image</string>
+    <string name="chances_getting_approved">chances_of_getting_approved</string>
+    <string name="rejected_reasons">rejected_reasons</string>
+    <string name="status_log_list">status_log_list</string>
+    <string name="date_field">date</string>
+    <string name="text_field">text</string>
+    <string name="state_field">state</string>
+    <string name="Pending_applicaton_text">PENDING APPLICATION</string>
+    <string name="approved_text">APPROVED</string>
+    <string name="in_progress">In Progress</string>
+    <string name="in_progress_text">IN PROGRESS</string>
+    <string name="application_tracker_viewed">Application Tracker Viewed</string>
+    <string name="you_havent_started_application">You haven\'t started any application yet.</string>
+    <string name="rejected_caps">REJECTED</string>
+    <string name="rejected_small">rejected</string>
+    <string name="approved_caps">APPROVED</string>
+    <string name="approved_small">approved</string>
+    <string name="in_progress_caps">IN PROGRESS</string>
+    <string name="in_progress_small">in progress</string>
+
+
+    //Expense
+    <string name="all_time">All Time</string>
+    <string name="category">category</string>
+    <string name="all_text">all</string>
+    <string name="expense">expense</string>
+    <string name="expense_log">expense_log</string>
+    <string name="none">None</string>
+    <string name="add_expense_initiation">Add Expense Initiation</string>
+    <string name="weekly_text_s">weekly</string>
+    <string name="custom_text_s">custom</string>
+    <string name="period">Period</string>
+    <string name="expense_tracker_viewed">Expense Tracker Viewed</string>
+    <string name="get_expense_url">/expenses/log-list/?page=</string>
+    <string name="null_text">null</string>
+    <string name="filter_by">filter_by</string>
+    <string name="page">page</string>
+    <string name="start_date">start_date</string>
+    <string name="end_date">end_date</string>
+    <string name="page_text">page</string>
+    <string name="pages_text">pages</string>
+    <string name="summary">summary</string>
+    <string name="results_text">results</string>
+    <string name="day_text">day</string>
+    <string name="month_text">month</string>
+    <string name="expense_date">expense_date</string>
+
+    <string name="expense_type">expense_type</string>
+    <string name="documents_list">documents_list</string>
+    <string name="url_text">url</string>
+    <string name="document_guid">document_guid</string>
+    <string name="pdf_extension">.pdf</string>
+    <string name="pdf_text">pdf</string>
+    <string name="delete_expense_url">/expenses/logs/</string>
+    <string name="deleted_successfully_text">Deleted Successfully</string>
+    <string name="time_millisecond">\ 00:00:00\</string>
+    <string name="time_milisec_endtime">\ 23:59:59\</string>
+    <string name="date_time_format">yyyy-MM-dd HH:mm:ss</string>
+    <string name="ymd_date_format">yyyy-MM-dd</string>
+    <string name="rs_prefix">\Rs \</string>
+    <string name="other">Other</string>
+    <string name="standard">Standard</string>
+    <string name="customised_list">Customised List</string>
+    <string name="decimal_format">#.##</string>
+    <string name="please_select_date">Please select Date</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="please_select_exp_type">Please select expense type</string>
+    <string name="object_id">object_id</string>
+    <string name="Fuel">Fuel</string>
+    <string name="fuel_unit">fuel_unit</string>
+    <string name="in_rupees">In Rupees</string>
+    <string name="fuel_cost">fuel_cost</string>
+    <string name="total_ltr">total_ltr</string>
+
+    <string name="notes">notes</string>
+    <string name="shop_name">shop_name</string>
+    <string name="location_details">location_details</string>
+    <string name="no_files_attached">No files attached</string>
+    <string name="type_of_expense">Type of Expense</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="total_km_reading">Total Km Reading</string>
+    <string name="location_name">Location Name</string>
+    <string name="expense_date_c">Expense Date</string>
+    <string name="notes_c">Notes</string>
+    <string name="file_size">File Size</string>
+    <string name="file_type">File Type</string>
+    <string name="add_expense_successful">Add Expense Successful</string>
+    <string name="date_c">Date</string>
+    <string name="petrol_quantity">Petrol Quantity</string>
+    <string name="Location">Location</string>
+    <string name="expense_tracker">Expense Tracker</string>
+    <string name="add_fuel_successful">Add Fuel Successful</string>
+    <string name="standard_s">standard</string>
+    <string name="enter_fuel_station">Enter Fuel Station Location (optional)</string>
+    <string name="regular_service">Regular Service</string>
+    <string name="enter_service_center">Enter Service Centre Name (optional)</string>
+    <string name="charging_station">Charging Station</string>
+    <string name="enter_charging_station">Enter Charging Station Location (optional)</string>
+    <string name="enter_centre_name">Enter Centre Name</string>
+    <string name="max_4_docs_allowed">Maximum four documents are allowed</string>
+    <string name="get_fuel_price_url">/expenses/fuel-price/</string>
+    <string name="fuel_range">fuel_range</string>
+    <string name="min">min</string>
+    <string name="max">max</string>
+    <string name="fuel_data">fuel_data</string>
+    <string name="price">price</string>
+    <string name="add_expense_url">/expenses/logs/</string>
+    <string name="message_field">message</string>
+    <string name="application_pdf">application/pdf</string>
+    <string name="expense_type_url">/expenses/types/</string>
+    <string name="enter_expense_name">Please enter expense name</string>
+    <string name="enter_center_name_optional">Enter Centre Name (optional)</string>
+    <string name="cus">cus</string>
+    <string name="frequent">frequent</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="expense_updated_string">Expense Updated</string>
+    <string name="expense_id">expense_id</string>
+    <string name="type">type</string>
+    <string name="ExpenseLogs">ExpenseLogs</string>
+    <string name="document_content_type">document_content_type</string>
+    <string name="image_png">image/png</string>
+    <string name="upload_delete_expense_doc_url">/expenses/document/</string>
+    <string name="document_link">document_link</string>
+    <string name="true_text">true</string>
+    <string name="content_type">Content-Type</string>
+    <string name="application_json">application/json</string>
+    <string name="Expense_Pdf">Expense Pdf </string>
+
+
+    //sensors
+    <string name="activity_intent">activity_intent</string>
+    <string name="user_name">user_name</string>
+    <string name="device_info">device_info</string>
+    <string name="user_is_text"> User is </string>
+    <string name="hide_fullscreen">Hide FullScreen</string>
+    <string name="show_fullscreen">Show FullScreen</string>
+    <string name="upload_sensor_path">uploads/</string>
+    <string name="textUrl">textUrl</string>
+    <string name="collection_post">posts</string>
+    <string name="save_message">Saved to Firebase Storage</string>
+    <string name="error_save_firebase_msg">Error saving to Firebase Storage</string>
+    <string name="zip_extension">.zip</string>
+
+    <string name="user_is_still">User is Still - TRUE</string>
+    <string name="user_is_walking">User is walking</string>
+    <string name="user_is_in_vehicle">User is in vehicle</string>
+    <string name="user_in_vehicle_false">User is in vehicle - FALSE</string>
+    <string name="user_in_vehicle_unknown">User is in vehicle - UNKNOWN</string>
+    <string name="user_in_vehicle_else">User is in vehicle - ELSE</string>
+    <string name="user_starting_to_be_still">User is starting to be still</string>
+    <string name="user_is_stopping_to_be_still">User is stopping to be still</string>
+    <string name="user_is_starting_to_walk">User is starting to walk</string>
+    <string name="user_is_stopping_to_walk">User is stopping to walk</string>
+    <string name="starting_to_be_in_vehicle">User is starting to be in vehicle</string>
+    <string name="starting_to_be_in_vehicle_false">User is starting to be in vehicle - FALSE</string>
+    <string name="user_is_starting_to_be_in_vehicle_unknown">User is starting to be in vehicle - UNKNOWN</string>
+    <string name="starting_to_be_in_vehicle_else">User is starting to be in vehicle - ELSE</string>
+    <string name="stopping_to_be_in_vehicle">User is stopping to be in vehicle</string>
+    <string name="stopping_to_e_in_vehicle_false">User is stopping to be in vehicle - FALSE</string>
+    <string name="stopping_to_be_in_vehicle_unknown">User is stopping to be in vehicle - UNKNOWN</string>
+    <string name="stopping_to_be_in_vehicle_else">User is stopping to be in vehicle - ELSE</string>
+    <string name="pushnotification">pushnotification</string>
+    <string name="yes_s">yes</string>
+    <string name="oto_runner">oto_runner</string>
+    <string name="Oto_service">Oto Service</string>
+
+
+    <string name="select_one_fence">Please, select at least one fence</string>
+    <string name="user_idle">User Idle</string>
+    <string name="user_walking">User Walking</string>
+    <string name="user_in_vehicle">User In Vehicle</string>
+
+
+    //Services
+
+    <string name="unknown_text">UNKNOWN</string>
+    <string name="enter">ENTER</string>
+    <string name="enter_camel_case">Enter</string>
+    <string name="exit">EXIT</string>
+    <string name="manual_ride">manual_ride</string>
+    <string name="delay">delay</string>
+    <string name="Logs">Logs</string>
+    <string name="LogTransition">LogTransition.txt</string>
+    <string name="on_reciever_start_text">\n On Receiver Start </string>
+    <string name="time_format">HH:mm:ss</string>
+    <string name="activity_recieved_in_receiver"> - Activity Received in Receiver= </string>
+
+    <string name="false_text">false</string>
+    <string name="manual_ride_type_">manual_ride_type</string>
+    <string name="manual_timer">manual_timer</string>
+    <string name="activity_confidence_in_reciever"> - Activity Confidence in Receiver= </string>
+    <string name="activity_confidence_in_reciever_outer"> - Activity Confidence in Receiver outter=</string>
+    <string name="Y">Y</string>
+    <string name="N">N</string>
+    <string name="activity"> - Activity </string>
+    <string name="detected_first_time_start_recording"> detected first time and start recording the data</string>
+    <string name="triggered_start_sensorservice">- Triggered START SensorService</string>
+    <string name="ACTION_PROCESS_ACTIVITY_TRANSITIONS">com.oto.android.app.ACTION_PROCESS_ACTIVITY_TRANSITIONS</string>
+    <string name="hh_mm">HH:mm</string>
+    <string name="stopping_sensor_service">- Stopping the SensorDataCollectionService Service</string>
+    <string name="exception_on_stop"> - exception on stop </string>
+
+    <string name="confidence">confidence</string>
+    <string name="task_not_successful">Task not successful</string>
+    <string name="max_must_be_greater_than_min">max must be greater than min</string>
+    <string name="my_service">My Service</string>
+    <string name="my_service_content">My Service is unstoppable and need to run in background </string>
+    <string name="service_is_running"> Service is running</string>
+    <string name="notifier_shutdown"> notifyer.shutdownNow()</string>
+    <string name="you_stop_me_lol">You stop me LOL </string>
+    <string name="getSesorDate">—> errorOccurred :getSensorData() 3 ></string>
+    <string name="ForegrndOnlyLoctnServ">ForegrndOnlyLoctnServ</string>
+    <string name="while_in_use_location">com.example.android.whileinuselocation</string>
+    <string name="while_in_use_channel_01">while_in_use_channel_01</string>
+    <string name="Accelerometer">ACCELEROMETER</string>
+    <string name="magnetometer">MAGNETOMETER</string>
+    <string name="gyroscope">GYROSCOPE</string>
+    <string name="no_data">No Data</string>
+    <string name="firebase_messaging_channel_name">OTO</string>
+    <string name="notification_source">notification_source</string>
+    <string name="MyFirebaseMsgService">MyFirebaseMsgService</string>
+    <string name="file_not_found">file not found</string>
+    <string name="notification_channel_id">com.oto.android.app.services</string>
+    <string name="oto_background_serrvice">OTO Background Service</string>
+    <string name="your_ride_is_in_progress">Your Ride is in progress</string>
+    <string name="bgdetected_storage_path">service_log/uploads/</string>
+    <string name="bgdetected_storage_prod_path">service_log/production/</string>
+    <string name="log_zip">log.zip</string>
+    <string name="upload_successful">upload successful</string>
+    <string name="upload_failed">upload failed</string>
+    <string name="desc">desc</string>
+    <string name="display">display</string>
+    <string name="screen_field">screen</string>
+    <string name="loan_status">loan_status</string>
+    <string name="goal_enrollment_uuid">goal_enrollment_uuid</string>
+    <string name="challenge_enrollment_uuid">challenge_enrollment_uuid</string>
+    <string name="activity_guid">activity_guid</string>
+    <string name="reminder_uuid">reminder_uuid</string>
+    <string name="reminder_id">reminder_id</string>
+    <string name="mark_as_completed">mark_as_completed</string>
+    <string name="reminders_s">reminders</string>
+    <string name="title">title</string>
+    <string name="mark_complete_text_1">Mark as Complete</string>
+    <string name="ride_upload_path">/OtoCapital/</string>
+
+    <string name="ride_firebase_prod_path">production/</string>
+    <string name="upload_start">Upload start</string>
+    <string name="firebase_upload_failed">Firebase Upload Failed</string>
+    <string name="sensorsData">sensorsData</string>
+    <string name="bsts">bsts</string>
+    <string name="bste">bste</string>
+    <string name="tst">tst</string>
+    <string name="tet">tet</string>
+    <string name="file_delete_upload_link">File Delete - Uploaded file link</string>
+    <string name="manual">manual</string>
+    <string name="auto">auto</string>
+    <string name="ride_started">Ride Started</string>
+    <string name="oto_sensor_service">OTO Sensor Service</string>
+    <string name="oto_data_collection_application">OTO Data Collection Application</string>
+    <string name="manual_ride_file">manual_ride_file</string>
+    <string name="ev_scooty">ev_scooty</string>
+    <string name="car">car</string>
+    <string name="bike">bike</string>
+    <string name="scooty">scooty</string>
+    <string name="ride_ended">Ride Ended</string>
+    <string name="type_c">Type</string>
+    <string name="time_c">Time</string>
+    <string name="minutes">minutes</string>
+    <string name="add_expense_log">Add Expense Log</string>
+    <string name="date">Date</string>
+    <string name="select">Select</string>
+    <string name="frequently_used_options">Frequently used options</string>
+    <string name="this_data_would_be_added_to_your_fuel_log_also">* This data would be added to your fuel log also</string>
+
+    <string name="per_litre_heading">(Per Litre)</string>
+    <string name="track_your_application">Track your Application</string>
+    <string name="loan_dashboard">Loan Dashboard</string>
+    <string name="bike_details">Bike Details</string>
+    <string name="your_logs">Your Logs</string>
+    <string name="new_key_heading">( new )</string>
+    <string name="fuel_tracker">Fuel Tracker</string>
+    <string name="e_commerce">E-commerce</string>
+    <string name="explore_bikes">Explore Bikes</string>
+    <string name="apply_for_loan">Apply for loan</string>
+    <string name="offers">Offers</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="in_case_of_any_support">In case of any Support,</string>
+    <string name="primary">primary</string>
+
+    //utils
+    <string name="public_downloads">content://downloads/public_downloads</string>
+    <string name="video">video</string>
+    <string name="audio">audio</string>
+    <string name="id_">_id=?</string>
+    <string name="content">content</string>
+    <string name="file">file</string>
+    <string name="fuel_id">fuel_id</string>
+    <string name="xx">xx</string>
+    <string name="need_permission">Need Permission</string>
+    <string name="permission_text">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="goto_settings">GOTO SETTINGS</string>
+    <string name="cancel">Cancel</string>
+    <string name="package_text">package</string>
+    <string name="TEST">TEST</string>
+
+    //xmls
+    <string name="add_your_fuel_expense">Add Your Fuel Expense</string>
+
+
+    <string name="enter_fuel_expense_amount">Enter Fuel Expense Amount</string>
+    <string name="rs_string">RS</string>
+    <string name="attach_bill">Attach Bill</string>
+    <string name="total_litres_of_petrol_added">Total Litres Of Petrol Added</string>
+    <string name="ltr_c">Ltr</string>
+    <string name="add_petrol_pump_name_optional">Add Petrol Pump name (optional)</string>
+    <string name="type_your_note_here_optional">Type your Note here (optional)</string>
+    <string name="uploading">Uploading...</string>
+    <string name="add_file">Add File</string>
+    <string name="keep_record_of_your_bills">Keep record of your bills</string>
+    <string name="add_location">Add Location</string>
+    <string name="add_centre_name_optional">Add Centre name (optional )</string>
+    <string name="enter_kms_reading">Enter Kms reading</string>
+    <string name="vehicles_kms_reading">Vehicles Kms Reading</string>
+    <string name="add_a_reminder">Add a Reminder</string>
+
+    <string name="reminder_name">Reminder Name</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="repeat_reminder">Repeat Reminder</string>
+    <string name="add_a_note">Add a Note</string>
+    <string name="how_would_you_like_to_get_your_servicing_done">How would you like to get your servicing done?</string>
+    <string name="book_at_your_own_service_station">Book at your own Service Station</string>
+    <string name="select_city">Select City</string>
+    <string name="enter_area_optional">Enter Area (Optional)</string>
+    <string name="add_service_centre_location">Add Service Centre Location</string>
+    <string name="detect_current_location_using_gps">Detect current location using GPS</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="edit_expense_log">Edit Expense Log</string>
+    <string name="add_service_centre_name">Add Service Centre name</string>
+    <string name="edit_your_fuel_expense">Edit Your Fuel Expense</string>
+    <string name="update">Update</string>
+    <string name="monthly_expense_log">Monthly Expense Logs</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="expense_log_text">Expense Log</string>
+    <string name="no_data_found">No data found</string>
+    <string name="add_an_expense_to_get_started">Add an Expense to get started</string>
+    <string name="keep_a_track_of_all_your_expenses_here">Keep a track of all your expenses here</string>
+
+    <string name="add_fuel_to_get_started">Add Fuel to get started</string>
+    <string name="add_fuel_bills_and_we_will_help_you_track_and_improve_the_mileage">Add fuel bills and we will help you track and improve the mileage</string>
+    <string name="add_fuel_text">Add Fuel</string>
+    <string name="send_log">Send Log</string>
+    <string name="loan_application">Loan Application</string>
+    <string name="you_haven_t_started_any_application_yet">You haven\'t started any application yet.</string>
+    <string name="your_application_id">Your application ID -</string>
+    <string name="call">Call:</string>
+    <string name="start_application">Start Application</string>
+    <string name="why_was_your_application_rejected">Why was your application rejected?</string>
+    <string name="view_more_reasons">View more reasons</string>
+    <string name="how_can_you_improve_your_chances_of_getting_approved">How can you improve your chances of getting approved:</string>
+    <string name="your_bike_details">Your bike details</string>
+    <string name="on_road_price_text">On Road Price :</string>
+    <string name="note">Note</string>
+
+    <string name="make_payment">Make Payment</string>
+    <string name="complete_now_to_apply">Complete now to apply</string>
+    <string name="contact_us_tech_otocapitalin">Contact us: tech@otocapital.in</string>
+    <string name="_91">+91</string>
+    <string name="i_want_to">what are you looking for?</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="by_clicking_on_verify_otp_button_you_agree_to_oto_s_terms_and_conditions_insert_link">By clicking on Verify OTP button, you agree to OTO\'s Terms and Conditions (insert link)</string>
+    <string name="edit_number">Edit Number</string>
+    <string name="resend_otp_text">Resend OTP</string>
+    <string name="please_enter_the_otp_sent_to_your_registered">Please enter the OTP sent to your registered</string>
+
+    <string name="cost_incurred_optional">Cost Incurred (Optional)</string>
+    <string name="delete">DELETE</string>
+    <string name="or_after_certain_kms_whichever_comes_first">Or, after certain Kms, whichever comes first</string>
+    <string name="month_str">Month</string>
+    <string name="week_str">Week</string>
+    <string name="day">Day</string>
+    <string name="repeat_reminder_after_every">Repeat reminder after every</string>
+    <string name="setting_a_reminder_would_help_you_remind_based_on_the_last_serviced_day_or_kms_driven_now_you_can_choose_to_set_reminder_based_on_kms_or_days">Setting a reminder would help you remind based on the last serviced day or Kms driven. Now you can choose to set reminder based on kms or Days</string>
+    <string name="sensor_starts_when_in_vehicle_activty_is_deteched">Sensor starts when In-Vehicle Activty is deteched</string>
+    <string name="user_is">User is -</string>
+    <string name="start_c">START</string>
+    <string name="stop_c">STOP</string>
+    <string name="hello">Hello</string>
+    <string name="oto_app">OTO app</string>
+    <string name="is_your_day_to_day_companion_which_would_help_with_everything_about_your_bike">is your day to day companion which would help with everything about your Bike.</string>
+    <string name="trusted_by_100_000_users">Trusted by 100,000+ users</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="back_c">BACK</string>
+    <string name="expected_mileage_for_your_vehicle">Expected Mileage for your Vehicle -</string>
+    <string name="add_your_bike_details">Add your Bike details</string>
+    <string name="add_information_to_examine_health_of_your_bike">Add information to examine Health of your bike</string>
+    <string name="total_kms_driven_odometer_reading">Total Kms driven ( Odometer Reading )</string>
+    <string name="enter_text">Enter</string>
+    <string name="average_travel">Average Travel</string>
+    <string name="kms">( Kms )</string>
+    <string name="average_fuel_cost">Average Fuel Cost</string>
+    <string name="current_mileage_of_your_vehicle">Current Mileage of your Vehicle</string>
+    <string name="_35_55_km_charge">35.55 Km/ charge</string>
+    <string name="last_serviced_at">Last Serviced at</string>
+    <string name="days_ago">Days ago</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="cost_of_last_servicing">Cost of last Servicing</string>
+    <string name="choose_file_text">Choose File</string>
+    <string name="attach_fuel_bill">Attach Fuel Bill</string>
+    <string name="reminder_deleted">Reminder Deleted</string>
+    <string name="call_for_support_c">Call for Support</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="f">F</string>
+    <string name="claim_now">CLAIM NOW</string>
+    <string name="claim_daily_rewards">Claim Daily Rewards</string>
+    <string name="congratulations">congratulations</string>
+    <string name="mountain_rider">Mountain Rider</string>
+    <string name="electric_vehicle_str">Electric Vehicle</string>
+    <string name="bike_str">Bike</string>
+    <string name="skip_i_dont_own_a_vehicle">Skip, I dont own a vehicle</string>
+    <string name="terms_and_conditions">TERMS AND CONDITIONS</string>
+    <string name="tnc_description">You hereby consent to OTO CAPITAL being appointed as your authorised representative to receive your Credit Information from Experian for the purpose of Vehicle Leasing(“End Use Purpose”).</string>
+    <string name="tnc_desc2">Information Collection, Use, Confidentiality, No-Disclosure and Data Purging</string>
+    <string name="tnc_desc3">OTO CAPITAL shall access your Credit Information as your authorized representative and OTO CAPITAL shall use the Credit Information for limited End Use Purpose consisting of and in relation to the services proposed to be availed by you from OTO CAPITAL. We shall not aggregate, retain, store, copy, reproduce, republish, upload, post, transmit, sell or rent the Credit Information to any other person and the same cannot be copied or reproduced other than as agreed herein and in furtherance to CICRA.</string>
+    <string name="tnc_des4">The Parties agree to protect and keep confidential the Credit Information both online and offline. The Credit Information shared by you, or received on by us on your behalf shall be destroyed, purged, erased promptly within 1 (one) Business Day of upon the completion of the transaction/ End Use Purpose for which the Credit Information report was procured.</string>
+    <string name="tnc_desc5">Governing Law and Jurisdiction</string>
+    <string name="tnc_desc6">The relationship between you and OTO CAPITAL shall be governed by laws of India and all claims or disputes arising there from shall be subject to the exclusive jurisdiction of the courts of Mumbai.</string>
+    <string name="tnc_desc7">Definitions:</string>
+    <string name="tnc_desc8">Capitalised terms used herein but not defined above shall have the following meanings: “Business Day” means a day (other than a public holiday) on which banks are open for general business in Mumbai. “Credit Information Report” “means the credit information / scores/ aggregates / variables / inferences or reports which shall be generated by Experian; “Credit Score” means the score which shall be mentioned on the Credit Information Report which shall be computed by Experian. “CICRA” shall mean the Credit Information Companies (Regulation) Act, 2005 read with the Credit Information Companies Rules, 2006 and the Credit Information Companies Regulations, 2006, and shall include any other rules and regulations prescribed thereunder.</string>
+    <string name="tnc_desc9">PLEASE READ THE ABOVE MENTIONED TERMS AND CONDITIONS AND CLICK ON “ACCEPT” FOLLOWED BY THE LINK BELOW TO COMPLETE THE AUTHORISATION PROCESS FOR SHARING OF YOUR CREDIT INFORMATION BY EXPERIAN WITH OTO CAPITAL IN ITS CAPACITY AS YOUR AUTHORISED REPRESENTATIVE. BY CLICKING “ACCEPT” YOU AGREE AND ACCEPT THE DISCLAIMERS AND TERM AND CONDITIONS SET OUT HEREIN.</string>
+    <string name="got_it_text">Got it</string>
+    <string name="save_c">SAVE</string>
+    <string name="add_an_expense_name">Add an Expense Name</string>
+    <string name="type_here">Type Here</string>
+    <string name="reminder_set">Reminder set</string>
+    <string name="hey_we_have_set_a_reminder_for_you">Hey we have set a reminder for you</string>
+    <string name="type_pressure">Type Pressure</string>
+    <string name="service_name">Service Name</string>
+    <string name="have_you_checked_it_in_the_last_3_weeks">Have you checked it in the last 3 weeks ?</string>
+    <string name="no_remind_me">No, Remind Me</string>
+    <string name="add_the_last_date_of_tyre_pressure_checked">Add the last date of Tyre pressure checked</string>
+    <string name="dd_mm_yyyy">DD-MM-YYYY</string>
+    <string name="don_t_worry_we_will_help_you_remember">Don’t Worry We will help you remember</string>
+
+    <string name="no_c">NO</string>
+    <string name="are_you_sure_you_want_to_cancel_the_reminder">Are you sure you want to cancel the reminder</string>
+    <string name="lets_us_know_the_cost_incurred_for_this_service" translatable="false">Lets us know the cost incurred for this service</string>
+    <string name="cost_incurred">Cost Incurred</string>
+    <string name="optional">Optional</string>
+    <string name="do_you_want_to_discard_the_changes" translatable="false">Do you want to discard the changes?</string>
+    <string name="are_you_sure_you_want_to_delete_the_reminder">Are you sure you want to delete the reminder</string>
+    <string name="delete_reminder">Delete Reminder</string>
+    <string name="the_expense_name_has_been_added_under_the_type_of_expense_dropdown">The expense name has been added under the Type of Expense dropdown</string>
+    <string name="awesome">Awesome</string>
+    <string name="click_here_to_view_pdf">Click here to view pdf</string>
+    <string name="message">Message</string>
+    <string name="protto_service">Protto Service</string>
+    <string name="service_type">Service Type</string>
+    <string name="make_name">Make Name</string>
+    <string name="model_name">Model Name</string>
+    <string name="make_selected">Make selected for servicing</string>
+    <string name="model_selected">Model selected for servicing</string>
+    <string name="servicing_date">Servicing date</string>
+    <string name="name_optional">Name (Optional)</string>
+    <string name="avail_service">Avail Service</string>
+    <string name="you_can_only_select_three_option">You can only select three option</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="emi_tenure_journey">EMI Tenure Journey</string>
+    <string name="pay_lumpsum">PAY LUMPSUM</string>
+    <string name="do_you_want_to_own_the_bike">Do you want to own the bike?</string>
+    <string name="pay_one_time_lumpsum_terminal_amount">Pay one time lumpsum/terminal amount</string>
+    <string name="uh_oh_you_haven_t_earned_any_badges_yet_sign_up_for_goals_challenges_to_grab_one">Uh-oh! You haven\'t earned any badges yet. Sign up for goals/challenges to grab one!</string>
+    <string name="total_score">Total Score</string>
+
+    <string name="braking_events">Braking events</string>
+    <string name="hey">Hey ,</string>
+    <string name="welcome_to_oto">Welcome to OTO</string>
+    <string name="driving_behaviour_report">Driving Behaviour Report</string>
+    <string name="need_attention_on_the_below_action_items_to_keep_your_bike_health_maintained">Need Attention on the below action items to keep your bike health maintained</string>
+    <string name="total_kms_driven_c">Total Kms Driven</string>
+    <string name="avg_fuel_cost_c">Avg Fuel cost</string>
+    <string name="mileage">Mileage</string>
+    <string name="see_all_details">See all details</string>
+    <string name="avg_score">Avg Score</string>
+    <string name="hard_breaking">Hard Breaking</string>
+    <string name="over_speeding">Over Speeding</string>
+    <string name="rough_patches">Rough Patches</string>
+    <string name="potholes">Potholes</string>
+    <string name="pro">PRO</string>
+    <string name="tto">TTO</string>
+    <string name="early_bird_offer">Early Bird Offer</string>
+    <string name="avail_now">AVAIL NOW</string>
+    <string name="your_application_for_the_bike_of_rs_3_50_000_is_under_review">Your application for the bike of Rs 3,50,000 is under review</string>
+    <string name="play_rider_club_amp_win_exciting_rewards"><![CDATA[Play Rider Club & win exciting rewards]]></string>
+    <string name="play_game">Play Game</string>
+    <string name="add_bike_now">Add Bike Now</string>
+    <string name="upcoming_reminders">Upcoming Reminders</string>
+    <string name="view_all_reminders">View all Reminders</string>
+    <string name="add_new_reminder">Add New Reminder</string>
+    <string name="looks_like_you_haven_t_been_regular_track_more_rides_for_a_weekly_summary">Looks like you haven\'t been regular. Track more rides for a weekly summary!</string>
+    <string name="always_wanted_to_own_a_dream_bike_of_yours">Always wanted to own a Dream bike of yours?</string>
+    <string name="emi_starting_from_35_lower_than_banks">EMI starting from 35% lower than banks</string>
+    <string name="contract_mileage">Contract Mileage</string>
+    <string name="pay_to_retain_vehicle">Pay to Retain Vehicle</string>
+    <string name="refund_on_return_vehicle">Refund on Return Vehicle</string>
+
+    <string name="personal_details">Personal Details</string>
+
+
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="_00">00</string>
+    <string name="uploading1">uploading</string>
+    <string name="pending">Pending</string>
+    <string name="you_don_t_have_a_reminder_set_for_now">You don’t have a Reminder set for now</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="score_c">SCORE</string>
+    <string name="start_manual_ride">Start Manual Ride</string>
+    <string name="all_ride">All Ride</string>
+    <string name="looks_like_you_didn_t_track_rides_for_this_duration_try_another">Looks like you didn\'t track rides for this duration. Try another.</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="_0_00">0.00</string>
+    <string name="kilometer">Kilometer</string>
+    <string name="_0_km_hr">0 km/hr</string>
+    <string name="expense_logs">Expense Logs</string>
+    <string name="daily_claim_bonus">Daily Claim ( Bonus )</string>
+    <string name="date_23_04_20">Date 23/04/20</string>
+    <string name="get_scheduled">Purchase your dream bike from OTO</string>
+    <string name="reminders_for">At 35% lower EMI | Upfront cash payment</string>
+    <string name="your_rides">your rides</string>
+    <string name="quickly_amp_easily">OTO Assistance</string>
+    <string name="track_expenses">Book your next service with OTO,find the nearest EV charging station and lot more</string>
+    <string name="of_your_bike">Book your next service with OTO,find the nearest EV charging station and lot more</string>
+    <string name="earn_rewards">Bike Health</string>
+    <string name="by">Get reports on bike health, rides taken and kilometers travelled.</string>
+    <string name="tracking_amp_improving"><![CDATA[tracking & improving]]></string>
+    <string name="your_ride">your ride</string>
+    <string name="get_a_new_bike_at">My rewards</string>
+    <string name="_35_lower_emi_s">Win exciting gift cards from popular brands and earn cashbacks.</string>
+    <string name="than_banks">than Banks</string>
+    <string name="action_needed">Action Needed</string>
+    <string name="book_now">Book Now</string>
+    <string name="take_action">Take Action</string>
+    <string name="delete_text">Delete</string>
+    <string name="expense_added">Expense Added</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="incurred_cost">Incurred cost</string>
+    <string name="total_images">Total Images</string>
+    <string name="total_fuel_cost">Total Fuel Cost</string>
+    <string name="fuel_filled">Fuel Filled</string>
+    <string name="reminder_added">Reminder Added</string>
+    <string name="service">SERVICE</string>
+    <string name="estimated_cost">Estimated cost</string>
+    <string name="complete">Complete</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="add">ADD</string>
+    <string name="your_customised_type_list">Your Customised Type list</string>
+    <string name="type_of_reminder">Type of Reminder</string>
+    <string name="enter_a_new_type_of_reminder_name">Enter a new type of Reminder Name</string>
+    <string name="bike_details_notes">Bike details notes</string>
+
+    <string name="tips">Tips</string>
+    <string name="last_servcing">Last Servcing</string>
+    <string name="service_center">Service Center</string>
+    <string name="bike_third_party_insurance_renewal_with">Bike third-party Insurance renewal with….</string>
+    <string name="delete_log">Delete Log</string>
+    <string name="edit_log">Edit Log</string>
+    <string name="cancel_reminder">Cancel Reminder</string>
+    <string name="edit_reminder">Edit Reminder</string>
+    <string name="welcome">Welcome</string>
+    <string name="payments_coming_soon">Payments Coming Soon</string>
+    <string name="to_use_ride_feature_you_need_to_give_us_the_following_permissions">To use ride feature you need to give us the following permissions</string>
+    <string name="tracking_your_rides_would_help_improve_the_mileage_and_keep_your_bike_health_maintained">Tracking your rides would help improve the mileage and keep your bike health maintained</string>
+    <string name="physical_activity">Physical Activity</string>
+
+    <string name="you_need_to_allow_this_to_enjoy_the_feature">You need to allow this to enjoy the feature</string>
+    <string name="your_location_helps_to_improve_the_tracking">Your location helps to improve the tracking</string>
+    <string name="media_and_storage">Media and Storage</string>
+    <string name="to_store_information_while_ride_is_in_progress_we_dont_use_any_of_the_media_space_otherwise">To store information while ride is in progress.We dont use any of the media space otherwise</string>
+    <string name="auto_starts">Auto Starts</string>
+    <string name="so_we_don_t_miss_the_rides_after_your_phone_restarts">So we don\'t miss the rides after your phone restarts</string>
+    <string name="battery_optimization">Battery Optimization</string>
+    <string name="battery_saver_no_restrictions"><![CDATA[Battery Saver --> No Restrictions]]></string>
+    <string name="deny">DENY</string>
+    <string name="allow">ALLOW</string>
+    <string name="worth_rs">Worth Rs</string>
+
+    <string name="welcome1">Welcome,</string>
+    <string name="call_for_support1">Call for support: </string>
+    <string name="lease_id_text">LEASE ID:</string>
+    <string name="cash_downpayment">Cash Downpayment</string>
+    <string name="your_agreement_tenure">Your Agreement Tenure: </string>
+    <string name="last_optional_installment">Last Optional Installment</string>
+
+    <string name="deposit_adjusted">Deposit has been adjusted in this amount</string>
+    <string name="options_at_the_end_of_12_months">Options at the end of 12 months</string>
+    <string name="number_of_emis_paid">Number of EMIs paid : </string>
+    <string name="paid">Paid</string>
+    <string name="delayed">Delayed</string>
+    <string name="overdue">Overdue</string>
+    <string name="last_date">Last Date</string>
+    <string name="redeem_now">REDEEM NOW</string>
+    <string name="how_it_works">HOW IT WORKS</string>
+    <string name="my_account">My Account</string>
+    <string name="loan_journey_deep_link">app://</string>
+    <string name="user_personal_information">User Personal Information</string>
+    <string name="personal_information_text">Our app collect user perosnal information which includes name, profile picture, dob , state pincode. Our app also collect mobile number for verification and log-in process.</string>
+    <string name="sms_permision">Financial SMS</string>
+    <string name="sms_permission_text">Our app collect and monitor only your financial transactional SMS about bank related activities, transaction , the name of transacting parties, a description of the transaction and the amount of the transaction for the purpose of performing credit risk assessment. The credit risk assessment enable us to perform a quicker loan disbursal. No Personal SMS data is collected, read of store.</string>
+    <string name="lcoation_permission_text">Our app collect your location data for accurate tracking of rides</string>
+    <string name="permission_header_description">To use the ride feature and Apply Loan feature you need to give us the following permissions</string>
+    <string name="phone_permission_text">Our app collects specific details about your device which include your hardware model,RAM, Storage,unique device identifires like IMEI,serial nummber,SSAID,AAID; SIM information that include network operator, roaming state, MNC and MMC codes, WIFI information that includes MAC addresss and mobile network information to uniquely identify the device and ensure that no unauthorized device acts on your behalf to prevent frauds. This also helps us in enriching your credit profile and assessing  your credit worthiness.</string>
+    <string name="app_installed">Installed Applications</string>
+    <string name="app_permission_text">We collect metadata of each installed application which includes the application name, package name, installed time, updated time, version name and version code of each isntalled application on your device to access your credit worthiness and provide you with pre-approved customized loan offers.</string>
+    <string name="permission_note">Please note that certain information that is required mandatorily to perform your credit risk assessment is securely shared with our registered third-party service provider</string>
+    <string name="terms_condition_text">By continuing you agree to our <u>Privacy Policy</u> &amp; <u>Terms and Conidtions</u></string>
+    <string name="rate_us">Rate Us</string>
+    <string name="whatsapp">Connect on Whatsapp</string>
+    <string name="set_game_exit">/game/exit/</string>
+    <string name="terms_condition_check"><![CDATA[Please accept to Terms & Conditions]]></string>
+
+    <string name="utm_source_event">UTM Source</string>
+    <string name="utm_medium_event">UTM Medium</string>
+    <string name="utm_campaign_event">UTM Campaign</string>
+    <string name="user_exerior_key">c0c97a92-64a4-416b-bd0d-484bae44e487</string>
+    <string name="user_exerior_key_prod">8179fdbb-9382-4097-8a62-777bcec9431d</string>
+    <string name="view_details_line"><u>View Details</u></string>
+    <!--    <string name="truecaller_sdk_key">GFthcfaeaf82b0f76416fa7e684899d000a29</string>-->
+    <string name="truecaller_sdk_key">lSYmE026b933ea8f74013ad041cc534d1d676</string>
+    <string name="first_txt_home"><b>35%</b> lower EMIs than banks.</string>
+    <string name="second_txt_home">Online approval in <b>30 minutes</b> .</string>
+    <string name="third_txt_home"><b>Flexible</b> Plans</string>
+    <string name="fourth_txt_home"><b>Upgrade</b> your bike anytime.</string>
+
+
+    <string name="intro_1"><font fgcolor='#2bb780' size="30">TWO WHEELER\nLOANS</font><font fgcolor='#585858' size="20"> IN TEN MINUTES</font></string>
+    <string name="intro_2"><font fgcolor='#2bb780' size="30">BUY\nTWO WHEELER</font><font fgcolor='#585858' size="20"> IN CASH</font></string>
+    <string name="intro_3"><font fgcolor='#2bb780' size="30">MANAGE\n</font><font fgcolor='#585858' size="20"> YOUR EXISTING</font><font fgcolor='#2bb780' size="30"> BIKE</font></string>
+
 </resources>
