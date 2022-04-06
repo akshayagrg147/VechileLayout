@@ -1760,5 +1760,14 @@
     <string name="intro_1"><font fgcolor='#2bb780' size="30">TWO WHEELER\nLOANS</font><font fgcolor='#585858' size="20"> IN TEN MINUTES</font></string>
     <string name="intro_2"><font fgcolor='#2bb780' size="30">BUY\nTWO WHEELER</font><font fgcolor='#585858' size="20"> IN CASH</font></string>
     <string name="intro_3"><font fgcolor='#2bb780' size="30">MANAGE\n</font><font fgcolor='#585858' size="20"> YOUR EXISTING</font><font fgcolor='#2bb780' size="30"> BIKE</font></string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="i_want_a_loan">I Want a Loan</string>
+    <string name="complete_the_loan_application_now_for_quick_loan_approval">Complete the loan application now for quick loan approval</string>
+    <string name="collection_of_two_wheelers_available_lowest">Explore our collection of two wheelers available at lowest on road price</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="i_want_to_buy_in_cash">I Want to Buy in Cash</string>
+    <string name="i_have_bike">I Have Bike</string>
+    <string name="book_maintenance_track_your_bike_health_and_set_timely_reminders">Book Maintenance Track your bike health and set timely reminders</string>
+    <string name="manage_bike">Manage Bike</string>
 
 </resources>

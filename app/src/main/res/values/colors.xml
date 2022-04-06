@@ -179,6 +179,7 @@
     <color name="gray_210">#ececed</color>
     <color name="grey_login_new">#585858</color>
     <color name="grey_medium">#767474</color>
+    <color name="black_bg">#272c2a</color>
 
     <color name="intro_header">#FFB1E5D0</color>
     <array name="array_dot_active">
