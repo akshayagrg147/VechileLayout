@@ -48,6 +48,7 @@
     <color name="ride_confirmation_title">#181326</color>
     <color name="check_box_color">#29B67F</color>
     <color name="check_box_unselected_color">#757380</color>
+    <color name="gray_150">#f8f8f8</color>
     <color name="ride_summary_tips_label">#555266</color>
     <color name="ride_summary_label">#141433</color>
     <color name="ride_summary_label1">#03031a</color>
@@ -84,6 +85,7 @@
     <color name="color_blue">#1919ff</color>
     <color name="color_athens_gray">#f0f0f2</color>
     <color name="color_athens_gray1">#F4F4F7</color>
+    <color name="color_athens_gray2">#929191</color>
     <color name="color_mischka_1">#dfdfe6</color>
     <color name="color_scarpa">#585766</color>
     <color name="color_pale_lavender">#eeedf2</color>
@@ -212,6 +214,7 @@
     <color name="gray_201">#888888</color>
     <color name="gray_101">#888888</color>
     <color name="red_001">#ff0000</color>
+    <color name="black_mild">#2f2f2f</color>
     <array name="array_dot_inactive">
         <item>@color/inactive_color</item>
         <item>@color/inactive_color</item>

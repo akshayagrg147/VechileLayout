@@ -1,113 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="2dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginStart="6dp"
-    android:layout_marginEnd="6dp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    app:cardElevation="@dimen/_2sdp"
     app:cardPreventCornerOverlap="true">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#efefef"
-            android:orientation="vertical">
-
+            android:orientation="horizontal">
             <ImageView
                 android:id="@+id/product_image"
-                android:layout_width="190dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_bike_img"
                 android:adjustViewBounds="true"
-                android:scaleType="centerCrop"/>
-        </LinearLayout>
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_bike_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_corner"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/star_rating" />
+
+                <View
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="4.6"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/grey_login_new"
+                    android:textSize="@dimen/_5sdp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="14dp">
+            android:padding="@dimen/_14sdp">
 
             <TextView
                 android:id="@+id/product_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Honda Shine DRUM "
-                android:textAppearance="?attr/textAppearanceHeadline6"/>
+                android:fontFamily="@font/ginger_pro_demi"
+                android:text="@string/honda_shine_drum"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="15dp"
-             />
+                android:layout_height="@dimen/_15sdp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-                <TextView
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#008000"
-                    android:textSize="10sp"
-                    android:text="125cc"
-                    android:textAppearance="?attr/textAppearanceBody2"/>
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="fill_parent"
-                    />
                 <TextView
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="|"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/_125cc"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/_10ssp" />
+
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="#585858"
-                    android:textSize="10sp"
-                    android:gravity="center_horizontal"/>
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="fill_parent"
-                    />
-                <TextView
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:gravity="center_horizontal"
+                    android:text="@string/pipe"
+                    android:textSize="10sp" />
 
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="fill_parent" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#008000"
-                    android:textSize="10dp"
-                    android:text="65 kmpl"
-                    android:textAppearance="?attr/textAppearanceBody2"/>
+                    android:text="@string/_65_kmpl"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/_10ssp" />
 
             </LinearLayout>
+
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="10dp"
-                />
+                android:layout_height="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="@string/ex_showroom_price"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/grey_login_new"
+                android:textSize="@dimen/_10ssp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_5sdp" />
+
             <TextView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#585858"
-                android:textSize="10dp"
-                android:text="Ex-Showroom Price"
-                android:textAppearance="?attr/textAppearanceBody2"/>
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="5dp"
-                />
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="₹ 92,599/-"
-                android:textAppearance="?attr/textAppearanceBody2"/>
-
+                android:fontFamily="@font/ginger_pro_demi"
+                android:text="@string/_92_599"
+                android:textAppearance="?attr/textAppearanceBody2" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </com.google.android.material.card.MaterialCardView>

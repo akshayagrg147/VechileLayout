@@ -6,13 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+       />
+
+    <include
+        android:id="@+id/include"
+        android:layout_marginTop="@dimen/_10sdp"
+        layout="@layout/custom_searchview"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    <LinearLayout
+        android:id="@+id/searchcount"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/gray_400"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ginger_pro_regular"
+            android:text="Showing result: "
+            android:textAppearance="?attr/textAppearanceHeadline6"
+
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black_mild"
+            android:fontFamily="@font/ginger_pro_regular"
+            android:text="1-20 out of 114 bikes"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchcount"
+        android:layout_width="wrap_content"
+        tools:listitem="@layout/product_item"
+        android:layout_height="wrap_content"
+        tools:itemCount="2"
+        tools:orientation="vertical"
+        tools:scrollbars="vertical"
+        tools:spanCount="2"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="@dimen/_2sdp">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/frame2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:padding="@dimen/_10sdp"
+        android:text="Sort"
+        android:fontFamily="@font/ginger_pro_demi"
+        android:textColor="@color/grey_login_new"
+        android:textAlignment="center"
+        android:textSize="@dimen/_16sdp" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/filter2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/reply_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/ginger_pro_demi"
+            android:textColor="@color/grey_login_new"
+            android:padding="@dimen/_10sdp"
+            android:text="Filter"
+            android:textAlignment="center"
+
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

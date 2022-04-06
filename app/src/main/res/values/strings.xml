@@ -1760,5 +1760,11 @@
     <string name="intro_1"><font fgcolor='#2bb780' size="30">TWO WHEELER\nLOANS</font><font fgcolor='#585858' size="20"> IN TEN MINUTES</font></string>
     <string name="intro_2"><font fgcolor='#2bb780' size="30">BUY\nTWO WHEELER</font><font fgcolor='#585858' size="20"> IN CASH</font></string>
     <string name="intro_3"><font fgcolor='#2bb780' size="30">MANAGE\n</font><font fgcolor='#585858' size="20"> YOUR EXISTING</font><font fgcolor='#2bb780' size="30"> BIKE</font></string>
+    <string name="honda_shine_drum">Honda Shine DRUM</string>
+    <string name="_125cc">125cc</string>
+    <string name="pipe">|</string>
+    <string name="_65_kmpl">65 kmpl</string>
+    <string name="ex_showroom_price">Ex-Showroom Price</string>
+    <string name="_92_599">₹ 92,599/-</string>
 
 </resources>
