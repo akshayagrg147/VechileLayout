@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <include
@@ -23,8 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
     <LinearLayout
         android:id="@+id/searchcount"
         android:layout_width="wrap_content"
@@ -96,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
-        android:padding="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
         android:text="Sort"
         android:fontFamily="@font/ginger_pro_demi"
         android:textColor="@color/grey_login_new"
@@ -124,7 +125,7 @@
             android:textSize="@dimen/_14sdp"
             android:fontFamily="@font/ginger_pro_demi"
             android:textColor="@color/grey_login_new"
-            android:padding="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
             android:text="Filter"
             android:textAlignment="center" />
     </LinearLayout>

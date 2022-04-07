@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/hamburger"
-        android:layout_width="@dimen/_30sdp"
+        android:layout_width="@dimen/_25sdp"
         android:layout_height="@dimen/_20sdp"
         android:src="@drawable/hamburger2"
         app:layout_constraintEnd_toStartOf="@+id/logo"
