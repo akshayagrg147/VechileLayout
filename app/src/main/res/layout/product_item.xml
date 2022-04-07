@@ -8,7 +8,6 @@
     android:layout_marginEnd="@dimen/_6sdp"
     app:cardElevation="@dimen/_2sdp"
     app:cardPreventCornerOverlap="true">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +26,6 @@
                 android:src="@drawable/ic_bike_img"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <LinearLayout
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="wrap_content"
@@ -35,7 +33,6 @@
                 android:background="@drawable/round_corner"
                 android:orientation="horizontal"
                 android:padding="@dimen/_3sdp"
-
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -43,7 +40,6 @@
                     android:layout_width="@dimen/_10sdp"
                     android:layout_height="@dimen/_10sdp"
                     android:src="@drawable/star_rating" />
-
                 <View
                     android:layout_width="@dimen/_5sdp"
                     android:layout_height="match_parent" />
@@ -54,6 +50,7 @@
                     android:gravity="center"
                     android:fontFamily="@font/ginger_pro_regular"
                     android:text="4.6"
+                    android:layout_gravity="center"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="@color/grey_login_new"
                     android:textSize="@dimen/_5sdp" />

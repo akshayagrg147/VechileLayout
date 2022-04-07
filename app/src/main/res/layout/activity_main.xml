@@ -85,6 +85,7 @@
     android:layout_width="0dp"
     android:layout_weight="2"
     android:gravity="center"
+    android:background="@drawable/bg_border_gray"
     android:layout_height="wrap_content">
     <ImageView
         android:src="@drawable/frame2"
@@ -100,13 +101,14 @@
         android:fontFamily="@font/ginger_pro_demi"
         android:textColor="@color/grey_login_new"
         android:textAlignment="center"
-        android:textSize="@dimen/_16sdp" />
+        android:textSize="@dimen/_14sdp" />
 </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="2"
+        android:background="@drawable/bg_border_gray"
         android:gravity="center"
         android:layout_height="wrap_content">
         <ImageView
@@ -119,13 +121,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
+            android:textSize="@dimen/_14sdp"
             android:fontFamily="@font/ginger_pro_demi"
             android:textColor="@color/grey_login_new"
             android:padding="@dimen/_10sdp"
             android:text="Filter"
-            android:textAlignment="center"
-
-            android:textSize="@dimen/_16sdp" />
+            android:textAlignment="center" />
     </LinearLayout>
     </LinearLayout>
 

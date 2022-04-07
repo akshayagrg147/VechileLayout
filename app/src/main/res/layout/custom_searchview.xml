@@ -7,9 +7,6 @@
     android:background="@drawable/bg_border"
     android:paddingBottom="8dp"
     android:gravity="center_vertical">
-
-
-
     <EditText
         android:id="@+id/edt_search_text"
         android:layout_width="0dp"
@@ -30,7 +27,4 @@
         android:layout_height="20dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_baseline_search_24"/>
-
-
-
 </LinearLayout>

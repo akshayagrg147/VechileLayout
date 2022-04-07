@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbarfilter"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+       />
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+
+        android:layout_width="wrap_content"
+        tools:listitem="@layout/category_menu_item"
+        android:layout_height="wrap_content"
+        tools:itemCount="5"
+        tools:orientation="vertical"
+        tools:scrollbars="vertical"
+        tools:spanCount="2"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+
+        android:layout_width="wrap_content"
+        tools:listitem="@layout/category_brand_subitem"
+        android:layout_height="wrap_content"
+        tools:itemCount="5"
+        tools:orientation="vertical"
+        tools:scrollbars="vertical"
+        tools:spanCount="2"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:baselineAligned="false">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:background="@drawable/bg_border_gray"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="CLEAR"
+        android:fontFamily="@font/ginger_pro_demi"
+        android:textColor="@color/grey_login_new"
+        android:textAlignment="center"
+        android:textSize="@dimen/_14sdp" />
+</LinearLayout>
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="@drawable/bg_border_gray"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reply_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/ginger_pro_demi"
+            android:textColor="@color/grey_login_new"
+            android:padding="@dimen/_10sdp"
+            android:text="APPLY"
+            android:textAlignment="center"
+
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
