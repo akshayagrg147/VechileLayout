@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOffer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@drawable/btn_bg_round_corner"
+        android:drawableEnd="@drawable/ic_arrow_right_circle"
+        android:drawableTint="@color/white"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/fastrack_get_3000_cashback"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOffer"
+        app:tabIndicator="@color/green_400">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specs" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_review" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/similar_bikes" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_icon_black"
+                    android:tint="@color/green_400"
+                    app:layout_constraintBottom_toBottomOf="@id/tvBikeName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvBikeName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBikeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/ginger_pro_demi"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toEndOf="@+id/ivBack"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Royal enfield Meteor 350" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@color/bg_display"
+                    android:src="@drawable/ic_display_bike"
+                    app:layout_constraintStart_toStartOf="@+id/ivBack"
+                    app:layout_constraintTop_toBottomOf="@id/tvBikeName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:background="@drawable/bg_half_round_rectangle"
+                    android:fontFamily="@font/ginger_pro_demi"
+                    android:paddingHorizontal="@dimen/_32sdp"
+                    android:paddingVertical="@dimen/_4sdp"
+                    android:text="@string/color"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivBike" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvVariant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:background="@drawable/bg_half_round_rectangle"
+                    android:backgroundTint="@color/bg_variant"
+                    android:fontFamily="@font/ginger_pro_demi"
+                    android:paddingHorizontal="@dimen/_32sdp"
+                    android:paddingVertical="@dimen/_4sdp"
+                    android:text="@string/variant"
+                    android:textColor="@color/grey_login_new"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/tvColor"
+                    app:layout_constraintTop_toBottomOf="@+id/ivBike" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvColor"
+                    app:layout_constraintTop_toBottomOf="@+id/tvColor" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/rvColor"
+                    app:layout_constraintStart_toStartOf="@+id/tvColor"
+                    app:layout_constraintTop_toTopOf="@+id/rvColor"
+                    app:srcCompat="@drawable/ic_arrow_round" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvColor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toStartOf="@+id/ivNext"
+                    app:layout_constraintStart_toEndOf="@+id/ivPrevious"
+                    app:layout_constraintTop_toBottomOf="@+id/tvColor"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/item_color" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/rvColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rvColor"
+                    app:srcCompat="@drawable/ic_arrow_round" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvColorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/ginger_pro_demi"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/ivPrevious"
+                    app:layout_constraintTop_toBottomOf="@id/rvColor"
+                    tools:text="Supernova blue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/on_road_price_label"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvPrice" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintStart_toEndOf="@+id/tvLabelPrice"
+                    app:layout_constraintTop_toBottomOf="@id/tvColorName"
+                    tools:text="02,23,000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPriceBreakUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/price_break_up"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelPrice" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelSpec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_demi"
+                    android:text="@string/specification"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <HorizontalScrollView
+                    android:id="@+id/hs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLabelSpec">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llDisplacement"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_specs"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp"
+                            app:layout_constraintEnd_toStartOf="@+id/llMaxPower"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivDisplacement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_displacement" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvValueDisplacement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_demi"
+                                android:textColor="@color/reminder_category_text"
+                                android:textSize="@dimen/_12ssp"
+                                tools:text="349cc" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvLabelDisplacement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_regular"
+                                android:text="@string/displacement"
+                                android:textColor="@color/grey_login_new"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMaxPower"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:background="@color/bg_specs"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp"
+                            app:layout_constraintEnd_toStartOf="@+id/llMaxTorque"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/llDisplacement"
+                            app:layout_constraintTop_toTopOf="@id/llDisplacement">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivMaxPower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_max_power" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvValueMaxPower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_demi"
+                                android:textColor="@color/reminder_category_text"
+                                android:textSize="@dimen/_12ssp"
+                                tools:text="20 BHP" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvLabelMaxPower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_regular"
+                                android:text="@string/max_power"
+                                android:textColor="@color/grey_login_new"
+                                android:textSize="@dimen/_10ssp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMaxTorque"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:background="@color/bg_specs"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/llMaxPower"
+                            app:layout_constraintTop_toTopOf="@id/llMaxPower">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivMaxTorque"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_max_torque" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvValueMaxTorque"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_demi"
+                                android:textColor="@color/reminder_category_text"
+                                android:textSize="@dimen/_12ssp"
+                                tools:text="20 NM" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvLabelMaxTorque"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_regular"
+                                android:text="@string/max_torque"
+                                android:textColor="@color/grey_login_new"
+                                android:textSize="@dimen/_10ssp" />
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:id="@+id/hs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hs1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="spread">
+
+                        <LinearLayout
+                            android:id="@+id/llWheelBase"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_specs"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp"
+                            app:layout_constraintEnd_toStartOf="@+id/llCompressionRatio"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivWheelBase"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_wheelbase" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvValueWheelBase"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_demi"
+                                android:textColor="@color/reminder_category_text"
+                                android:textSize="@dimen/_12ssp"
+                                tools:text="1349 mm" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvLabelWheelBase"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_regular"
+                                android:text="@string/wheelbase"
+                                android:textColor="@color/grey_login_new"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llCompressionRatio"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:background="@color/bg_specs"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp"
+                            app:layout_constraintEnd_toStartOf="@+id/llStroke"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/llWheelBase"
+                            app:layout_constraintTop_toTopOf="@id/llWheelBase">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivcompression"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_compression_ratio" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvValueCompression"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_demi"
+                                android:textColor="@color/reminder_category_text"
+                                android:textSize="@dimen/_12ssp"
+                                tools:text="9:5:1" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvLabelCompression"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_regular"
+                                android:text="@string/compression_ratio"
+                                android:textColor="@color/grey_login_new"
+                                android:textSize="@dimen/_10ssp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llStroke"
+                            android:layout_width="157dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:background="@color/bg_specs"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/llCompressionRatio"
+                            app:layout_constraintTop_toTopOf="@id/llCompressionRatio">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivStroke"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_stroke" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvValueStroke"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_demi"
+                                android:textColor="@color/reminder_category_text"
+                                android:textSize="@dimen/_12ssp"
+                                tools:text="20 NM" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvLabelStroke"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ginger_pro_regular"
+                                android:text="@string/max_torque"
+                                android:textColor="@color/grey_login_new"
+                                android:textSize="@dimen/_10ssp" />
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </HorizontalScrollView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFullSpecification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/full_spec"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawableEnd="@drawable/ic_arrow_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hs2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
