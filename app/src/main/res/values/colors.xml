@@ -13,6 +13,7 @@
     <!-- grayscale -->
     <color name="white">#FFFFFF</color>
     <color name="gray_light">#DBDBDB</color>
+    <color name="gray_l">#a1a1a1</color>
     <color name="gray_light_x">#EBEAEA</color>
     <color name="gray_light_y">#bebebe</color>
     <color name="gray_light_z">#f3f3f3</color>

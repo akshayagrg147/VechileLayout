@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/bg_bottomborder"
+    android:paddingBottom="8dp"
+    android:gravity="center_vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_black_border_"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ginger_pro_regular"
+            android:text="SORT BY"
+            />
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="18dp"
+        android:weightSum="1"
+        android:id="@+id/radioGroup">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="What's new "
+            android:textColor="@color/white"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:textSize="@dimen/_10sdp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price-high to low"
+            android:textColor="@color/white"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity"
+            android:textColor="@color/white"
+            android:checked="false"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price-low to high"
+            android:textColor="@color/white"
+            android:checked="false"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="0.13" />
+    </RadioGroup>
+
+</LinearLayout>
