@@ -1785,5 +1785,8 @@
     <string name="wheelbase">Wheelbase</string>
     <string name="compression_ratio">Compression Ratio</string>
     <string name="full_spec">Full Specification</string>
+    <string name="available_offers">Available Offers</string>
+    <string name="applied"><u>Applied</u></string>
+    <string name="apply">Apply</string>
 
 </resources>

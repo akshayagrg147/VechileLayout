@@ -67,6 +67,7 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPrice"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="@dimen/_16sdp"
@@ -229,7 +230,9 @@
                     app:layout_constraintStart_toStartOf="@+id/tvLabelPrice"
                     app:layout_constraintTop_toBottomOf="@+id/tvLabelPrice" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSpecification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_16sdp"
@@ -509,11 +512,8 @@
                                 android:text="@string/max_torque"
                                 android:textColor="@color/grey_login_new"
                                 android:textSize="@dimen/_10ssp" />
-
                         </LinearLayout>
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
                 </HorizontalScrollView>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -536,6 +536,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clVideoReview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_16sdp"
@@ -551,6 +552,137 @@
                     android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvVideoReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    tools:listitem="@layout/item_video_review"
+                    tools:itemCount="5"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelVideoReview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelVideoReview"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSimilarBikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelSimilarBikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_demi"
+                    android:text="@string/similar_bikes"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSimilarBikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    tools:listitem="@layout/item_video_review"
+                    tools:itemCount="5"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelSimilarBikes"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelSimilarBikes"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_display"
+                android:layout_marginHorizontal="@dimen/_16sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAvailableOffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:textColor="@color/grey_login_new"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:drawableStart="@drawable/ic_offers_icons_white"
+                    android:drawableTint="@color/reminder_category_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/available_offers" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCbOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:textSize="@dimen/_11ssp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey_login_new"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAvailableOffers"
+                    android:text="Get ₹999 Cashback on OTO EMI Plan" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOfferApplied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:textSize="@dimen/_11ssp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/green_400"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@+id/tvCbOffer"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAvailableOffers"
+                    android:text="@string/applied" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReward"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:textSize="@dimen/_11ssp"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:textColor="@color/grey_login_new"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/tvOfferApply"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCbOffer"
+                    tools:text="Get Accessories worth ₹1499 on your purchase" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOfferApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/apply"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvOfferApplied"
+                    app:layout_constraintStart_toEndOf="@+id/tvReward"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCbOffer" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

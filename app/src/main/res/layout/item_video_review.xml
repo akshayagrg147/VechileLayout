@@ -4,9 +4,11 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="@dimen/_16sdp"
+    android:layout_marginVertical="@dimen/_6sdp"
     android:elevation="@dimen/_6sdp"
     app:cardElevation="@dimen/_6sdp"
-    app:cardCornerRadius="@dimen/_8sdp">
+    app:cardCornerRadius="@dimen/_4sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -45,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_12ssp"
-            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_4sdp"
             android:fontFamily="@font/ginger_pro_bold"
             android:textColor="@color/reminder_category_text"
             app:layout_constraintTop_toTopOf="@+id/ivThumb"
@@ -59,8 +61,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_12ssp"
             android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginStart="@dimen/_2sdp"
-            android:fontFamily="@font/ginger_pro_bold"
+            android:fontFamily="@font/ginger_pro_regular"
             android:textColor="@color/reminder_category_text"
             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
             app:layout_constraintStart_toStartOf="@+id/ivThumb"
@@ -72,9 +73,8 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_12ssp"
             android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginStart="@dimen/_2sdp"
             android:layout_marginBottom="@dimen/_14sdp"
-            android:fontFamily="@font/ginger_pro_bold"
+            android:fontFamily="@font/ginger_pro_regular"
             android:textColor="@color/reminder_category_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvLine1"
