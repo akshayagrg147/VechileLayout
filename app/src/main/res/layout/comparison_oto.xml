@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp">
+
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
@@ -16,6 +18,7 @@
             android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
             <ImageView
                 android:contentDescription="logo"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -54,8 +57,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:layout_marginBottom="@dimen/_90sdp"
                 android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_80sdp"
                 android:paddingLeft="8dp"
                 android:paddingTop="8dp"
                 android:paddingRight="8dp"
@@ -69,19 +72,14 @@
                     android:layout_weight="1" />
 
                 <include
-
                     layout="@layout/product_itemadd"
-
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_220sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
-
                     android:layout_weight="1" />
 
             </LinearLayout>
-
-
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearLayoutCompat"
@@ -126,21 +124,11 @@
             android:text="Compare Now"
             android:textAlignment="center"
             android:textColor="@color/white"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCompat"
+            app:layout_constraintVertical_bias="0.725"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-
-
+            app:layout_constraintStart_toStartOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
 
 </ScrollView>
