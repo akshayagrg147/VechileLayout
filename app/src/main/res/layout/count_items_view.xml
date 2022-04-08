@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/bg_black_border_corner_"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/white_upward_arrow" />
+
+
+    <TextView
+        android:id="@+id/all_bike_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/arrow"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:text="All Bikes"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/item_count"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:text="12/14"
+        />
+
+
+</RelativeLayout>
