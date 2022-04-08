@@ -1767,4 +1767,32 @@
     <string name="ex_showroom_price">Ex-Showroom Price</string>
     <string name="_92_599">₹ 92,599/-</string>
 
+
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="i_want_a_loan">I Want a Loan</string>
+    <string name="complete_the_loan_application_now_for_quick_loan_approval">Complete the loan application now for quick loan approval</string>
+    <string name="collection_of_two_wheelers_available_lowest">Explore our collection of two wheelers available at lowest on road price</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="i_want_to_buy_in_cash">I Want to Buy in Cash</string>
+    <string name="i_have_bike">I Have Bike</string>
+    <string name="book_maintenance_track_your_bike_health_and_set_timely_reminders">Book Maintenance Track your bike health and set timely reminders</string>
+    <string name="manage_bike">Manage Bike</string>
+    <string name="fastrack_get_3000_cashback">Fastrack Get ₹3000 Cashback. Pay 99 to unlock</string>
+    <string name="specs">Specs</string>
+    <string name="similar_bikes">Similar Bikes</string>
+    <string name="video_review">Video Review</string>
+    <string name="color">Color</string>
+    <string name="on_road_price_label">On Road Price:</string>
+    <string name="price_break_up">Show Price break up</string>
+    <string name="specification">Specification</string>
+    <string name="displacement">Displacement</string>
+    <string name="max_power">Maximum Power</string>
+    <string name="max_torque">Maximum Torque</string>
+    <string name="wheelbase">Wheelbase</string>
+    <string name="compression_ratio">Compression Ratio</string>
+    <string name="full_spec">Full Specification</string>
+    <string name="available_offers">Available Offers</string>
+    <string name="applied"><u>Applied</u></string>
+    <string name="apply">Apply</string>
+
 </resources>

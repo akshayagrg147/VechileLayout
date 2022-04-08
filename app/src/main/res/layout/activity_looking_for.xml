@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_bg">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLabelLookingFor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:text="@string/what_are_you_looking_for"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelLookingFor">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:text="@string/i_want_a_loan"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelLoanDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/complete_the_loan_application_now_for_quick_loan_approval"
+                    android:textColor="@color/grey_login_new"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivApplyLoan"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelLoan"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelLoan" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvApplyForLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/btn_bg_round_corner"
+                    android:drawableEnd="@drawable/ic_arrow_green"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/apply_for_loan"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelLoanDesc"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelLoanDesc" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivApplyLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_apply_loan" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvLoan">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:text="@string/i_want_to_buy_in_cash"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelCashDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/collection_of_two_wheelers_available_lowest"
+                    android:textColor="@color/grey_login_new"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivBuyNow"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelCash"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelCash" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBuyNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/btn_bg_round_corner"
+                    android:drawableEnd="@drawable/ic_arrow_green"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/buy_now"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelCashDesc"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelCashDesc" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBuyNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_apply_cash" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHaveBike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_40sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvCash">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelHaveBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:text="@string/i_have_bike"
+                    android:textColor="@color/reminder_category_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelBikeDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:text="@string/book_maintenance_track_your_bike_health_and_set_timely_reminders"
+                    android:textColor="@color/grey_login_new"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivManageBike"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelHaveBike"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelHaveBike" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvManageBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/btn_bg_round_corner"
+                    android:drawableEnd="@drawable/ic_arrow_green"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/manage_bike"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tvLabelBikeDesc"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelBikeDesc" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivManageBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_bike" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
