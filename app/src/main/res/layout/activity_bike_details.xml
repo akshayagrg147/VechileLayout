@@ -592,7 +592,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_22sdp"
-                    tools:listitem="@layout/item_video_review"
+                    tools:listitem="@layout/product_item"
                     tools:itemCount="5"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     android:orientation="horizontal"

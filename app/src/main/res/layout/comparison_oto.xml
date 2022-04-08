@@ -124,7 +124,7 @@
             android:text="Compare Now"
             android:textAlignment="center"
             android:textColor="@color/white"
-            app:layout_constraintVertical_bias="0.725"
+            app:layout_constraintVertical_bias="0.735"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

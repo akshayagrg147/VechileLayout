@@ -56,15 +56,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_13sdp"
+                android:minLines="3"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:text="@string/honda_shine_drum"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/_15sdp" />
-
-
+                android:layout_height="@dimen/_8sdp" />
 
             <TextView
                 android:layout_width="match_parent"
