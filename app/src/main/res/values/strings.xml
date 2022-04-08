@@ -1663,7 +1663,6 @@
     <string name="_35_lower_emi_s">Win exciting gift cards from popular brands and earn cashbacks.</string>
     <string name="than_banks">than Banks</string>
     <string name="action_needed">Action Needed</string>
-    <string name="book_now">Book Now</string>
     <string name="take_action">Take Action</string>
     <string name="delete_text">Delete</string>
     <string name="expense_added">Expense Added</string>
@@ -1765,7 +1764,7 @@
     <string name="pipe">|</string>
     <string name="_65_kmpl">65 kmpl</string>
     <string name="ex_showroom_price">Ex-Showroom Price</string>
-    <string name="_92_599">₹ 92,599/-</string>
+    <string name="_92_599">₹ 92,599/-</string><string name="book_now">Book Now</string><string name="available_offers">Available Offers</string><string name="color">color</string>
 
 
     <string name="what_are_you_looking_for">What are you looking for?</string>
@@ -1781,7 +1780,6 @@
     <string name="specs">Specs</string>
     <string name="similar_bikes">Similar Bikes</string>
     <string name="video_review">Video Review</string>
-    <string name="color">Color</string>
     <string name="on_road_price_label">On Road Price:</string>
     <string name="price_break_up">Show Price break up</string>
     <string name="specification">Specification</string>
@@ -1791,8 +1789,8 @@
     <string name="wheelbase">Wheelbase</string>
     <string name="compression_ratio">Compression Ratio</string>
     <string name="full_spec">Full Specification</string>
-    <string name="available_offers">Available Offers</string>
     <string name="applied"><u>Applied</u></string>
     <string name="apply">Apply</string>
+    <string name="compare">Compare</string>
 
 </resources>

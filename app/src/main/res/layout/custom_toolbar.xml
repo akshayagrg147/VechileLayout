@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_4sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
         android:fontFamily="@font/ginger_pro_regular"
         android:text="@string/Bangalore_text"
         android:textAppearance="?attr/textAppearanceBody2"
@@ -44,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_location_pointer"
+        app:layout_constraintBottom_toBottomOf="@+id/location"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/location" />
 </androidx.constraintlayout.widget.ConstraintLayout>

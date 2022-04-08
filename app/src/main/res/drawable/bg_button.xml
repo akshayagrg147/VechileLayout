@@ -9,10 +9,7 @@
     <solid android:color="@color/green_400" />
 
     <corners
-        android:topLeftRadius="@dimen/_10sdp"
-        android:topRightRadius="@dimen/_10sdp"
-        android:bottomLeftRadius="@dimen/_10sdp"
-        android:bottomRightRadius="@dimen/_10sdp"
+       android:radius="6sp"
        />
 
 </shape>
