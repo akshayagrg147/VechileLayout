@@ -1,8 +1,9 @@
-package com.example.vechilelayout
+package com.example.vechilelayout.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.vechilelayout.R
 import kotlinx.android.synthetic.main.activity_looking_for.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_looking_for)
 
         tvManageBike.setOnClickListener {
-            startActivity(Intent(this,VehicleListActivity::class.java))
+            startActivity(Intent(this, VehicleListActivity::class.java))
         }
 
     }

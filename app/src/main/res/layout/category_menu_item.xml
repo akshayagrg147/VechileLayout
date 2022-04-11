@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/_35sdp"
-    android:paddingRight="@dimen/_35sdp"
-    android:paddingTop="@dimen/_1sdp"
+    android:padding="@dimen/_28sdp"
     android:background="@drawable/bg_border"
-    android:paddingBottom="@dimen/_1sdp"
     android:gravity="center_vertical">
     <ImageView
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:src="@drawable/bike_icon"/>

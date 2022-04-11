@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/_10sdp"
     android:background="@drawable/bg_black_border_corner_"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <ImageView
         android:id="@+id/arrow"
