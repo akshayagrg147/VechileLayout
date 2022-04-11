@@ -98,7 +98,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/_6sdp"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:padding="@dimen/_8sdp"
                 android:text="Sort"
@@ -126,7 +126,7 @@
                 android:id="@+id/reply_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/_6sdp"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:padding="@dimen/_8sdp"
                 android:text="Filter"
