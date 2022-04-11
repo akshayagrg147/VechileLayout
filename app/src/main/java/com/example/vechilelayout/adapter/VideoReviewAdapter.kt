@@ -9,14 +9,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
 import com.example.vechilelayout.model.VehicleListModel
 import com.example.vechilelayout.view.BikeDetailsActivity
+import kotlinx.android.synthetic.main.item_video_review.view.*
 import kotlinx.android.synthetic.main.product_item.view.*
 
-class VehicleListAdapter(var context: Context, var list : ArrayList<VehicleListModel>) :
-    RecyclerView.Adapter<VehicleListAdapter.MyViewHolder>() {
+class VideoReviewAdapter(var context: Context, var list : ArrayList<VehicleListModel>) :
+    RecyclerView.Adapter<VideoReviewAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(context)
-        val view: View = inflater.inflate(R.layout.product_item, parent,false)
+        val view: View = inflater.inflate(R.layout.item_video_review, parent,false)
         return MyViewHolder(view)
     }
 
@@ -34,7 +35,7 @@ class VehicleListAdapter(var context: Context, var list : ArrayList<VehicleListM
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun onbind(vehicleListModel: VehicleListModel){
-            itemView.vehicleName.setText(vehicleListModel.bikeName)
+            itemView.tvTitle.setText(vehicleListModel.bikeName)
         }
     }
 

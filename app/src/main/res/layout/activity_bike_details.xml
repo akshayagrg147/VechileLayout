@@ -9,6 +9,8 @@
     <include
         android:id="@+id/toolbar"
         layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -101,7 +103,7 @@
                     android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toEndOf="@+id/ivBack"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:text="Royal enfield Meteor 350" />
+                    android:text="Royal enfield Meteor 350" />
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivBike"
@@ -226,7 +228,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/clRecycler"
                     app:layout_constraintTop_toBottomOf="@id/clRecycler"
-                    tools:text="Supernova blue" />
+                    android:text="Supernova blue" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvLabelPrice"
@@ -253,7 +255,7 @@
                     android:textSize="@dimen/_20ssp"
                     app:layout_constraintStart_toEndOf="@+id/tvLabelPrice"
                     app:layout_constraintTop_toBottomOf="@id/tvColorName"
-                    tools:text="02,23,000" />
+                    android:text="02,23,000" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvPriceBreakUp"
@@ -326,7 +328,7 @@
                                 android:fontFamily="@font/ginger_pro_demi"
                                 android:textColor="@color/reminder_category_text"
                                 android:textSize="@dimen/_12ssp"
-                                tools:text="349cc" />
+                                android:text="349cc" />
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:id="@+id/tvLabelDisplacement"
@@ -365,7 +367,7 @@
                                 android:fontFamily="@font/ginger_pro_demi"
                                 android:textColor="@color/reminder_category_text"
                                 android:textSize="@dimen/_12ssp"
-                                tools:text="20 BHP" />
+                                android:text="20 BHP" />
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:id="@+id/tvLabelMaxPower"
@@ -405,7 +407,7 @@
                                 android:fontFamily="@font/ginger_pro_demi"
                                 android:textColor="@color/reminder_category_text"
                                 android:textSize="@dimen/_12ssp"
-                                tools:text="20 NM" />
+                                android:text="20 NM" />
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:id="@+id/tvLabelMaxTorque"
@@ -462,7 +464,7 @@
                                 android:fontFamily="@font/ginger_pro_demi"
                                 android:textColor="@color/reminder_category_text"
                                 android:textSize="@dimen/_12ssp"
-                                tools:text="1349 mm" />
+                                android:text="1349 mm" />
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:id="@+id/tvLabelWheelBase"
@@ -501,7 +503,7 @@
                                 android:fontFamily="@font/ginger_pro_demi"
                                 android:textColor="@color/reminder_category_text"
                                 android:textSize="@dimen/_12ssp"
-                                tools:text="9:5:1" />
+                                android:text="9:5:1" />
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:id="@+id/tvLabelCompression"
@@ -541,7 +543,7 @@
                                 android:fontFamily="@font/ginger_pro_demi"
                                 android:textColor="@color/reminder_category_text"
                                 android:textSize="@dimen/_12ssp"
-                                tools:text="20 NM" />
+                                android:text="20 NM" />
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:id="@+id/tvLabelStroke"
@@ -706,7 +708,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/tvOfferApply"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvCbOffer"
-                    tools:text="Get Accessories worth ₹1499 on your purchase" />
+                    android:text="Get Accessories worth ₹1499 on your purchase" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvOfferApply"
