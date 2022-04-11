@@ -15,6 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="1.4"
+        android:backgroundTint="@color/green"
         android:scaleY="1.4" />
 
     <View
@@ -26,18 +27,21 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:src="@drawable/bike_icon" />
+        android:src="@drawable/bike" />
 
     <View
-        android:layout_width="@dimen/_5sdp"
+        android:layout_width="@dimen/_10sdp"
         android:layout_height="match_parent" />
 
     <TextView
         android:id="@+id/tvBikeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_4sdp"
         android:fontFamily="@font/ginger_pro_demi"
         android:text="Bikes"
-        android:textAlignment="center"
+        android:textColor="@color/grey_login_new"
+
         android:textAppearance="?attr/textAppearanceHeadline6" />
 </LinearLayout>

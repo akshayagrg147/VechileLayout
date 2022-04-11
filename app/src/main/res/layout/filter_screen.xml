@@ -116,7 +116,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvType"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:itemCount="3"
             tools:listitem="@layout/category_type_subitem"
@@ -149,7 +149,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_margin="@dimen/_4sdp"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:padding="@dimen/_8sdp"
                 android:text="CLEAR"
@@ -169,7 +169,7 @@
                 android:id="@+id/reply_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_margin="@dimen/_4sdp"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:padding="@dimen/_8sdp"
                 android:text="APPLY"

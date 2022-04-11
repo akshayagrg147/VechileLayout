@@ -16,13 +16,14 @@
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
             android:background="#efefef"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/product_image"
+                android:padding="@dimen/_20sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -90,9 +91,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/ginger_pro_regular"
                     android:text="@string/_125cc"
-                    android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="@color/green_400"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_8ssp" />
 
                 <View
                     android:layout_width="@dimen/_10sdp"
@@ -108,7 +108,7 @@
                     android:textSize="10sp" />
 
                 <View
-                    android:layout_width="@dimen/_10sdp"
+                    android:layout_width="@dimen/_8sdp"
                     android:layout_height="fill_parent" />
 
                 <TextView
@@ -117,26 +117,25 @@
                     android:text="@string/_65_kmpl"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="@color/green_400"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_8ssp" />
 
             </LinearLayout>
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/_10sdp" />
+                android:layout_height="@dimen/_8sdp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/ginger_pro_regular"
                 android:text="@string/ex_showroom_price"
-                android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="@color/grey_login_new"
-                android:textSize="@dimen/_10ssp" />
+                android:textSize="@dimen/_8ssp" />
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/_5sdp" />
+                android:layout_height="@dimen/_1sdp" />
 
             <TextView
                 android:layout_width="match_parent"
