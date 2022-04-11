@@ -10,7 +10,6 @@
 
     <corners
         android:topLeftRadius="@dimen/_10sdp"
-        android:topRightRadius="@dimen/_10sdp"
-       />
+        android:topRightRadius="@dimen/_10sdp" />
 
 </shape>
