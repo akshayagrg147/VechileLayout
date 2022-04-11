@@ -5,92 +5,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <include
         android:id="@+id/toolbar"
         layout="@layout/custom_toolbarfilter"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       />
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:itemCount="4"
+            tools:listitem="@layout/category_menu_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:orientation="vertical"
+            tools:scrollbars="vertical" />
 
-<androidx.appcompat.widget.LinearLayoutCompat
-    android:layout_width="match_parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/toolbar"
-    android:orientation="horizontal"
-    android:layout_height="wrap_content">
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="@dimen/_10sdp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
+            tools:listitem="@layout/category_brand_subitem"
+            tools:orientation="vertical"
+            tools:scrollbars="vertical"
+            tools:spanCount="2" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
-        android:layout_width="wrap_content"
-        tools:listitem="@layout/category_menu_item"
-        android:layout_height="wrap_content"
-        tools:itemCount="5"
-        tools:orientation="vertical"
-        tools:scrollbars="vertical"
-        tools:spanCount="2"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="@dimen/_10sdp"
-
-        android:layout_width="wrap_content"
-        tools:listitem="@layout/category_brand_subitem"
-        android:layout_height="wrap_content"
-        tools:itemCount="5"
-        tools:orientation="vertical"
-        tools:scrollbars="vertical"
-        tools:spanCount="2"/>
-</androidx.appcompat.widget.LinearLayoutCompat>
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@color/white"
+        android:baselineAligned="false"
         android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="@dimen/_2sdp"
-        android:baselineAligned="false">
+        app:layout_constraintRight_toRightOf="parent">
 
-<LinearLayout
-    android:layout_width="0dp"
-    android:layout_weight="2"
-    android:background="@drawable/bg_border_gray"
-    android:gravity="center"
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_10sdp"
-        android:padding="@dimen/_8sdp"
-        android:text="CLEAR"
-        android:fontFamily="@font/ginger_pro_demi"
-        android:textColor="@color/grey_login_new"
-        android:textAlignment="center"
-        android:textSize="@dimen/_14sdp" />
-</LinearLayout>
         <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:background="@drawable/bg_border_gray"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/reply_textview"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:fontFamily="@font/ginger_pro_demi"
-            android:textColor="@color/grey_login_new"
-            android:padding="@dimen/_8sdp"
-            android:text="APPLY"
-            android:textAlignment="center"
-            android:textSize="@dimen/_14sdp" />
-    </LinearLayout>
+            android:layout_weight="2"
+            android:background="@drawable/bg_border_gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_demi"
+                android:padding="@dimen/_8sdp"
+                android:text="CLEAR"
+                android:textAlignment="center"
+                android:textColor="@color/grey_login_new"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/bg_border_gray"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/reply_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_demi"
+                android:padding="@dimen/_8sdp"
+                android:text="APPLY"
+                android:textAlignment="center"
+                android:textColor="@color/grey_login_new"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
