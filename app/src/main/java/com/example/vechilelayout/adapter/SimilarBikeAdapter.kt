@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
 import com.example.vechilelayout.model.VehicleListModel
 import com.example.vechilelayout.view.BikeDetailsActivity
+import com.example.vechilelayout.view.ComparisonActivity
 import kotlinx.android.synthetic.main.product_item.view.*
 
 class SimilarBikeAdapter(var context: Context, var list : ArrayList<VehicleListModel>) :
@@ -25,6 +26,7 @@ class SimilarBikeAdapter(var context: Context, var list : ArrayList<VehicleListM
         holder.itemView.setOnClickListener {
             context.startActivity(Intent(context,BikeDetailsActivity::class.java))
         }
+        holder.onCompareClick()
     }
 
     override fun getItemCount(): Int {
@@ -36,6 +38,12 @@ class SimilarBikeAdapter(var context: Context, var list : ArrayList<VehicleListM
         fun onbind(vehicleListModel: VehicleListModel){
             itemView.btnCompare.visibility = View.VISIBLE
             itemView.vehicleName.setText(vehicleListModel.bikeName)
+        }
+
+        fun onCompareClick(){
+            itemView.btnCompare.setOnClickListener {
+                context.startActivity(Intent(context,ComparisonActivity::class.java))
+            }
         }
     }
 
