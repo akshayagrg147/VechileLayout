@@ -1,12 +1,15 @@
 package com.example.vechilelayout.view
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Dialog
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.vechilelayout.R
 import com.example.vechilelayout.adapter.VehicleListAdapter
 import com.example.vechilelayout.model.VehicleListModel
 import kotlinx.android.synthetic.main.activity_vehicle_list.*
+import kotlinx.android.synthetic.main.custom_toolbarfilter.*
+
 
 class VehicleListActivity : AppCompatActivity() {
 
@@ -27,6 +30,14 @@ class VehicleListActivity : AppCompatActivity() {
         adapter = VehicleListAdapter(this,vehicleList)
         rvVehicle.layoutManager = GridLayoutManager(this,2)
         rvVehicle.adapter = adapter
-        
+
+        llFilter.setOnClickListener {
+            val dialog = Dialog(this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen)
+            dialog.setContentView(R.layout.filter_screen)
+            dialog.location_icon.setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
+        }
     }
 }
