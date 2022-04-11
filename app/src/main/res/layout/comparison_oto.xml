@@ -42,7 +42,7 @@
                     android:layout_marginStart="@dimen/_5sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/ginger_pro_regular"
+                    android:fontFamily="@font/ginger_pro_bold"
                     android:text="Compare Bikes"
                     android:textColor="@color/white" />
 

@@ -16,6 +16,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_yelolow_corner.xml" value="0.1465" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/btn_bg_round_corner.xml" value="0.1465" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/button_green_click.xml" value="0.1115" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/close_white.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/green_circle_shape.xml" value="0.1275" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_action_arrow_left.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_arrow_multi.xml" value="0.1115" />
@@ -45,7 +46,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_bike_variant.xml" value="0.13760683760683762" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_color.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_video_review.xml" value="0.22" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/price_break_up.xml" value="0.3333333333333333" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/price_break_up.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/product_item.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/product_itemcomp.xml" value="0.16666666666666666" />
       </map>
