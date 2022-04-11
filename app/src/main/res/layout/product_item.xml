@@ -113,7 +113,7 @@
                     android:fontFamily="@font/ginger_pro_regular"
                     android:gravity="center_horizontal"
                     android:text="@string/pipe"
-                    android:textSize="10sp" />
+                    android:textSize="@dimen/_8sdp" />
 
                 <View
                     android:layout_width="@dimen/_8sdp"
