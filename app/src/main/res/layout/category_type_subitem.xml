@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/_4sdp"
-    android:background="@drawable/bg_border"
+
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingLeft="@dimen/_8sdp"
@@ -14,13 +14,11 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="1.4"
+        android:scaleX="1.0"
         android:backgroundTint="@color/green"
-        android:scaleY="1.4" />
+        android:scaleY="1.0" />
 
-    <View
-        android:layout_width="@dimen/_1sdp"
-        android:layout_height="match_parent" />
+
 
     <ImageView
         android:layout_width="wrap_content"

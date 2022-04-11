@@ -18,7 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="@dimen/_140sdp"
             android:layout_height="@dimen/_140sdp"
-            android:background="#efefef"
+            android:background="@color/color_at"
             android:orientation="horizontal">
 
             <ImageView
@@ -33,29 +33,35 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="@dimen/_40sdp"
+                android:layout_width="@dimen/_32sdp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:background="@drawable/round_corner"
                 android:orientation="horizontal"
-                android:padding="@dimen/_3sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
+                    android:layout_marginStart="@dimen/_3sdp"
                     android:layout_width="@dimen/_10sdp"
                     android:layout_height="@dimen/_10sdp"
+
                     android:src="@drawable/star_rating" />
                 <View
-                    android:layout_width="@dimen/_5sdp"
+                    android:layout_width="@dimen/_1sdp"
                     android:layout_height="match_parent" />
 
                 <TextView
+                    android:layout_marginTop="@dimen/_1sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:fontFamily="@font/ginger_pro_regular"
                     android:text="4.6"
+
                     android:layout_gravity="center"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="@color/grey_login_new"
@@ -73,8 +79,10 @@
                 android:id="@+id/vehicleName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black_mild"
+                android:textSize="@dimen/_12sdp"
                 android:fontFamily="@font/ginger_pro_demi"
-                android:text="@string/honda_shine_drum"
+                android:text="Honda Activa 6g"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <View
@@ -105,7 +113,7 @@
                     android:fontFamily="@font/ginger_pro_regular"
                     android:gravity="center_horizontal"
                     android:text="@string/pipe"
-                    android:textSize="10sp" />
+                    android:textSize="@dimen/_8sdp" />
 
                 <View
                     android:layout_width="@dimen/_8sdp"
