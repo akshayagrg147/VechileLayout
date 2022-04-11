@@ -1,23 +1,29 @@
 package com.example.vechilelayout.view
 
 import android.graphics.drawable.Drawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
-import com.example.vechilelayout.adapter.*
+import com.example.vechilelayout.adapter.ColorAdapter
+import com.example.vechilelayout.adapter.SimilarBikeAdapter
+import com.example.vechilelayout.adapter.VideoReviewAdapter
 import com.example.vechilelayout.model.VehicleListModel
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_bike_details.*
-import kotlinx.android.synthetic.main.activity_vehicle_list.*
+import kotlinx.android.synthetic.main.price_break_up.*
+import kotlinx.android.synthetic.main.price_break_up.view.*
+
 
 class BikeDetailsActivity : AppCompatActivity() {
 
     lateinit var adapter : VideoReviewAdapter
     lateinit var adapter1 : SimilarBikeAdapter
     lateinit var adapter2 : ColorAdapter
+    lateinit var sheetBehavior: BottomSheetBehavior<*>
 
     var videoReviewList = ArrayList<VehicleListModel>()
     var similarBikeList = ArrayList<VehicleListModel>()
@@ -50,6 +56,7 @@ class BikeDetailsActivity : AppCompatActivity() {
         colorList.add(AppCompatResources.getDrawable(this,R.drawable.bg_circle_blue)!!)
         colorList.add(AppCompatResources.getDrawable(this,R.drawable.bg_circle_blue)!!)
 
+       // sheetBehavior = BottomSheetBehavior.from(bottomSheetTT.bottomSheet)
         adapter = VideoReviewAdapter(this,videoReviewList)
         rvVideoReview.layoutManager = LinearLayoutManager(this,RecyclerView.HORIZONTAL,false)
         rvVideoReview.adapter = adapter
@@ -62,5 +69,8 @@ class BikeDetailsActivity : AppCompatActivity() {
         rvColor.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL,false)
         rvColor.adapter = adapter2
 
+       /* tvPriceBreakUp.setOnClickListener {
+            sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+        }*/
     }
 }

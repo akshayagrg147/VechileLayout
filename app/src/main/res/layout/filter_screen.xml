@@ -23,97 +23,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-       <!-- <LinearLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <include
                 layout="@layout/category_menu_item"/>
+            <include
+                layout="@layout/category_menu_item"/>
+            <include
+                layout="@layout/category_menu_item"/>
+            <include
+                layout="@layout/category_menu_item"/>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/_28sdp"
-                android:background="@drawable/bg_border"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/bike_icon"/>
-                <TextView
-                    android:id="@+id/product_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="@dimen/_12sdp"
-                    android:fontFamily="@font/ginger_pro_demi"
-                    android:text="Brand"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
+        </LinearLayout>
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/_28sdp"
-                android:background="@drawable/bg_border"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/bike_icon"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="@dimen/_12sdp"
-                    android:fontFamily="@font/ginger_pro_demi"
-                    android:text="Budget"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
+        <View
+            android:layout_width="1dp"
+            android:background="@color/gray_50"
+            android:layout_height="match_parent"/>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/_28sdp"
-                android:background="@drawable/bg_border"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/bike_icon"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="@dimen/_12sdp"
-                    android:fontFamily="@font/ginger_pro_demi"
-                    android:text="Mileage"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
-
-            </LinearLayout>
-
-        </LinearLayout>-->
-
-        <androidx.recyclerview.widget.RecyclerView
+        <!--<androidx.recyclerview.widget.RecyclerView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:itemCount="4"
             tools:listitem="@layout/category_menu_item"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:orientation="vertical"
-            tools:scrollbars="vertical" />
+            tools:scrollbars="vertical" />-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvType"
@@ -152,11 +91,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_4sdp"
                 android:fontFamily="@font/ginger_pro_demi"
-                android:padding="@dimen/_8sdp"
+                android:padding="@dimen/_4sdp"
                 android:text="CLEAR"
                 android:textAlignment="center"
                 android:textColor="@color/grey_login_new"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_14ssp" />
         </LinearLayout>
 
         <LinearLayout
@@ -172,11 +111,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_4sdp"
                 android:fontFamily="@font/ginger_pro_demi"
-                android:padding="@dimen/_8sdp"
+                android:padding="@dimen/_4sdp"
                 android:text="APPLY"
                 android:textAlignment="center"
                 android:textColor="@color/grey_login_new"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_14ssp" />
         </LinearLayout>
     </LinearLayout>
 

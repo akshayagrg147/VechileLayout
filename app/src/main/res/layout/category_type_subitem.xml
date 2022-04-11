@@ -38,9 +38,8 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/_11sdp"
         android:layout_marginTop="@dimen/_4sdp"
-        android:fontFamily="@font/ginger_pro_demi"
-        android:text="Bikes"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:text="@string/bike"
         android:textColor="@color/grey_login_new"
-
         android:textAppearance="?attr/textAppearanceHeadline6" />
 </LinearLayout>

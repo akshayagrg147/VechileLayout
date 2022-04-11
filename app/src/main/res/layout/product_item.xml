@@ -4,9 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/_10sdp"
-    android:layout_marginEnd="@dimen/_6sdp"
-    android:layout_marginBottom="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
     app:cardElevation="@dimen/_2sdp"
     app:cardPreventCornerOverlap="true">
 
@@ -17,18 +16,18 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="@dimen/_140sdp"
-            android:layout_height="@dimen/_140sdp"
+            android:layout_height="@dimen/_90sdp"
             android:background="@color/color_at"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/product_image"
                 android:padding="@dimen/_20sdp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_bike_img"
+                android:src="@drawable/ic_vehicle_side_view"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,6 +35,7 @@
                 android:layout_width="@dimen/_32sdp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
                 android:background="@drawable/round_corner"
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/_2sdp"
@@ -48,7 +48,6 @@
                     android:layout_marginStart="@dimen/_3sdp"
                     android:layout_width="@dimen/_10sdp"
                     android:layout_height="@dimen/_10sdp"
-
                     android:src="@drawable/star_rating" />
                 <View
                     android:layout_width="@dimen/_1sdp"
@@ -73,25 +72,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/_12sdp">
+            android:padding="@dimen/_10sdp">
 
             <TextView
                 android:id="@+id/vehicleName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black_mild"
-                android:textSize="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp"
+                android:minLines="2"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:text="Honda Activa 6g"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/_15sdp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
                 android:orientation="horizontal">
 
                 <TextView

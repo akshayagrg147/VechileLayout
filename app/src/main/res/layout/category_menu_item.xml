@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="@dimen/_12sdp"
-        android:fontFamily="@font/ginger_pro_regular"
+        android:fontFamily="@font/ginger_pro_light"
         android:text="Type"
         android:textAppearance="?attr/textAppearanceHeadline6" />
 
