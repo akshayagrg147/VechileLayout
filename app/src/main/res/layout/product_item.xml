@@ -163,6 +163,7 @@
             app:iconTint="@color/white"
             android:visibility="gone"
             android:paddingVertical="@dimen/_4sdp"
+            app:backgroundTint="@color/black100_color"
             android:background="@drawable/bg_black_half_rectangle"/>
     </LinearLayout>
 

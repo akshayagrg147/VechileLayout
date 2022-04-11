@@ -68,8 +68,6 @@
         android:id="@+id/llClear"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_2sdp"
         android:background="@color/white"
         android:baselineAligned="false"
@@ -79,26 +77,28 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@drawable/bg_border_gray"
             android:gravity="center">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_4sdp"
+               android:gravity="center"
                 android:fontFamily="@font/ginger_pro_demi"
                 android:padding="@dimen/_4sdp"
-                android:text="CLEAR"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/clear"
+                android:textAllCaps="true"
                 android:textAlignment="center"
                 android:textColor="@color/grey_login_new"
                 android:textSize="@dimen/_14ssp" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@drawable/bg_border_gray"
@@ -108,10 +108,12 @@
                 android:id="@+id/reply_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_4sdp"
+                android:gravity="center"
                 android:fontFamily="@font/ginger_pro_demi"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:padding="@dimen/_4sdp"
-                android:text="APPLY"
+                android:text="@string/apply"
+                android:textAllCaps="true"
                 android:textAlignment="center"
                 android:textColor="@color/grey_login_new"
                 android:textSize="@dimen/_14ssp" />

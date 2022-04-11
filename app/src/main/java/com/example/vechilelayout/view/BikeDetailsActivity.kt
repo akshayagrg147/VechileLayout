@@ -3,6 +3,7 @@ package com.example.vechilelayout.view
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -56,7 +57,7 @@ class BikeDetailsActivity : AppCompatActivity() {
         colorList.add(AppCompatResources.getDrawable(this,R.drawable.bg_circle_blue)!!)
         colorList.add(AppCompatResources.getDrawable(this,R.drawable.bg_circle_blue)!!)
 
-       // sheetBehavior = BottomSheetBehavior.from(bottomSheetTT.bottomSheet)
+        sheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottomSheetTT))
         adapter = VideoReviewAdapter(this,videoReviewList)
         rvVideoReview.layoutManager = LinearLayoutManager(this,RecyclerView.HORIZONTAL,false)
         rvVideoReview.adapter = adapter
@@ -69,8 +70,8 @@ class BikeDetailsActivity : AppCompatActivity() {
         rvColor.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL,false)
         rvColor.adapter = adapter2
 
-       /* tvPriceBreakUp.setOnClickListener {
-            sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-        }*/
+        tvPriceBreakUp.setOnClickListener {
+            sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
     }
 }

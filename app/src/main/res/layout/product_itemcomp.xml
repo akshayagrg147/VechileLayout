@@ -25,7 +25,8 @@
                 android:layout_width="@dimen/_135sdp"
                 android:layout_height="@dimen/_85sdp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_bike_img"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_vehicle_side_view"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,7 +35,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
-                android:background="@drawable/round_corner"
                 android:orientation="horizontal"
                 android:padding="@dimen/_3sdp"
                 app:layout_constraintEnd_toEndOf="parent"

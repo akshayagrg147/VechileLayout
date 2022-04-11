@@ -16,7 +16,7 @@
         android:text="FILTERS"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textColor="@color/black_mild"
-        android:textSize="@dimen/_15sdp"
+        android:textSize="@dimen/_14sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -41,6 +41,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_18sdp"
             android:layout_marginTop="@dimen/_30sdp"
+            app:tabIndicatorHeight="@dimen/_2sdp"
+            app:tabIndicatorColor="@color/green_400"
+            app:tabTextAppearance="@style/CustomTabText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvOffer"
@@ -104,15 +107,15 @@
                         android:layout_marginStart="@dimen/_8sdp"
                         android:fontFamily="@font/ginger_pro_demi"
                         android:textColor="@color/reminder_category_text"
-                        android:textSize="@dimen/_16ssp"
+                        android:textSize="@dimen/_14ssp"
                         app:layout_constraintStart_toEndOf="@+id/ivBack"
                         app:layout_constraintTop_toTopOf="parent"
                         android:text="Royal enfield Meteor 350" />
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/ivBike"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_138sdp"
                         android:layout_marginTop="@dimen/_16sdp"
                         android:background="@color/bg_display"
                         android:src="@drawable/ic_display_bike"
@@ -125,7 +128,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_24sdp"
                         android:background="@drawable/bg_half_round_rectangle"
-                        android:fontFamily="@font/ginger_pro_demi"
+                        android:fontFamily="@font/ginger_pro_regular"
                         android:paddingHorizontal="@dimen/_32sdp"
                         android:paddingVertical="@dimen/_4sdp"
                         android:text="@string/color"
@@ -142,7 +145,7 @@
                         android:layout_marginTop="@dimen/_24sdp"
                         android:background="@drawable/bg_half_round_rectangle"
                         android:backgroundTint="@color/bg_variant"
-                        android:fontFamily="@font/ginger_pro_demi"
+                        android:fontFamily="@font/ginger_pro_regular"
                         android:paddingHorizontal="@dimen/_32sdp"
                         android:paddingVertical="@dimen/_4sdp"
                         android:text="@string/variant"
@@ -228,7 +231,7 @@
                         android:layout_marginTop="@dimen/_4sdp"
                         android:fontFamily="@font/ginger_pro_demi"
                         android:textColor="@color/reminder_category_text"
-                        android:textSize="@dimen/_14ssp"
+                        android:textSize="@dimen/_12ssp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/clRecycler"
                         app:layout_constraintTop_toBottomOf="@id/clRecycler"
@@ -758,10 +761,6 @@
 
     <include
         android:id="@+id/bottomSheetTT"
-        layout="@layout/price_break_up"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"/>
+        layout="@layout/price_break_up" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -3,6 +3,7 @@ package com.example.vechilelayout.adapter
 import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
+import android.opengl.Visibility
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,6 +37,7 @@ class ColorAdapter(var context: Context, var list : ArrayList<Drawable>) :
 
         fun onbind(drawable: Drawable){
             itemView.ivColor.setImageDrawable(drawable)
+            itemView.ivColorSelect.visibility = View.INVISIBLE
         }
     }
 

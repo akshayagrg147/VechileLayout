@@ -1793,5 +1793,6 @@
     <string name="apply">Apply</string>
     <string name="compare">Compare</string>
     <string name="fireball">Fireball</string>
+    <string name="clear">Clear</string>
 
 </resources>
