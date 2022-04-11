@@ -14,9 +14,10 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
         android:scaleX="1.0"
-        android:backgroundTint="@color/green"
-        android:scaleY="1.0" />
+        android:buttonTint="@color/green_400"
+       android:scaleY="1.0" />
 
 
 
