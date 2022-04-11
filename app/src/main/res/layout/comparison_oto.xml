@@ -59,10 +59,10 @@
                 android:layout_weight="2"
                 android:orientation="horizontal"
                 android:layout_marginBottom="@dimen/_80sdp"
-                android:paddingLeft="8dp"
-                android:paddingTop="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp">
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp">
 
                 <include
                     layout="@layout/product_itemcomp"
@@ -85,7 +85,7 @@
             android:id="@+id/linearLayoutCompat"
             android:layout_width="fill_parent"
             android:background="@color/white"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/_200sdp"
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
             app:layout_constraintBottom_toBottomOf="parent"
