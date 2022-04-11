@@ -27,31 +27,33 @@
                 android:src="@drawable/ic_oto_new_logo" />
 
             <RelativeLayout
+                android:layout_marginTop="@dimen/_2sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
                     android:id="@+id/back"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/_30sdp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/green_back_arrow" />
 
                 <TextView
-                    android:layout_toEndOf="@+id/back"
                     android:id="@+id/product_title"
-                    android:layout_marginStart="@dimen/_5sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/back"
                     android:fontFamily="@font/ginger_pro_bold"
                     android:text="Compare Bikes"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
 
 
             </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_5sdp" />
+                android:layout_height="@dimen/_10sdp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,7 +76,7 @@
                 <include
                     layout="@layout/product_itemadd"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/_220sdp"
+                    android:layout_height="@dimen/_150sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_weight="1" />
@@ -93,7 +95,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_23sdp" />
+                android:layout_height="@dimen/_32sdp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -107,11 +109,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_12sdp"
+                android:textSize="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:fontFamily="@font/ginger_pro_regular"
                 android:text="Are you confused between multiple bikes to choose from? Not sure what features should you compare?  Don't worry, bike comparison was never so easy."
-                android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@color/grey_login_new" />
         </LinearLayout>
         <TextView
@@ -124,7 +125,7 @@
             android:text="Compare Now"
             android:textAlignment="center"
             android:textColor="@color/white"
-            app:layout_constraintVertical_bias="0.69"
+            app:layout_constraintVertical_bias="0.66"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
