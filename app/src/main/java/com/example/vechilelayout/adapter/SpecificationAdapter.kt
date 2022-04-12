@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
 import com.example.vechilelayout.model.VehicleListModel
@@ -12,7 +13,7 @@ import kotlinx.android.synthetic.main.category_menu_item.view.*
 import kotlinx.android.synthetic.main.category_type_subitem.view.*
 import kotlinx.android.synthetic.main.product_item.view.*
 
-class SpecificationAdapter(var context: Context, var list : ArrayList<VehicleListModel>) :
+class SpecificationAdapter(var context: Context, var list : ArrayList<VehicleListModel>, var clickListener:(Int) -> Unit) :
     RecyclerView.Adapter<SpecificationAdapter.MyViewHolder>() {
 
     var tempPosition = 0
@@ -24,7 +25,7 @@ class SpecificationAdapter(var context: Context, var list : ArrayList<VehicleLis
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.onItemClick(position)
+        holder.onItemClick(position,clickListener)
         holder.onbind(list[position],position)
     }
 
@@ -33,9 +34,9 @@ class SpecificationAdapter(var context: Context, var list : ArrayList<VehicleLis
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
         fun onbind(vehicleListModel: VehicleListModel, position: Int){
             itemView.tvTitle.setText(vehicleListModel.bikeName)
+            itemView.ivIcon.setImageDrawable(ContextCompat.getDrawable(context,vehicleListModel.image))
             if(tempPosition == position){
                 itemView.llParent.setBackgroundResource(R.drawable.bg_border_green)
             } else {
@@ -43,10 +44,11 @@ class SpecificationAdapter(var context: Context, var list : ArrayList<VehicleLis
             }
         }
 
-        fun onItemClick(position: Int){
+        fun onItemClick(position: Int,  clickListener: (Int) -> Unit){
             itemView.setOnClickListener {
                 tempPosition = position
                 notifyDataSetChanged()
+                clickListener(position)
             }
         }
     }

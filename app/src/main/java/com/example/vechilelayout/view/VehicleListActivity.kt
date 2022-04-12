@@ -9,8 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
 import com.example.vechilelayout.adapter.*
 import com.example.vechilelayout.model.VehicleListModel
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_bike_details.*
 import kotlinx.android.synthetic.main.activity_vehicle_list.*
+import kotlinx.android.synthetic.main.bottom_sheet_sortby.view.*
 import kotlinx.android.synthetic.main.custom_toolbarfilter.*
 import kotlinx.android.synthetic.main.dialog_specification.*
 import kotlinx.android.synthetic.main.filter_screen.*
@@ -21,6 +23,7 @@ class VehicleListActivity : AppCompatActivity() {
     lateinit var adapter : VehicleListAdapter
     lateinit var adapter1 : FilterCategoryTypedapter
     lateinit var brandAdapter: FilterCategoryBranddapter
+    lateinit var sheetBehavior: BottomSheetBehavior<*>
 
     var vehicleList = ArrayList<VehicleListModel>()
     var categoryType = ArrayList<VehicleListModel>()
@@ -28,6 +31,8 @@ class VehicleListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vehicle_list)
+
+        sheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bsSortBy))
 
         vehicleList.add(VehicleListModel("Honda Shine Drum"))
         vehicleList.add(VehicleListModel("Royal Enfield"))
@@ -39,6 +44,14 @@ class VehicleListActivity : AppCompatActivity() {
         adapter = VehicleListAdapter(this,vehicleList)
         rvVehicle.layoutManager = GridLayoutManager(this,2)
         rvVehicle.adapter = adapter
+
+        llSortBy.setOnClickListener {
+            sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+
+        bsSortBy.ivClose.setOnClickListener {
+            sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+        }
 
         llFilter.setOnClickListener {
             val dialog = Dialog(this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen)

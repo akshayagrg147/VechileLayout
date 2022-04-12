@@ -25,10 +25,12 @@ class BikeDetailsActivity : AppCompatActivity() {
     lateinit var specificationAdapter: SpecificationAdapter
     lateinit var specificationCategoryAdapter: SpecificationCategoryAdapter
     lateinit var sheetBehavior: BottomSheetBehavior<*>
+    lateinit var viewPagerAdapter: ViewPagerAdapter
 
     var videoReviewList = ArrayList<VehicleListModel>()
     var similarBikeList = ArrayList<VehicleListModel>()
     var colorList = ArrayList<Drawable>()
+    var imageList = ArrayList<Int>()
     var categoryType = ArrayList<VehicleListModel>()
     var specificationType = ArrayList<VehicleListModel>()
 
@@ -59,6 +61,13 @@ class BikeDetailsActivity : AppCompatActivity() {
         colorList.add(AppCompatResources.getDrawable(this,R.drawable.bg_circle_blue)!!)
         colorList.add(AppCompatResources.getDrawable(this,R.drawable.bg_circle_blue)!!)
 
+        imageList.add(R.drawable.ic_display_bike)
+        imageList.add(R.drawable.ic_display_bike)
+        imageList.add(R.drawable.ic_display_bike)
+
+        viewPagerAdapter = ViewPagerAdapter(this,imageList)
+        viewPager.adapter = viewPagerAdapter
+
         sheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottomSheetTT))
         adapter = VideoReviewAdapter(this,videoReviewList)
         rvVideoReview.layoutManager = LinearLayoutManager(this,RecyclerView.HORIZONTAL,false)
@@ -81,6 +90,45 @@ class BikeDetailsActivity : AppCompatActivity() {
             sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
         }
 
+        fun specificationItemClick(position : Int, dialog: Dialog){
+            categoryType.clear()
+            when(position){
+                1->{
+                    categoryType.add(VehicleListModel("WHEELBASE"))
+                    categoryType.add(VehicleListModel("GROUND CLEARANCE"))
+                    categoryType.add(VehicleListModel("LENGTH"))
+                    categoryType.add(VehicleListModel("WIDTH"))
+                    categoryType.add(VehicleListModel("HEIGHT"))
+                }
+                2->{
+                    categoryType.add(VehicleListModel("TYPE"))
+                    categoryType.add(VehicleListModel("FRONT SUSPENSION"))
+                    categoryType.add(VehicleListModel("REAR SUSPENSION"))
+                }
+                3->{
+                    categoryType.add(VehicleListModel("ABS"))
+                    categoryType.add(VehicleListModel("FRONT BRAKE TYPE"))
+                    categoryType.add(VehicleListModel("REAR BRAKE TYPE"))
+                    categoryType.add(VehicleListModel("REAR BRAKE SIZE"))
+                    categoryType.add(VehicleListModel("CALLIPER TYPE"))
+                }
+                4->{
+                    categoryType.add(VehicleListModel("HEADLIGHT"))
+                    categoryType.add(VehicleListModel("BATTERY CAPACITY"))
+                    categoryType.add(VehicleListModel("BATTERY TYPE"))
+                }
+                else -> {
+                    categoryType.add(VehicleListModel("TYPE"))
+                    categoryType.add(VehicleListModel("DISPLACEMENT"))
+                    categoryType.add(VehicleListModel("COMPRESSION RATIO"))
+                    categoryType.add(VehicleListModel("MAXIMUM TORQUE"))
+                    categoryType.add(VehicleListModel("CLUTCH"))
+
+                }
+            }
+            specificationCategoryAdapter = SpecificationCategoryAdapter(this,categoryType)
+            dialog.rvSpecificationCategory.adapter = specificationCategoryAdapter
+        }
 
         tvFullSpecification.setOnClickListener {
             val dialog = Dialog(this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen)
@@ -90,25 +138,21 @@ class BikeDetailsActivity : AppCompatActivity() {
             dialog.location_icon.setOnClickListener {
                 dialog.dismiss()
             }
-            dialog.rvSpecification.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
-            specificationType.clear()
-            specificationType.add(VehicleListModel("Engine"))
-            specificationType.add(VehicleListModel("Body Dimensions"))
-            specificationType.add(VehicleListModel("Chasis & Suspensions"))
-            specificationType.add(VehicleListModel("Types & Brakes"))
-            specificationType.add(VehicleListModel("Electricals"))
-            specificationAdapter = SpecificationAdapter(this,specificationType)
-            dialog.rvSpecification.adapter = specificationAdapter
-
             dialog.rvSpecificationCategory.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
-            categoryType.clear()
-            categoryType.add(VehicleListModel("TYPE"))
-            categoryType.add(VehicleListModel("WHEELBASE"))
-            categoryType.add(VehicleListModel("FRONT SUSPENSION"))
-            categoryType.add(VehicleListModel("REAR SUSPENSION"))
-            categoryType.add(VehicleListModel("FRONT BRAKE TYPE"))
+            specificationItemClick(0,dialog)
             specificationCategoryAdapter = SpecificationCategoryAdapter(this,categoryType)
             dialog.rvSpecificationCategory.adapter = specificationCategoryAdapter
+
+            dialog.rvSpecification.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
+            specificationType.clear()
+            specificationType.add(VehicleListModel("Engine",R.drawable.ic_engine))
+            specificationType.add(VehicleListModel("Body Dimensions",R.drawable.ic_body_dimension))
+            specificationType.add(VehicleListModel("Chasis & Suspensions",R.drawable.ic_suspensions))
+            specificationType.add(VehicleListModel("Types & Brakes",R.drawable.ic_tyres))
+            specificationType.add(VehicleListModel("Electricals",R.drawable.ic_electricals))
+            specificationAdapter = SpecificationAdapter(this,specificationType,{position : Int -> specificationItemClick(position,dialog) })
+            dialog.rvSpecification.adapter = specificationAdapter
+
         }
     }
 }

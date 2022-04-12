@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/_8sdp"
-    android:paddingRight="@dimen/_8sdp"
-    android:paddingTop="@dimen/_8sdp"
+    android:padding = "@dimen/_8sdp"
     android:background="@drawable/bg_bottomborder"
-    android:paddingBottom="@dimen/_8sdp"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    app:behavior_peekHeight="0dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@drawable/bg_black_border_"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/product_title"
@@ -20,32 +22,39 @@
             android:fontFamily="@font/ginger_pro_regular"
             android:text="SORT BY"
             />
+
         <ImageView
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/close_white"
+            android:id="@+id/ivClose"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close_white" />
 
     </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_5sdp" />
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/grey_login_new"/>
+
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:weightSum="1"
         android:id="@+id/radioGroup">
 
 
         <RadioButton
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/_55sdp"
+            android:layout_height="wrap_content"
             android:text="What's new "
             android:textColor="@color/white"
             android:id="@+id/radioButton"
             android:checked="false"
+            android:minHeight="@dimen/_30sdp"
+            android:fontFamily="@font/ginger_pro_regular"
             android:textSize="@dimen/_10sdp" />
 
         <RadioButton
@@ -55,7 +64,9 @@
             android:textColor="@color/white"
             android:id="@+id/radioButton2"
             android:checked="false"
+            android:minHeight="@dimen/_30sdp"
             android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/ginger_pro_regular"
             android:layout_weight="0.13" />
         <RadioButton
             android:layout_width="wrap_content"
@@ -63,7 +74,9 @@
             android:text="Popularity"
             android:textColor="@color/white"
             android:checked="false"
+            android:minHeight="@dimen/_30sdp"
             android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/ginger_pro_regular"
             android:layout_weight="0.13" />
         <RadioButton
             android:layout_width="wrap_content"
@@ -72,6 +85,9 @@
             android:textColor="@color/white"
             android:checked="false"
             android:textSize="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:minHeight="@dimen/_30sdp"
+            android:fontFamily="@font/ginger_pro_regular"
             android:layout_weight="0.13" />
     </RadioGroup>
 

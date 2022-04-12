@@ -112,15 +112,22 @@
                         app:layout_constraintTop_toTopOf="parent"
                         android:text="Royal enfield Meteor 350" />
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/ivBike"
+                    <LinearLayout
+                        android:id="@+id/llViewPager"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_138sdp"
                         android:layout_marginTop="@dimen/_16sdp"
                         android:background="@color/bg_display"
                         android:src="@drawable/ic_display_bike"
                         app:layout_constraintStart_toStartOf="@+id/ivBack"
-                        app:layout_constraintTop_toBottomOf="@id/tvBikeName" />
+                        app:layout_constraintTop_toBottomOf="@id/tvBikeName">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvColor"
@@ -135,7 +142,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ivBike" />
+                        app:layout_constraintTop_toBottomOf="@+id/llViewPager" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvVariant"
@@ -152,7 +159,7 @@
                         android:textColor="@color/grey_login_new"
                         android:textSize="@dimen/_14ssp"
                         app:layout_constraintStart_toEndOf="@+id/tvColor"
-                        app:layout_constraintTop_toBottomOf="@+id/ivBike" />
+                        app:layout_constraintTop_toBottomOf="@+id/llViewPager" />
 
                     <View
                         android:layout_width="match_parent"
