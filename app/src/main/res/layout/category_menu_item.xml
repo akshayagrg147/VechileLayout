@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
     android:orientation="vertical"
     android:layout_width="@dimen/_90sdp"
     android:layout_height="@dimen/_94sdp"
@@ -15,7 +16,7 @@
         android:src="@drawable/bike_icon"/>
 
     <TextView
-        android:id="@+id/product_title"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"

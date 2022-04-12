@@ -7,14 +7,14 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
-import com.example.vechilelayout.adapter.FilterCategoryBranddapter
-import com.example.vechilelayout.adapter.FilterCategoryTypedapter
-import com.example.vechilelayout.adapter.VehicleListAdapter
+import com.example.vechilelayout.adapter.*
 import com.example.vechilelayout.model.VehicleListModel
+import kotlinx.android.synthetic.main.activity_bike_details.*
 import kotlinx.android.synthetic.main.activity_vehicle_list.*
 import kotlinx.android.synthetic.main.custom_toolbarfilter.*
+import kotlinx.android.synthetic.main.dialog_specification.*
 import kotlinx.android.synthetic.main.filter_screen.*
-
+import kotlinx.android.synthetic.main.filter_screen.rvType
 
 class VehicleListActivity : AppCompatActivity() {
 
@@ -46,7 +46,6 @@ class VehicleListActivity : AppCompatActivity() {
             dialog.location_icon.setOnClickListener {
                 dialog.dismiss()
             }
-
             dialog.rvType.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
             categoryType.clear()
             categoryType.add(VehicleListModel("Moped"))

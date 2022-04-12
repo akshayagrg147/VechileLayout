@@ -7,7 +7,7 @@
     android:gravity="center_vertical">
 
     <TextView
-        android:id="@+id/product_title"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/gray_l"
@@ -19,13 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_5sdp" />
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/_12ssp"
         android:textColor="#2f2f2f"
         android:fontFamily="@font/ginger_pro_regular"
-        android:text="Single cylinder, 4 stroke,
-Air-Oil cooled"
+        android:text="Telescopic, 41 mm forks, 130 mm travel"
         />
 </LinearLayout>

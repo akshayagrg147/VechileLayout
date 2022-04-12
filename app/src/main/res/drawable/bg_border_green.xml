@@ -4,14 +4,9 @@
 
     <stroke
         android:width="@dimen/_1sdp"
-        android:color="#2bb780" />
-
-    <gradient
-        android:centerColor="#f3f3f3"
-        android:endColor="#f3f3f3"
-        android:startColor="#f3f3f3" />
-
+        android:color="@color/green_400" />
+    <solid android:color="#f8f8f8"/>
     <corners
-        android:radius="@dimen/_5sdp" />
+        android:radius="@dimen/_2sdp" />
 
 </shape>
