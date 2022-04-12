@@ -73,5 +73,10 @@ class BikeDetailsActivity : AppCompatActivity() {
         tvPriceBreakUp.setOnClickListener {
             sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
         }
+
+        bottomSheetTT.ivClose.setOnClickListener {
+            with(sheetBehavior) { setPeekHeight(0,false) }
+            sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+        }
     }
 }

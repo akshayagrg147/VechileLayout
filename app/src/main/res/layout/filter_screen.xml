@@ -29,13 +29,84 @@
             android:orientation="vertical">
 
             <include
+                android:id="@+id/llType"
                 layout="@layout/category_menu_item"/>
-            <include
-                layout="@layout/category_menu_item"/>
-            <include
-                layout="@layout/category_menu_item"/>
-            <include
-                layout="@layout/category_menu_item"/>
+            <LinearLayout
+                android:id="@+id/llBrand"
+                android:orientation="vertical"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_94sdp"
+                android:background="@drawable/bg_border"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_brand_"/>
+
+                <TextView
+                    android:id="@+id/product_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/ginger_pro_light"
+                    android:text="@string/brand"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llBudget"
+                android:orientation="vertical"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_94sdp"
+                android:background="@drawable/bg_border"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_budget"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_11ssp"
+                    android:fontFamily="@font/ginger_pro_light"
+                    android:text="Budget"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llMileage"
+                android:orientation="vertical"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_94sdp"
+                android:background="@drawable/bg_border"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_mileage"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_11ssp"
+                    android:fontFamily="@font/ginger_pro_light"
+                    android:text="Mileage"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
