@@ -18,6 +18,8 @@ import kotlinx.android.synthetic.main.product_item.view.*
 class ColorAdapter(var context: Context, var list : ArrayList<Drawable>) :
     RecyclerView.Adapter<ColorAdapter.MyViewHolder>() {
 
+    var tempPosition : Int = 0
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(context)
         val view: View = inflater.inflate(R.layout.item_color, parent,false)
@@ -25,7 +27,8 @@ class ColorAdapter(var context: Context, var list : ArrayList<Drawable>) :
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.onbind(list[position])
+        holder.onItemClick(position)
+        holder.onbind(list[position],position)
 
     }
 
@@ -35,9 +38,20 @@ class ColorAdapter(var context: Context, var list : ArrayList<Drawable>) :
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun onbind(drawable: Drawable){
+        fun onbind(drawable: Drawable,position: Int){
             itemView.ivColor.setImageDrawable(drawable)
-            itemView.ivColorSelect.visibility = View.INVISIBLE
+            if(position == tempPosition){
+                itemView.ivColorSelect.visibility = View.VISIBLE
+            } else {
+                itemView.ivColorSelect.visibility = View.INVISIBLE
+            }
+        }
+
+        fun onItemClick(position: Int){
+            itemView.setOnClickListener {
+                tempPosition = position
+                notifyDataSetChanged()
+            }
         }
     }
 

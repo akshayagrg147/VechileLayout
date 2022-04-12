@@ -1,16 +1,21 @@
 package com.example.vechilelayout.view
 
 import android.app.Dialog
+import android.content.Context
+import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vechilelayout.R
 import com.example.vechilelayout.adapter.*
 import com.example.vechilelayout.model.VehicleListModel
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_bike_details.*
 import kotlinx.android.synthetic.main.custom_toolbarfilter.*
 import kotlinx.android.synthetic.main.dialog_specification.*
@@ -26,6 +31,7 @@ class BikeDetailsActivity : AppCompatActivity() {
     lateinit var specificationCategoryAdapter: SpecificationCategoryAdapter
     lateinit var sheetBehavior: BottomSheetBehavior<*>
     lateinit var viewPagerAdapter: ViewPagerAdapter
+    lateinit var vehicleVariantAdapter: VehicleVariantAdapter
 
     var videoReviewList = ArrayList<VehicleListModel>()
     var similarBikeList = ArrayList<VehicleListModel>()
@@ -33,6 +39,7 @@ class BikeDetailsActivity : AppCompatActivity() {
     var imageList = ArrayList<Int>()
     var categoryType = ArrayList<VehicleListModel>()
     var specificationType = ArrayList<VehicleListModel>()
+    var vehicleVariantList = ArrayList<VehicleListModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,6 +72,10 @@ class BikeDetailsActivity : AppCompatActivity() {
         imageList.add(R.drawable.ic_display_bike)
         imageList.add(R.drawable.ic_display_bike)
 
+        vehicleVariantList.add(VehicleListModel("Fireball"))
+        vehicleVariantList.add(VehicleListModel("Stellar"))
+        vehicleVariantList.add(VehicleListModel("Supernova"))
+
         viewPagerAdapter = ViewPagerAdapter(this,imageList)
         viewPager.adapter = viewPagerAdapter
 
@@ -81,6 +92,9 @@ class BikeDetailsActivity : AppCompatActivity() {
         rvColor.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL,false)
         rvColor.adapter = adapter2
 
+        vehicleVariantAdapter = VehicleVariantAdapter(this,vehicleVariantList)
+        rvVariant.adapter = vehicleVariantAdapter
+
         tvPriceBreakUp.setOnClickListener {
             sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
         }
@@ -89,6 +103,52 @@ class BikeDetailsActivity : AppCompatActivity() {
             with(sheetBehavior) { setPeekHeight(0,false) }
             sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
         }
+
+        tvColor.setOnClickListener {
+            rvColor.visibility = View.VISIBLE
+            rvVariant.visibility = View.GONE
+            tvColor.setTextColor(ContextCompat.getColor(this,R.color.white))
+            tvColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.green_400))
+            tvVariant.setTextColor(ContextCompat.getColor(this,R.color.grey_login_new))
+            tvVariant.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.bg_variant))
+        }
+
+        tvVariant.setOnClickListener {
+            rvColor.visibility = View.GONE
+            rvVariant.visibility = View.VISIBLE
+            tvVariant.setTextColor(ContextCompat.getColor(this,R.color.white))
+            tvVariant.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.green_400))
+            tvColor.setTextColor(ContextCompat.getColor(this,R.color.grey_login_new))
+            tvColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.bg_variant))
+        }
+
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                when(tab?.position){
+                    0 ->{
+                        scrollView.scrollTo(0,clPrice.y.toInt())
+                    }
+                    1 ->{
+                        scrollView.scrollTo(0,clSpecification.y.toInt())
+                    }
+                    2->{
+                        scrollView.scrollTo(0,clVideoReview.y.toInt())
+                    }
+                    3->{
+                        scrollView.scrollTo(0,clSimilarBikes.y.toInt())
+                    }
+                }
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+
+            }
+
+        })
 
         fun specificationItemClick(position : Int, dialog: Dialog){
             categoryType.clear()
