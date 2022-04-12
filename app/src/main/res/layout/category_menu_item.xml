@@ -14,7 +14,7 @@
         android:layout_height="@dimen/_24sdp"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:src="@drawable/bike_icon"/>
+        android:src="@drawable/ic_scooter"/>
 
     <TextView
         android:id="@+id/tvTitle"
