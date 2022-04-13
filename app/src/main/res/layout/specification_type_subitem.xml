@@ -3,7 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding = "@dimen/_8sdp"
-    android:background="@drawable/bg_border"
     android:gravity="center_vertical">
 
     <TextView
@@ -17,7 +16,7 @@
          />
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_5sdp" />
+        android:layout_height="@dimen/_2sdp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
