@@ -141,7 +141,6 @@
         android:id="@+id/llClear"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_2sdp"
         android:background="@color/white"
         android:baselineAligned="false"
         android:weightSum="4"

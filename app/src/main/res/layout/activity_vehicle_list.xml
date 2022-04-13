@@ -80,7 +80,6 @@
             android:id="@+id/llSetting"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_2sdp"
             android:background="@color/white"
             android:weightSum="4"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -144,6 +143,7 @@
 
     <include
         android:id="@+id/bsSortBy"
+        android:visibility="gone"
         layout="@layout/bottom_sheet_sortby"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
