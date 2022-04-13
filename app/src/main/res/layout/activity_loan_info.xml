@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_black_border"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAppIcon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_oto_new_logo"
+                android:tint="@color/green_400"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSelectLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/ginger_pro_bold"
+                android:text="@string/select_bike_to_start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="@+id/ivAppIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ivAppIcon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/btn_bg_round_corner"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_11ssp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="@string/select_dream_bike"
+                android:textColor="@color/grey_login_new"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvSelectLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                android:text="@string/or"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/tvSelect"
+                app:layout_constraintTop_toBottomOf="@+id/tvSearch" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/btn_bg_round_corner"
+                android:backgroundTint="@color/bg_grey"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                android:text="@string/select_bike"
+                android:textColor="@color/grey_login_new"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="@+id/tvSearch"
+                app:layout_constraintTop_toBottomOf="@+id/tvSearch" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTenureLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="@string/tenure"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/gray_l"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelect" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:tint="@color/green_400"
+                android:layout_marginStart="@dimen/_6sdp"
+                app:srcCompat="@drawable/ic_action_information"
+                android:layout_marginBottom="@dimen/_1sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTenureLabel"
+                app:layout_constraintStart_toEndOf="@+id/tvTenureLabel"
+                app:layout_constraintTop_toTopOf="@+id/tvTenureLabel"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_23sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:fontFamily="@font/ginger_pro_demi"
+                android:text="Start your Comparision"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="Are you confused between multiple bikes to choose from? Not sure what features should you compare?  Don't worry, bike comparison was never so easy."
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/grey_login_new"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/ginger_pro_demi"
+            android:gravity="center"
+            android:text="Compare Now"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.64" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

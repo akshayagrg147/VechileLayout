@@ -23,7 +23,7 @@
         app:layout_constraintBottom_toTopOf="@+id/llClear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
-        
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvFiterCategory"
            android:layout_width="wrap_content"
