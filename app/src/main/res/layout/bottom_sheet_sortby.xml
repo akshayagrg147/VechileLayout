@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding = "@dimen/_8sdp"
+
     android:background="@drawable/bg_bottomborder"
     android:gravity="center_vertical"
     app:behavior_peekHeight="0dp"
@@ -12,16 +12,23 @@
     app:layout_behavior="@string/bottom_sheet_behavior">
 
     <RelativeLayout
+        android:paddingTop = "@dimen/_15sdp"
+        android:paddingStart= "@dimen/_17sdp"
+        android:paddingEnd="@dimen/_10sdp"
+
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/product_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/ginger_pro_regular"
+            android:textSize="@dimen/_12sdp"
+
+            android:fontFamily="@font/ginger_pro_bold"
             android:text="SORT BY"
-            />
+            android:textColor="@color/white" />
 
         <ImageView
             android:id="@+id/ivClose"
@@ -39,9 +46,10 @@
         android:background="@color/grey_login_new"/>
 
     <RadioGroup
+        android:padding = "@dimen/_8sdp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_1sdp"
         android:weightSum="1"
         android:id="@+id/radioGroup">
 
