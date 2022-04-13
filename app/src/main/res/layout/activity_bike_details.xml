@@ -686,6 +686,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/ginger_pro_regular"
                         android:textSize="@dimen/_11ssp"
+                        android:maxLines="2"
                         android:gravity="center_vertical"
                         android:textColor="@color/grey_login_new"
                         android:layout_marginStart="@dimen/_8sdp"
@@ -696,7 +697,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvOfferApplied"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/ginger_pro_bold"
                         android:textSize="@dimen/_11ssp"
@@ -704,6 +705,7 @@
                         android:textColor="@color/green_400"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginTop="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tvCbOffer"
                         app:layout_constraintTop_toBottomOf="@+id/tvAvailableOffers"
                         android:text="@string/applied" />
@@ -712,32 +714,31 @@
                         android:id="@+id/tvReward"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/ginger_pro_regular"
-                        android:textSize="@dimen/_11ssp"
-                        android:gravity="center_vertical"
-                        android:maxLines="2"
-                        android:textColor="@color/grey_login_new"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginTop="@dimen/_12sdp"
-                        app:layout_constraintEnd_toStartOf="@+id/tvOfferApply"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Get Accessories worth ₹1499 on your purchase"
+                        android:textColor="@color/grey_login_new"
+                        android:textSize="@dimen/_11ssp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvCbOffer"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tvCbOffer"
-                        android:text="Get Accessories worth ₹1499 on your purchase" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCbOffer" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvOfferApply"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_1sdp"
                         android:fontFamily="@font/ginger_pro_bold"
                         android:gravity="center_vertical"
                         android:text="@string/apply"
                         android:textColor="@color/green_400"
                         android:textSize="@dimen/_11ssp"
-                        app:layout_constraintEnd_toEndOf="@+id/tvOfferApplied"
-                        app:layout_constraintStart_toEndOf="@+id/tvReward"
-                        app:layout_constraintTop_toBottomOf="@+id/tvCbOffer" />
+                        app:layout_constraintStart_toStartOf="@+id/tvOfferApplied"
+                        app:layout_constraintTop_toBottomOf="@+id/tvOfferApplied" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
