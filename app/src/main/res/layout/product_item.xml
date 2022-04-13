@@ -163,7 +163,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_10ssp"
             app:iconTint="@color/white"
-            android:visibility="visible"
+            android:visibility="gone"
             app:backgroundTint="@color/black100_color"
             android:background="@drawable/bg_black_half_rectangle"/>
     </LinearLayout>
