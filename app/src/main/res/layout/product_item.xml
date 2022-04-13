@@ -153,16 +153,17 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCompare"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_28sdp"
+            android:layout_height="wrap_content"
             android:text="@string/compare"
+            android:minHeight="@dimen/_10sdp"
             android:textColor="@color/white"
             app:icon="@drawable/ic_white_arrow_right"
             app:iconGravity="textEnd"
             android:gravity="center"
+            android:textAllCaps="false"
             android:textSize="@dimen/_10ssp"
             app:iconTint="@color/white"
-            android:visibility="gone"
-            android:paddingVertical="@dimen/_4sdp"
+            android:visibility="visible"
             app:backgroundTint="@color/black100_color"
             android:background="@drawable/bg_black_half_rectangle"/>
     </LinearLayout>
