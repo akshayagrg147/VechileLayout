@@ -1723,7 +1723,7 @@
     <string name="overdue">Overdue</string>
     <string name="last_date">Last Date</string>
     <string name="redeem_now">REDEEM NOW</string>
-    <string name="how_it_works">HOW IT WORKS</string>
+    <string name="how_it_works">How it works</string>
     <string name="my_account">My Account</string>
     <string name="loan_journey_deep_link">app://</string>
     <string name="user_personal_information">User Personal Information</string>
@@ -1799,5 +1799,8 @@
     <string name="select_dream_bike">Search your dream bike</string>
     <string name="select_bike">Select Bike</string>
     <string name="or">Or</string>
+    <string name="get_loan_offers">Get loan offers</string>
+<!--    <string name="pay_emi_and_save"><![CDATA[<p>Pay <b><font color=#000>2/3rd</b> EMI’s and save atleast <b><font color=#000>₹3000</b></p>]]></string>-->
+    <string name="pay_emi_and_save">Pay <b>2/3rd </b>EMI’s and saveatleast <b>₹3000</b></string>
 
 </resources>
