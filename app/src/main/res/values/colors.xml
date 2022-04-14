@@ -90,6 +90,7 @@
     <color name="color_athens_gray2">#929191</color>
     <color name="color_mischka_1">#dfdfe6</color>
     <color name="color_scarpa">#585766</color>
+    <color name="color_grey_edit">#e7e7e7</color>
     <color name="color_pale_lavender">#eeedf2</color>
     <color name="color_caribbean_green">#0bdb96</color>
     <color name="color_minsk">#48397D</color>
@@ -164,6 +165,7 @@
     <color name="grey_400">#9a9a9a</color>
     <color name="black_700">#313131</color>
     <color name="black_800">#2a2a2a</color>
+    <color name="radio_button_color">#818181</color>
 
     <color name="green_1_shade">#29B67F</color>
     <color name="dark_green_shade">#2e513c</color>
@@ -185,6 +187,7 @@
     <color name="grey_medium">#767474</color>
 
     <color name="intro_header">#FFB1E5D0</color>
+    <color name="d0d0d0">#d0d0d0</color>
     <array name="array_dot_active">
         <item>@color/green_category</item>
         <item>@color/green_category</item>

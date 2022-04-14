@@ -135,6 +135,9 @@
     <style name="SpinnerTheme" parent="android:Widget.Spinner">
         <item name="android:background">@drawable/bg_spinner_arrow</item>
     </style>
+    <style name="Spinnerdropdown" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/ic_drop_down</item>
+    </style>
     <style name="DialogTheme" parent="Theme.AppCompat.Light">
         <item name="colorAccent">@color/green_category</item>
     </style>
@@ -193,5 +196,12 @@
         <item name="fontFamily">@font/ginger_pro_regular</item>
         <item name="android:textColor">@color/grey_login_new</item>
         <item name="singleLine">true</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/d0d0d0</item>
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray_150"
+            android:padding="@dimen/_11sdp">
+
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/ic_logo_"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tvOffer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_off_reserved"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        <LinearLayout
+            android:id="@+id/personal_details"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvOffer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_icon_black"
+                android:tint="@color/green_400"
+                app:layout_constraintBottom_toBottomOf="@id/tvBikeName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvBikeName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBikeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/ginger_pro_demi"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Occupation  Income Details" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+         app:layout_constraintTop_toBottomOf="@+id/personal_details"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/inputLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@font/ginger_pro_regular"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Occupation Type" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:layout_marginStart="@dimen/_3sdp">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/radio_button_color"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="@dimen/_11sdp"
+
+                    android:text="Salaried"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/radio_button_color"
+                    android:text="Self Employed"/>
+
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@font/ginger_pro_regular"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Job Category" />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:id="@+id/spinner"
+
+                android:layout_marginStart="@dimen/_7sdp"
+
+                android:textSize="@dimen/_11sdp"
+
+
+                android:entries="@array/JobCategory"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@font/ginger_pro_regular"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Monthly Income" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:hint="Please enter the correct salary"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bottom_line"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@font/ginger_pro_regular"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Mode of Salary" />
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_68sdp"
+                    android:padding = "@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_login_new"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="Cash"
+                        />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_68sdp"
+                    android:padding = "@dimen/_8sdp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_credit_to_bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_login_new"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="Credit to Bank"
+                        />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding = "@dimen/_8sdp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cheque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_login_new"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="Cheque"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@font/ginger_pro_regular"
+                android:text="Cibil Score?" />
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding = "@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_less_650"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_login_new"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="Less then 650"
+                        />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding = "@dimen/_8sdp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_more_650"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_login_new"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="More than 650"
+                        />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding = "@dimen/_8sdp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_dont_know"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_login_new"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="I don’t know"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+          android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/ginger_pro_demi"
+            android:gravity="center"
+            android:text="check  &amp; eligibility"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintVertical_bias="0.64"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

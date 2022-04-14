@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="JobCategory" >
+    <item>Select</item>
+    <item>Artist</item>
+    <item>Software Enginear</item>
+    <item>Clerk</item>
+
+    </string-array>
+</resources>
