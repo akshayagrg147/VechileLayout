@@ -10,11 +10,11 @@ import kotlinx.android.synthetic.main.activity_looking_for.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_looking_for)
+        setContentView(R.layout.activity_loan_info)
 
-        tvManageBike.setOnClickListener {
+      /*  tvManageBike.setOnClickListener {
             startActivity(Intent(this, VehicleListActivity::class.java))
-        }
+        }*/
 
     }
 }

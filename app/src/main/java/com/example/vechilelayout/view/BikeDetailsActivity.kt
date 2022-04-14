@@ -193,9 +193,9 @@ class BikeDetailsActivity : AppCompatActivity() {
         tvFullSpecification.setOnClickListener {
             val dialog = Dialog(this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen)
             dialog.setContentView(R.layout.dialog_specification)
-            dialog.location.setText("SPECIFICATION")
+            dialog.toolBarTitle.text = "SPECIFICATION"
             dialog.show()
-            dialog.location_icon.setOnClickListener {
+            dialog.toolBarIcon.setOnClickListener {
                 dialog.dismiss()
             }
             dialog.rvSpecificationCategory.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
