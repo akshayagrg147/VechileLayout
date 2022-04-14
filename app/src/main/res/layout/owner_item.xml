@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParentOwner"
+    android:layout_width="@dimen/_85sdp"
+    android:layout_height="@dimen/_85sdp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <ImageView
+        android:id="@+id/imageowner"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/rented_family"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp" />
+
+    <TextView
+        android:id="@+id/ownership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:text="Rented with Family"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/grey_login_new"
+        android:textSize="@dimen/_10ssp" />
+</LinearLayout>
