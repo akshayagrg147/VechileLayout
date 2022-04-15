@@ -7,13 +7,13 @@
     android:layout_height="match_parent">
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_border_green"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/apply_edit_back"
         android:fontFamily="@font/ginger_pro_demi"
         android:gravity="center"
         android:layout_weight="1"
         android:text="Skip"
-        android:padding="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
         android:textAllCaps="true"
         android:textAlignment="center"
         android:textColor="@color/grey_login_new"
@@ -23,7 +23,8 @@
         android:layout_weight="4"
 
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:padding="@dimen/_10sdp"
         android:background="@drawable/bg_button"
         android:fontFamily="@font/ginger_pro_demi"
         android:gravity="center"
