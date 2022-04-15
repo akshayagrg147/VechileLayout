@@ -194,7 +194,6 @@
                 layout="@layout/video_custom_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 />
 
 
@@ -205,26 +204,22 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
             android:layout_gravity="center"
-
             android:background="@drawable/bg_border_green"
             android:drawableEnd="@drawable/ic_upload_symbol"
-
             android:drawablePadding="@dimen/_8sdp"
             android:fontFamily="@font/ginger_pro_bold"
             android:gravity="center_vertical"
             android:paddingStart="@dimen/_16sdp"
-
             android:paddingEnd="@dimen/_16sdp"
             android:text="UPLOAD"
             android:textAllCaps="true"
             android:textColor="@color/green_dark"
-
             android:textSize="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.61" />
+            app:layout_constraintVertical_bias="0.6" />
 
         <include
             android:id="@+id/skip_next"
