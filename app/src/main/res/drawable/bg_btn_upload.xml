@@ -5,11 +5,7 @@
     <stroke
         android:width="@dimen/_1sdp"
         android:color="@color/green_400" />
-
-    <solid android:color="@color/green_400" />
-
-    <corners
-       android:radius="@dimen/_5sdp"
-       />
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/_2sdp" />
 
 </shape>
