@@ -45,6 +45,18 @@
             </intent-filter>-->
         </activity>
 
+        <activity
+            android:name=".view.Person_Contact_details"
+            android:exported="true" />
+
+        <activity
+            android:name=".view.occup_income_tax"
+            android:exported="true"/>
+
+        <activity android:name=".view.ApplyLoanActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
     </application>
 
 </manifest>
