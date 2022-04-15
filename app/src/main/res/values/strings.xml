@@ -1803,7 +1803,7 @@
     <string name="select_bike">Select Bike</string>
     <string name="or">Or</string>
     <string name="get_loan_offers">Get loan offers</string>
-<!--    <string name="pay_emi_and_save"><![CDATA[<p>Pay <b><font color=#000>2/3rd</b> EMI’s and save atleast <b><font color=#000>₹3000</b></p>]]></string>-->
+    <!--    <string name="pay_emi_and_save"><![CDATA[<p>Pay <b><font color=#000>2/3rd</b> EMI’s and save atleast <b><font color=#000>₹3000</b></p>]]></string>-->
     <string name="pay_emi_and_save">Pay <b>2/3rd </b>EMI’s and save atleast <b>₹3000</b></string>
     <string name="loan_amount">Loan Amount</string>
     <string name="downpayment">Downpayment</string>
