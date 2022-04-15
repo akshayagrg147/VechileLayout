@@ -111,7 +111,7 @@ class VehicleListActivity : AppCompatActivity() {
         llFilter.setOnClickListener {
             val dialog = Dialog(this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen)
             dialog.setContentView(R.layout.filter_screen)
-            dialog.location_icon.setOnClickListener {
+            dialog.toolBarIcon.setOnClickListener {
                 dialog.dismiss()
             }
             specificationItemClick(0,dialog)

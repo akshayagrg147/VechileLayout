@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_20sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBikeVariant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:textColor="@color/grey_login_new"
+        android:textSize="@dimen/_10ssp"
+        app:fontFamily="@font/ginger_pro_demi"
+        app:layout_constraintEnd_toEndOf="@+id/tvBikePrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fireball" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBikePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@drawable/bg_variant_unselect"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_6sdp"
+        android:text="₹2,22,678*"
+        android:textColor="@color/grey_login_new"
+        android:textSize="@dimen/_10ssp"
+        app:fontFamily="@font/ginger_pro_demi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBikeVariant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
