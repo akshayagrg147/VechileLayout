@@ -1,5 +1,6 @@
 package com.example.vechilelayout.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,7 +13,6 @@ import com.example.vechilelayout.R
 import com.example.vechilelayout.adapter.OwnerAdapter
 import com.example.vechilelayout.model.OwnerShipModals
 import kotlinx.android.synthetic.main.occup_income_details.*
-import kotlinx.android.synthetic.main.per_contact_details.*
 
 class occup_income_tax : AppCompatActivity() {
 
@@ -48,6 +48,9 @@ class occup_income_tax : AppCompatActivity() {
             }
         }
 
+        tvCheckEligibilty.setOnClickListener {
+            startActivity(Intent(this,DocumentPanCardUploadActivity::class.java))
+        }
 
     }
 

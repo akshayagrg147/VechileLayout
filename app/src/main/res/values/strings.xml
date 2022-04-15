@@ -712,7 +712,7 @@
     <string name="explore_Bikes_text">Explore Bikes</string>
     <string name="bike_text">bike</string>
     <string name="feature_challenges_text1">Featured Challenge</string>
-    <string name="upload_successfully_text">upload successfully</string>
+    <string name="upload_successfully_text">uploaded successfully</string>
     <string name="upload_failed_text">upload failed</string>
     <string name="goal_detail_text">goal_detail</string>
     <string name="uuid_text">uuid</string>
@@ -1815,5 +1815,8 @@
     <string name="upload">Upload</string>
     <string name="here_s_the_guide_video">Here’s the guide video</string>
     <string name="step_by_step_walkthrough_to_help_you">Step by step walkthrough to help you</string>
+    <string name="your">Your</string>
+    <string name="sort_by">Sort by</string>
+    <string name="file_upload">File Upload</string>
 
 </resources>
