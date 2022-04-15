@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <include
+            android:id="@+id/custom_layout"
+            layout="@layout/toolbar_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            app:layout_constraintTop_toBottomOf="@+id/custom_layout"
+            android:background="@drawable/bg_grey_border_"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:background="@drawable/btn_bg_round_corner"
+                android:drawableEnd="@drawable/ic_green_right"
+                android:padding="@dimen/_8sdp"
+                android:text="Fastrack  &amp; Get ₹3000 Cashback. Pay 99 to unlock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginTop="@dimen/_16sdp"
+                />
+            <RadioGroup
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_3sdp">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/radio_button_color_uploading"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="@dimen/_11sdp"
+
+                    android:text="Electricity Bill"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/radio_button_color_uploading"
+                    android:text="Gas Bill"/>
+
+            </RadioGroup>
+            <ImageView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_upload_dummy_slip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Upload your "
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Electricity or Gas bill"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ginger_pro_bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/_200sdp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp" />
+
+            <include
+
+                layout="@layout/video_custom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <include
+
+                layout="@layout/skip_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+
+            android:background="@drawable/bg_border_green"
+            android:fontFamily="@font/ginger_pro_bold"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="UPLOAD"
+            android:textSize="@dimen/_10sdp"
+            android:drawableEnd="@drawable/ic_upload_symbol"
+            android:textAllCaps="true"
+
+            android:textColor="@color/green_dark"
+            app:layout_constraintVertical_bias="0.64"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
