@@ -38,11 +38,13 @@
             android:background="@drawable/btn_bg_round_corner"
             android:drawableEnd="@drawable/ic_arrow_right_circle"
             android:drawableTint="@color/white"
-            android:padding="@dimen/_8sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_6sdp"
             android:text="@string/fastrack_get_3000_cashback"
             android:textColor="@color/white"
-            android:textSize="@dimen/_11ssp"
+            android:textSize="@dimen/_10ssp"
             android:layout_marginTop="@dimen/_16sdp"
+            app:fontFamily="@font/ginger_pro_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -82,28 +84,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_8sdp"
-                        android:fontFamily="@font/ginger_pro_regular"
+                        android:fontFamily="@font/ginger_pro_demi"
+                        android:text="Royal enfield Meteor 350"
                         android:textColor="@color/reminder_category_text"
                         android:textSize="@dimen/_14ssp"
                         app:layout_constraintStart_toEndOf="@+id/ivBack"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:text="Royal enfield Meteor 350" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <LinearLayout
                         android:id="@+id/llViewPager"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_136sdp"
+                        android:layout_height="@dimen/_132sdp"
                         android:layout_marginTop="@dimen/_16sdp"
                         android:background="@color/bg_display"
                         android:src="@drawable/ic_display_bike"
+                        android:gravity="center"
                         app:layout_constraintStart_toStartOf="@+id/ivBack"
                         app:layout_constraintTop_toBottomOf="@id/tvBikeName">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/viewPager"
                             android:src="@drawable/ic_display_bike"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
+                            android:layout_width="@dimen/_210sdp"
+                            android:layout_height="@dimen/_124sdp" />
 
                     </LinearLayout>
 
@@ -151,7 +154,7 @@
                         android:id="@+id/clRecycler"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
                         android:layout_marginTop="@dimen/_20sdp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/tvColor"
@@ -164,7 +167,7 @@
                             android:orientation="horizontal"
                             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                             tools:itemCount="6"
-                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
                             android:layout_marginEnd="@dimen/_6sdp"
                             android:visibility="gone"
                             app:layout_constraintTop_toTopOf="parent"
@@ -192,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/_2sdp"
                         android:layout_marginTop="@dimen/_20sdp"
-                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
                         app:cardElevation="@dimen/_5sdp"
                         app:cardCornerRadius="@dimen/_4sdp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -388,7 +391,7 @@
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_7sdp"
                         android:gravity="center"
                         android:textAllCaps="true"
                         android:fontFamily="@font/ginger_pro_extrabold"
