@@ -30,33 +30,42 @@
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_300sdp"
+                android:layout_height="@dimen/_250sdp"
                 android:background="@drawable/bg_grey_border_"
                 android:orientation="vertical"
                 app:layout_constraintTop_toBottomOf="@+id/custom_layout">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvOffer"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/_18sdp"
-                    android:layout_marginTop="@dimen/_16sdp"
-                    android:background="@drawable/btn_bg_round_corner"
-                    android:drawableEnd="@drawable/ic_green_right"
-                    android:padding="@dimen/_8sdp"
-                    android:text="Fastrack  &amp; Get ₹3000 Cashback. Pay 99 to unlock"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_11ssp" />
+
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Select Business Proof"
+                    android:textSize="@dimen/_10sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:entries="@array/bank_category"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+
+
+                    />
+
 
 
                 <LinearLayout
 
                     android:id="@+id/before_upload"
                     android:layout_width="match_parent"
+
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="vertical"
-                   >
+                    >
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -83,12 +92,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ginger_pro_bold"
-                            android:text="Rental Agreement"
+                            android:text="Business Proof"
                             android:textSize="@dimen/_10sdp" />
 
                     </LinearLayout>
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/after_upload"
                     android:visibility="gone"
@@ -107,13 +115,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_20sdp" />
 
-<!--                        <include-->
-<!--                            android:id="@+id/custom_add_layout"-->
-<!--                            layout="@layout/document_add_layout"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_centerVertical="true"-->
-<!--                            android:layout_toEndOf="@+id/rv_documents" />-->
+                        <!--                        <include-->
+                        <!--                            android:id="@+id/custom_add_layout"-->
+                        <!--                            layout="@layout/document_add_layout"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_centerVertical="true"-->
+                        <!--                            android:layout_toEndOf="@+id/rv_documents" />-->
 
 
 
@@ -162,6 +170,8 @@
                 </LinearLayout>
 
 
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -176,7 +186,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_90sdp" />
+                    android:layout_height="@dimen/_145sdp" />
 
                 <include
 
@@ -218,7 +228,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.52" />
+
 
     <include
         android:id="@+id/skip_next"

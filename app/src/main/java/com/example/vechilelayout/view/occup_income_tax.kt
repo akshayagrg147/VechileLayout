@@ -68,6 +68,7 @@ class occup_income_tax : AppCompatActivity() {
         salaryrv.adapter = adapter
 
     }
+
     private fun callingCibil() {
         lateinit var adapter: OwnerAdapter
 

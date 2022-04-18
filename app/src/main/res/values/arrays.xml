@@ -7,4 +7,5 @@
     <item>Clerk</item>
 
     </string-array>
+    <string-array name="bank_category">1</string-array>
 </resources>
