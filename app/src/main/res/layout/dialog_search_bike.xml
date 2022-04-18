@@ -20,9 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_18sdp"
+        app:queryHint="@string/search_your_bike"
         android:background="@drawable/rectangle_back_apply"
         android:layoutDirection="rtl"
         app:searchIcon="@drawable/ic_baseline_search_24" />
-
 
 </LinearLayout>

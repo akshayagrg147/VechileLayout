@@ -1818,5 +1818,6 @@
     <string name="your">Your</string>
     <string name="sort_by">Sort by</string>
     <string name="file_upload">File Upload</string>
+    <string name="search_your_bike">Search Your Bike Name Here</string>
 
 </resources>

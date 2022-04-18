@@ -44,7 +44,6 @@ class ApplyLoanActivity : AppCompatActivity() {
             val dialog = Dialog(this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen)
             dialog.setContentView(R.layout.dialog_search_bike)
             dialog.toolBarTitle.text = "SEARCH YOUR BIKE"
-
             dialog.show()
             dialog.toolBarIcon.setOnClickListener {
                 dialog.dismiss()
