@@ -1,18 +1,15 @@
 package com.example.vechilelayout.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Layout
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.vechilelayout.R
 import com.example.vechilelayout.adapter.DocumentsAdapter
-import com.example.vechilelayout.adapter.OwnerAdapter
 import com.example.vechilelayout.model.DocumentsModals
-import com.example.vechilelayout.model.OwnerShipModals
 import kotlinx.android.synthetic.main.activity_upload_rental_aggrement.*
 import kotlinx.android.synthetic.main.per_contact_details.*
+import kotlinx.android.synthetic.main.skip_next.*
 
 class upload_rental_aggrement : AppCompatActivity() {
     lateinit var adapter : DocumentsAdapter
@@ -23,6 +20,7 @@ class upload_rental_aggrement : AppCompatActivity() {
             upload_button.visibility=View.GONE
             after_upload.visibility=View.VISIBLE
             before_upload.visibility=View.GONE
+            tvNext.alpha = 1F
 
         }
         callingDocumentsData()
