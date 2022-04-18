@@ -212,7 +212,6 @@ class BikeDetailsActivity : AppCompatActivity() {
             specificationType.add(VehicleListModel("Electricals",R.drawable.ic_electricals))
             specificationAdapter = SpecificationAdapter(this,specificationType,{position : Int -> specificationItemClick(position,dialog) })
             dialog.rvSpecification.adapter = specificationAdapter
-
         }
     }
 }

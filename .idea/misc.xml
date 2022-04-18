@@ -7,6 +7,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/background_green.xml" value="0.1" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/background_green_light.xml" value="0.1315" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_black_border.xml" value="0.1235" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_black_border_corner_.xml" value="0.1365" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_black_half_rectangle.xml" value="0.1315" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border.xml" value="0.1095" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border_gray.xml" value="0.1335" />
@@ -19,6 +20,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_button.xml" value="0.1315" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_button_service_no.xml" value="0.1025" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_card_home_screen.xml" value="0.1025" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_corner_reminder_completed.xml" value="0.1365" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_edittext_normal.xml" value="0.128" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_emi_round.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_green_border.xml" value="0.1335" />
@@ -26,14 +28,17 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_grey_border_.xml" value="0.131" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_half_round_rectangle.xml" value="0.1435" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_item_loan_tenure.xml" value="0.1405" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_loan_tenure.xml" value="0.131" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_savings_round.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_spinner_arrow.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_variant_select.xml" value="0.154" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_variant_unselect.xml" value="0.154" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_vehicle_not_select.xml" value="0.1365" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_white_border.xml" value="0.1295" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_yelolow_corner.xml" value="0.1465" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/btn_bg_round_corner.xml" value="0.1465" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/button_green_click.xml" value="0.1115" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/button_green_click_1.xml" value="0.1365" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/cb_selector.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/close_white.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/fade_line_chart.xml" value="0.16" />
@@ -81,7 +86,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/custom_searchview.xml" value="0.16770833333333332" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/custom_toolbar.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/custom_toolbarfilter.xml" value="0.13760683760683762" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/dialog_search_bike.xml" value="0.4466666666666667" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/dialog_search_bike.xml" value="0.13333333333333333" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/dialog_specification.xml" value="0.1412280701754386" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/filter_screen.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_bike_loan_variant.xml" value="0.12578125" />

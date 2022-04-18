@@ -204,4 +204,10 @@
         <item name="android:textColor">@color/d0d0d0</item>
         <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+
+        <!-- The hint text that appears when the user has not typed anything -->
+        <item name="queryHint">Search by Bike Name</item>
+    </style>
 </resources>
