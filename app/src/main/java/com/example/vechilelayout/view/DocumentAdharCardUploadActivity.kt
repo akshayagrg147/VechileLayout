@@ -1,5 +1,6 @@
 package com.example.vechilelayout.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -40,7 +41,7 @@ class DocumentAdharCardUploadActivity : AppCompatActivity() {
          }
 
         tvSkip.setOnClickListener {
-
+            startActivity(Intent(this,GasElectricittyBill::class.java))
         }
 
         ivBack.setOnClickListener {

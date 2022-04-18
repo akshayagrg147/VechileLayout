@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_upload_rental_aggrement.*
 import kotlinx.android.synthetic.main.per_contact_details.*
 import kotlinx.android.synthetic.main.skip_next.*
 
-class upload_rental_aggrement : AppCompatActivity() {
+class UploadRentalAgreement : AppCompatActivity() {
     lateinit var adapter : DocumentsAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

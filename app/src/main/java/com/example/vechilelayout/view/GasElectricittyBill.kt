@@ -1,5 +1,6 @@
 package com.example.vechilelayout.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,6 +17,10 @@ class GasElectricittyBill : AppCompatActivity() {
             after_upload.visibility=View.VISIBLE
             before_upload.visibility=View.GONE
             tvNext.alpha = 1F
+        }
+
+        tvSkip.setOnClickListener {
+            startActivity(Intent(this,UploadRentalAgreement::class.java))
         }
     }
 }
