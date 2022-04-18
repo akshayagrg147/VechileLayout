@@ -59,6 +59,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/share_circle.xml" value="0.1135" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/unselected_gender.xml" value="0.1275" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/white_circle_shape.xml" value="0.1135" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_apply_loan.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_bike_details.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_document_adhar_upload.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_document_pan_upload.xml" value="0.14666666666666667" />
@@ -68,7 +69,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_pan_adhar.xml" value="0.14666666666666667" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_select_loan_tenure.xml" value="0.14666666666666667" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_upload_rental_aggrement.xml" value="0.5" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_upload_rental_aggrement.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_vehicle_list.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/bg_variant_unselect.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/bottom_sheet_file_upload.xml" value="0.12578125" />
@@ -111,7 +112,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.5" />
+        <option name="scale" value="0.16666666666666666" />
       </ProjectState>
     </option>
   </component>
