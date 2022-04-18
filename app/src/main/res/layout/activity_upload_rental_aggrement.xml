@@ -107,13 +107,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_20sdp" />
 
-                        <include
-                            android:id="@+id/custom_add_layout"
-                            layout="@layout/document_add_layout"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toEndOf="@+id/rv_documents" />
+<!--                        <include-->
+<!--                            android:id="@+id/custom_add_layout"-->
+<!--                            layout="@layout/document_add_layout"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_toEndOf="@+id/rv_documents" />-->
 
 
 
@@ -218,7 +218,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.61" />
 
     <include
         android:id="@+id/skip_next"

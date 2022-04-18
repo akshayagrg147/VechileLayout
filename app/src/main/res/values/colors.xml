@@ -94,6 +94,7 @@
     <color name="color_grey_edit">#e7e7e7</color>
     <color name="color_pale_lavender">#eeedf2</color>
     <color name="color_caribbean_green">#0bdb96</color>
+    <color name="color_969696">#969696</color>
     <color name="color_minsk">#48397D</color>
     <color name="upload_bg">#e1e1ff</color>
 
@@ -160,6 +161,7 @@
     <color name="black_500">#4a4a4a</color>
     <color name="red_100">#fd4755</color>
     <color name="red_400">#f0481e</color>
+    <color name="grey_6f6f6f">#6f6f6f</color>
     <color name="white_trans">#fcfbfb</color>
     <color name="black600">#1b1a19</color>
     <color name="gray_100">#EEEEEE</color>

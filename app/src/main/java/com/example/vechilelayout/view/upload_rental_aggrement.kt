@@ -30,8 +30,10 @@ class upload_rental_aggrement : AppCompatActivity() {
     private fun callingDocumentsData() {
         var documentsCategory = ArrayList<DocumentsModals>()
         documentsCategory.add(DocumentsModals(R.drawable.rented_family))
+        documentsCategory.add(DocumentsModals(R.drawable.rented_family))
+
         adapter = DocumentsAdapter(this,documentsCategory)
-        rv_documents.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true)
+        rv_documents.layoutManager = GridLayoutManager(this,  2)
         rv_documents.adapter = adapter
     }
 }
