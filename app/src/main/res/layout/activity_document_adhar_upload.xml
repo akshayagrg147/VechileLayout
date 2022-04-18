@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -43,36 +44,37 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/_11ssp" />
 
-              <FrameLayout
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_gravity="center_horizontal">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
 
-                  <ImageView
-                      android:layout_width="@dimen/_210sdp"
-                      android:layout_height="@dimen/_120sdp"
-                      android:layout_marginTop="@dimen/_20sdp"
-                      android:contentDescription="@string/pan_card"
-                      android:src="@drawable/ic_pan_demo" />
+                    <ImageView
+                        android:layout_width="@dimen/_210sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:contentDescription="@string/pan_card"
+                        android:src="@drawable/ic_pan_demo" />
 
-                  <ImageView
-                      android:id="@+id/ivDelete"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="end"
-                      android:visibility="gone"
-                      android:layout_marginEnd="@dimen/_10sdp"
-                      android:layout_marginTop="@dimen/_10sdp"
-                      android:src="@drawable/ic_cross_b"/>
+                    <ImageView
+                        android:id="@+id/ivDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_cross_b"
+                        android:visibility="gone" />
 
-              </FrameLayout>
+                </FrameLayout>
+
                 <LinearLayout
                     android:id="@+id/llUploadDocSuccess"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_18sdp"
-                    android:gravity="center"
                     android:layout_marginBottom="@dimen/_40sdp"
+                    android:gravity="center"
                     android:orientation="horizontal"
                     android:visibility="gone">
 
@@ -112,8 +114,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:visibility="visible"
-                    android:layout_marginTop="@dimen/_14sdp">
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:visibility="visible">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -131,8 +133,8 @@
                         android:fontFamily="@font/ginger_pro_demi"
                         android:text="@string/document_name"
                         android:textColor="@color/green_400"
-                        android:visibility="visible"
-                        android:textSize="@dimen/_11ssp" />
+                        android:textSize="@dimen/_11ssp"
+                        android:visibility="visible" />
 
                     <TextView
                         android:id="@+id/tvDocumentName"
@@ -154,17 +156,19 @@
                     android:layout_marginBottom="@dimen/_40sdp"
                     android:fontFamily="@font/ginger_pro_regular"
                     android:gravity="center"
-                    android:visibility="visible"
                     android:text="1 Lakh+ people have securely uploaded their PAN card"
                     android:textColor="@color/grey_login_new"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible" />
 
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_15sdp"
                 android:background="@color/gray_150"
-                app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+                app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
             <LinearLayout
                 android:id="@+id/linearLayout1"
                 android:layout_width="match_parent"
@@ -178,41 +182,41 @@
                     android:id="@+id/llSameAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="visible"
                     android:layout_marginStart="@dimen/_14sdp"
                     android:layout_marginBottom="@dimen/_90sdp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="visible">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/reminder_category_text"
                         android:fontFamily="@font/ginger_pro_regular"
-                        android:text="Is your current address same as that \n on this adhar card"/>
+                        android:text="Is your current address same as that \n on this adhar card"
+                        android:textColor="@color/reminder_category_text"
+                        android:textSize="@dimen/_10ssp" />
 
                     <RadioGroup
-                        android:layout_weight="1"
                         android:layout_width="0dp"
-                        android:layout_marginStart="@dimen/_18sdp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:text="@string/yes"
-                            android:textSize="@dimen/_10ssp"
-                            android:textColor="@color/reminder_category_text"
-                            android:fontFamily="@font/ginger_pro_regular"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ginger_pro_regular"
+                            android:text="@string/yes"
+                            android:textColor="@color/reminder_category_text"
+                            android:textSize="@dimen/_10ssp" />
 
                         <RadioButton
-                            android:text="@string/no"
-                            android:textSize="@dimen/_10ssp"
-                            android:fontFamily="@font/ginger_pro_regular"
-                            android:textColor="@color/reminder_category_text"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ginger_pro_regular"
+                            android:text="@string/no"
+                            android:textColor="@color/reminder_category_text"
+                            android:textSize="@dimen/_10ssp" />
 
                     </RadioGroup>
 
@@ -220,9 +224,9 @@
 
                 <include
                     layout="@layout/skip_next"
-                    android:layout_gravity="bottom"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom" />
 
             </LinearLayout>
 
@@ -250,6 +254,6 @@
 
     <include
         android:id="@+id/bsFileUpload"
-        layout="@layout/bottom_sheet_file_upload"/>
+        layout="@layout/bottom_sheet_file_upload" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
