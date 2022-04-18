@@ -17,7 +17,7 @@ class IncomeProof : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_income_proof)
-        callingOnership();
+        callingBank();
         upload_button.setOnClickListener{
             after_upload.visibility=View.VISIBLE
             before_upload.visibility=View.GONE
@@ -27,17 +27,14 @@ class IncomeProof : AppCompatActivity() {
         }
 
     }
-    private fun callingOnership() {
+    private fun callingBank() {
         val spinner = findViewById<Spinner>(R.id.spinner)
-        var ownerCategory = ArrayList<OwnerShipModals>()
-        ownerCategory.add(OwnerShipModals("Select",R.drawable.ic_calendar_icon))
-        ownerCategory.add(OwnerShipModals("Rented Alone",R.drawable.ic_calendar_icon))
-        ownerCategory.add(OwnerShipModals("Rented with Friends ",R.drawable.ic_calendar_icon))
-        ownerCategory.add(OwnerShipModals("Owned by Self/Spouse",R.drawable.ic_calendar_icon))
-        ownerCategory.add(OwnerShipModals("Owned by Parents",R.drawable.ic_calendar_icon))
-        ownerCategory.add(OwnerShipModals("Owned by Siblings",R.drawable.ic_calendar_icon))
+        var bank_cat = ArrayList<OwnerShipModals>()
+        bank_cat.add(OwnerShipModals("Select",R.drawable.ic_calendar_icon))
+        bank_cat.add(OwnerShipModals("SBI",R.drawable.ic_calendar_icon))
+        bank_cat.add(OwnerShipModals("OBC",R.drawable.ic_calendar_icon))
 
-        adapter = customAdapterImageText(this,ownerCategory)
+        adapter = customAdapterImageText(this,bank_cat)
 
         spinner.adapter = adapter
     }
