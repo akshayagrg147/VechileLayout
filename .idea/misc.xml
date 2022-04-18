@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable-v24/bg_grey_border_.xml" value="0.131" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/background_green.xml" value="0.1" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/background_green_light.xml" value="0.1315" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_black_border.xml" value="0.1235" />
@@ -22,6 +23,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_emi_round.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_green_border.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_green_corner.xml" value="0.154" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_grey_border_.xml" value="0.131" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_half_round_rectangle.xml" value="0.1435" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_item_loan_tenure.xml" value="0.1405" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_savings_round.xml" value="0.1115" />
@@ -59,6 +61,7 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/white_circle_shape.xml" value="0.1135" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_bike_details.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_document_adhar_upload.xml" value="0.12578125" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_document_pan_upload.xml" value="0.14666666666666667" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_gas_electricitty_bill.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_loan_info.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_looking_for.xml" value="0.16666666666666666" />
@@ -107,7 +110,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.22" />
+        <option name="scale" value="0.5" />
       </ProjectState>
     </option>
   </component>
