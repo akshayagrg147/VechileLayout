@@ -10,44 +10,25 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border.xml" value="0.1095" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border_gray.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border_green.xml" value="0.1335" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border_home_coing_badge.xml" value="0.1025" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_border_searchview.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_bottomborder.xml" value="0.1095" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_btn_upload.xml" value="0.154" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_btn_yes.xml" value="0.1405" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_button.xml" value="0.1315" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_button_service_no.xml" value="0.1025" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_card_home_screen.xml" value="0.1025" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_edittext_normal.xml" value="0.128" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_emi_round.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_green_border.xml" value="0.1335" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_green_corner.xml" value="0.154" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_half_round_rectangle.xml" value="0.1435" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_item_loan_tenure.xml" value="0.1405" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_savings_round.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_spinner_arrow.xml" value="0.1115" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_variant_select.xml" value="0.154" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_variant_unselect.xml" value="0.154" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_white_border.xml" value="0.1295" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/bg_yelolow_corner.xml" value="0.1465" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/btn_bg_round_corner.xml" value="0.1465" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/button_green_click.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/cb_selector.xml" value="0.1335" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/close_white.xml" value="0.1335" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/fade_line_chart.xml" value="0.16" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/green_circle_shape.xml" value="0.1275" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_action_arrow_left.xml" value="0.1115" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_action_information.xml" value="0.1295" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_apply_for_loan_svg_icons.xml" value="0.1295" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_arrow_multi.xml" value="0.1115" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_arrow_right_circle.xml" value="0.131" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_arrow_round.xml" value="0.1075" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_back_icon_black.xml" value="0.1435" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1295" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_downpayment_home.xml" value="0.1025" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_loan_svg_24.xml" value="0.1405" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_offers_icons_white.xml" value="0.1235" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_oto_loan_service.xml" value="0.1025" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_thumb.xml" value="0.1235" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_vector.xml" value="0.1315" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/ic_video_play.xml" value="0.1135" />
@@ -55,14 +36,9 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/unselected_gender.xml" value="0.1275" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/drawable/white_circle_shape.xml" value="0.1135" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_bike_details.xml" value="0.16666666666666666" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_gas_electricitty_bill.xml" value="0.12578125" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_loan_info.xml" value="0.16666666666666666" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_looking_for.xml" value="0.16666666666666666" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_looking_for.xml" value="0.1412280701754386" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_pan_adhar.xml" value="0.14666666666666667" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_select_loan_tenure.xml" value="0.14666666666666667" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/activity_vehicle_list.xml" value="0.16666666666666666" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/bg_variant_unselect.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/bottom_sheet_sortby.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/category_brand_subitem.xml" value="0.13760683760683762" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/category_menu_item.xml" value="0.13760683760683762" />
@@ -71,24 +47,82 @@
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/custom_searchview.xml" value="0.16770833333333332" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/custom_toolbar.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/custom_toolbarfilter.xml" value="0.13760683760683762" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/dialog_search_bike.xml" value="0.4466666666666667" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/dialog_specification.xml" value="0.1412280701754386" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/filter_screen.xml" value="0.16666666666666666" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_bike_loan_variant.xml" value="0.12578125" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_bike_variant.xml" value="0.22" />
+        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_bike_variant.xml" value="0.13760683760683762" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_color.xml" value="0.22" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_loan_tenure.xml" value="0.13760683760683762" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_loan_tenure_card.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_video_review.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/item_viewpager.xml" value="0.1412280701754386" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/occup_income_details.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/price_break_up.xml" value="0.16666666666666666" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/product_item.xml" value="0.22" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/product_itemcomp.xml" value="0.16666666666666666" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/skip_next.xml" value="0.12578125" />
         <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/specification_type_subitem.xml" value="0.1412280701754386" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/toolbar_support.xml" value="0.12578125" />
-        <entry key="..\:/ANTINO/VechileLayout/app/src/main/res/layout/video_custom_layout.xml" value="0.12578125" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable-v24/bg_grey_border_.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable-v24/drop_down_spinner.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/apply_edit_back.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/bg_black_border.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/bg_border_gray.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/bg_button.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/bg_spinner_arrow.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/custom_spinner_icon.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/drop_down_spinner.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/edittext_bottom_line.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_arrow_right_circle.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_calendar_icon.xml" value="0.139" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_cash.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_cheque.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_credit_to_bank.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_dont_know.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_drop_down.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_engine.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_less_650.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_more_650.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/ic_support_icon.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/rented_family.xml" value="0.1365" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/drawable/spinner_bg.xml" value="0.152" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/PersonalContactDetails.xml" value="0.1359375" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_bike_details.xml" value="0.2430379746835443" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_buisness_proof.xml" value="0.20102564102564102" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_gas_electricitty_bill.xml" value="0.5" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_income_proof.xml" value="0.33" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_looking_for.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_occup_income_tax.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_person_contact_details.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_upload_rental_aggrement.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/activity_vehicle_list.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/bottom_sheet_sortby.xml" value="0.313969571230982" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/category_brand_subitem.xml" value="0.1453125" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/category_menu_item.xml" value="0.5" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/category_type_subitem.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/comparison_oto.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/count_items_view.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/custom_searchview.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/custom_spinner_item.xml" value="0.33" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/custom_toolbar.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/custom_toolbarfilter.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/custom_video_layout.xml" value="0.20102564102564102" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/dialog_specification.xml" value="0.1453125" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/document_add_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/document_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/filter_screen.xml" value="0.15" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/gas_electricity_bill.xml" value="0.22" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/item_bike_variant.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/item_color.xml" value="0.1203125" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/item_video_review.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/item_viewpager.xml" value="0.1203125" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/occup_income_details.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/owner_item.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/per_contact_details.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/personal_contact_details.xml" value="0.22" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/price_break_up.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/product_item.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/product_itemadd.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/product_itemcomp.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/skip_next.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/specification_type_subitem.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/spinner_list.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/toolbar_support.xml" value="0.75" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/VechileLayout/app/src/main/res/layout/video_custom_layout.xml" value="0.45219123505976094" />
       </map>
     </option>
   </component>
@@ -101,7 +135,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.22" />
+        <option name="scale" value="0.16666666666666666" />
       </ProjectState>
     </option>
   </component>
