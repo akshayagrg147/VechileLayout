@@ -389,6 +389,7 @@
                     app:cardElevation="@dimen/_10sdp">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvApplyForLoan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingVertical="@dimen/_7sdp"

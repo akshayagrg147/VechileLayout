@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/custom_layout"
+                layout="@layout/toolbar_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_grey_border_"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/custom_layout">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@drawable/btn_bg_round_corner"
+                    android:drawableEnd="@drawable/ic_green_right"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/fastrack_get_3000_cashback"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+              <FrameLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal">
+
+                  <ImageView
+                      android:layout_width="@dimen/_210sdp"
+                      android:layout_height="@dimen/_120sdp"
+                      android:layout_marginTop="@dimen/_20sdp"
+                      android:contentDescription="@string/pan_card"
+                      android:src="@drawable/ic_pan_demo" />
+
+                  <ImageView
+                      android:id="@+id/ivDelete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="end"
+                      android:visibility="gone"
+                      android:layout_marginEnd="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_10sdp"
+                      android:src="@drawable/ic_cross_b"/>
+
+              </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/llUploadDocSuccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_right_upload_success"
+                        android:drawablePadding="@dimen/_6sdp"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="@string/your"
+                        android:textColor="@color/reminder_category_text"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvUploadedDocName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:fontFamily="@font/ginger_pro_demi"
+                        android:text="@string/document_name"
+                        android:textColor="@color/green_400"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="@string/upload_successfully_text"
+                        android:textColor="@color/reminder_category_text"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llUploadDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/_14sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="@string/upload_your"
+                        android:textColor="@color/reminder_category_text"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDocSide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:fontFamily="@font/ginger_pro_demi"
+                        android:text="@string/document_name"
+                        android:textColor="@color/green_400"
+                        android:visibility="gone"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:id="@+id/tvDocumentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:fontFamily="@font/ginger_pro_bold"
+                        android:text="@string/document_name"
+                        android:textColor="@color/reminder_category_text"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:fontFamily="@font/ginger_pro_regular"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:text="1 Lakh+ people have securely uploaded their PAN card"
+                    android:textColor="@color/grey_login_new"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@color/gray_150"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+              <!--  <LinearLayout
+                    android:id="@+id/llSameAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/reminder_category_text"
+                        android:fontFamily="@font/ginger_pro_regular"
+                        android:text="Is your current address same as that \n on this adhar card"/>
+
+                    <RadioGroup
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:text="@string/yes"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="@color/reminder_category_text"
+                            android:fontFamily="@font/ginger_pro_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:text="@string/no"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/ginger_pro_regular"
+                            android:textColor="@color/reminder_category_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>-->
+
+                <include
+                    layout="@layout/video_custom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_38sdp"
+                    android:visibility="visible" />
+
+                <include
+                    layout="@layout/skip_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn_upload"
+                android:drawableEnd="@drawable/ic_upload_symbol"
+                android:drawablePadding="@dimen/_8sdp"
+                android:fontFamily="@font/ginger_pro_bold"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_18sdp"
+                android:text="@string/upload"
+                android:textAllCaps="true"
+                android:textColor="@color/green_dark"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bsFileUpload"
+        layout="@layout/bottom_sheet_file_upload"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

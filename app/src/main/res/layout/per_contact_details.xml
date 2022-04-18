@@ -284,6 +284,7 @@
                 android:background="@color/grey_login_new"/>
 
             <TextView
+                android:id="@+id/tvSubmitNext"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginStart="@dimen/_15sdp"

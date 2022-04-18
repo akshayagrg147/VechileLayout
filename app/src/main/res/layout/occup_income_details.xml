@@ -213,6 +213,7 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
             <TextView
+                android:id="@+id/tvCheckEligibilty"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_marginBottom="@dimen/_5sdp"

@@ -9,7 +9,7 @@
     <solid android:color="@color/green_400" />
 
     <corners
-       android:radius="@dimen/_5sdp"
+       android:radius="@dimen/_4sdp"
        />
 
 </shape>

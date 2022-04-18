@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:elevation="@dimen/_4ssp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    app:cardElevation="@dimen/_3sdp">
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:weightSum="5"
-        android:padding="@dimen/_10sdp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_14sdp"
+        android:paddingVertical="@dimen/_8sdp">
+
         <TextView
+            android:id="@+id/tvSkip"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/apply_edit_back"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_upload"
             android:fontFamily="@font/ginger_pro_demi"
             android:gravity="center"
-            android:layout_weight="1"
-            android:text="Skip"
-            android:padding="@dimen/_10sdp"
-            android:textAllCaps="true"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/skip"
             android:textAlignment="center"
-            android:textColor="@color/grey_login_new"
-            />
-        <TextView
-            android:layout_alignParentEnd="true"
-            android:layout_weight="4"
+            android:textAllCaps="true"
+            android:textColor="@color/grey_login_new" />
 
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_35sdp"
-            android:padding="@dimen/_10sdp"
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_weight="1"
             android:background="@drawable/bg_button"
             android:fontFamily="@font/ginger_pro_demi"
             android:gravity="center"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:text="Next"
-            android:textAllCaps="true"
+            android:alpha="0.5"
+            android:enabled="false"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/next"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            />
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
     </LinearLayout>
-
-
-
 </androidx.cardview.widget.CardView>

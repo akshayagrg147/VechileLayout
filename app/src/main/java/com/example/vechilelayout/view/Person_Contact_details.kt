@@ -1,5 +1,6 @@
 package com.example.vechilelayout.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,9 +24,6 @@ class Person_Contact_details : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.per_contact_details)
        callingOnership()
-
-
-
 
         val jobcategory = resources.getStringArray(R.array.JobCategory)
         val spinner = findViewById<Spinner>(R.id.spinner)
@@ -52,6 +50,10 @@ class Person_Contact_details : AppCompatActivity() {
 
                 }
             }
+        }
+
+        tvSubmitNext.setOnClickListener {
+            startActivity(Intent(this,occup_income_tax::class.java))
         }
     }
 

@@ -2,6 +2,7 @@ package com.example.vechilelayout.view
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -17,6 +18,11 @@ import com.example.vechilelayout.model.VehicleListModel
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_bike_details.*
+import kotlinx.android.synthetic.main.activity_bike_details.rvColor
+import kotlinx.android.synthetic.main.activity_bike_details.rvVariant
+import kotlinx.android.synthetic.main.activity_bike_details.tvColor
+import kotlinx.android.synthetic.main.activity_bike_details.tvVariant
+import kotlinx.android.synthetic.main.activity_select_loan_tenure.*
 import kotlinx.android.synthetic.main.custom_toolbarfilter.*
 import kotlinx.android.synthetic.main.dialog_specification.*
 import kotlinx.android.synthetic.main.price_break_up.view.*
@@ -70,5 +76,8 @@ class LoanTenureActivity : AppCompatActivity() {
             tvColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.bg_variant))
         }
 
+        tvApplyForLoan.setOnClickListener {
+            startActivity(Intent(this,Person_Contact_details::class.java))
+        }
     }
 }
