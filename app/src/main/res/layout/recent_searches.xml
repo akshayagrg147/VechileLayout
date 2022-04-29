@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_challan"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_baseline_access_time_24" />
+
+    <TextView
+        android:id="@+id/challan_no_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toEndOf="@id/icon_challan"
+        android:fontFamily="@font/ginger_pro_demi"
+        android:text="KA03KC6663"
+
+        android:textColor="@color/reminder_category_text"
+        android:textSize="@dimen/_10ssp" />
+
+    <ImageView
+
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/close_black" />
+
+    <TextView
+        android:id="@+id/zero_challan"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challan_no_title"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_toEndOf="@id/icon_challan"
+        android:fontFamily="@font/ginger_pro_demi"
+        android:text="0 Challans"
+
+        android:textColor="@color/reminder_category_text"
+        android:textSize="@dimen/_7ssp" />
+    <TextView
+        android:id="@+id/last_update"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challan_no_title"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_toEndOf="@id/zero_challan"
+        android:fontFamily="@font/ginger_pro_demi"
+        android:text="Last updated not available"
+
+        android:textColor="@color/red_ed1515"
+        android:textSize="@dimen/_7ssp" />
+</RelativeLayout>
+

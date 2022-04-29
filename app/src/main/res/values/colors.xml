@@ -50,6 +50,9 @@
     <color name="check_box_color">#29B67F</color>
     <color name="check_box_unselected_color">#757380</color>
     <color name="gray_150">#f8f8f8</color>
+    <color name="gray_707070">#707070</color>
+    <color name="red_ed1515">#ed1515</color>
+    <color name="gray_9a9a9a">#9a9a9a</color>
     <color name="ride_summary_tips_label">#555266</color>
     <color name="ride_summary_label">#141433</color>
     <color name="ride_summary_label1">#03031a</color>
@@ -110,6 +113,8 @@
     <color name="bg_screen2">#AB47BC</color>
     <color name="bg_screen3">#F44336</color>
     <color name="bg_screen4">#D500F9</color>
+    <color name="grey_d5d5d5">#d5d5d5</color>
+
 
     <!-- dots inactive colors -->
     <color name="dot_dark_screen1">#3700B3</color>

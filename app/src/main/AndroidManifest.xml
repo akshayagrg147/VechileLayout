@@ -11,18 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VechileLayout">
         <activity
+            android:name=".view.ChallanView"
+            android:exported="false" />
+        <activity
             android:name=".view.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".view.Person_Contact_details"
             android:exported="true" />
-
         <activity
             android:name=".view.occup_income_tax"
             android:exported="true" />
@@ -32,7 +30,14 @@
         <activity
             android:name=".view.VehicleListActivity"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
+            android:exported="true"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".view.BikeDetailsActivity"
             android:screenOrientation="portrait"
@@ -41,30 +46,26 @@
             android:name=".view.ComparisonActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".view.ApplyLoanActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".view.LoanTenureActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".view.DocumentPanCardUploadActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
-        <activity android:name=".view.DocumentAdharCardUploadActivity"
+        <activity
+            android:name=".view.DocumentAdharCardUploadActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
-        <activity android:name=".view.UploadRentalAgreement"
+        <activity
+            android:name=".view.UploadRentalAgreement"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
     </application>
 
 </manifest>

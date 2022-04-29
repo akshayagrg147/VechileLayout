@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:orientation="vertical"
+
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <RadioButton
+        android:id="@+id/radio_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_toRightOf="@+id/radio_value"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_border_e5e5e5"
+        android:orientation="vertical"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_challan"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/challan_no" />
+
+            <TextView
+                android:id="@+id/challan_no_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/gray_9a9a9a"
+                android:fontFamily="@font/ginger_pro_light"
+
+                android:text="Challan No."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/challan_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="#78668990"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_villoation_date"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/date_challan" />
+
+            <TextView
+                android:id="@+id/villoation_name"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_light"
+                android:text="Violation Date"
+
+                android:textColor="@color/gray_9a9a9a"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/villoation_value"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="12/04/2022"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_fine_Amount"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_baseline_add_card_24" />
+
+            <TextView
+                android:id="@+id/fine_amount_text"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_light"
+                android:text="Fine Amount"
+
+                android:textColor="@color/gray_9a9a9a"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/fine_amount"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="₹ 2000"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_description"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_baseline_description_24" />
+
+            <TextView
+                android:id="@+id/description_tile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_light"
+                android:text="Description"
+
+                android:textColor="@color/gray_9a9a9a"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/ginger_pro_regular"
+                android:text="Violated traffic light"
+                android:textColor="@color/reminder_category_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

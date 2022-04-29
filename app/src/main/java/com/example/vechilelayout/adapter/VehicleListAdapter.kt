@@ -16,25 +16,25 @@ class VehicleListAdapter(var context: Context, var list : ArrayList<VehicleListM
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(context)
-        val view: View = inflater.inflate(R.layout.product_item, parent,false)
+        val view: View = inflater.inflate(R.layout.recent_searches, parent,false)
         return MyViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.onbind(list[position])
-        holder.itemView.setOnClickListener {
-            context.startActivity(Intent(context,BikeDetailsActivity::class.java))
-        }
+//        holder.itemView.setOnClickListener {
+//            context.startActivity(Intent(context,BikeDetailsActivity::class.java))
+//        }
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return 3
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun onbind(vehicleListModel: VehicleListModel){
-            itemView.vehicleName.setText(vehicleListModel.bikeName)
+            //itemView.vehicleName.setText(vehicleListModel.bikeName)
         }
     }
 
