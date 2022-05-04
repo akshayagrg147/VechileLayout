@@ -11,13 +11,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VechileLayout">
         <activity
+            android:name=".view.layout_vechile_Detail"
+            android:exported="false" />
+        <activity
+            android:name=".view.ChallanListView"
+            android:exported="false" />
+        <activity
+            android:name=".view.AlldocumentsLayout"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.ChallanView"
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".view.Person_Contact_details"
             android:exported="true" />
@@ -29,15 +42,9 @@
             android:exported="true" />
         <activity
             android:name=".view.VehicleListActivity"
-            android:screenOrientation="portrait"
             android:exported="true"
-            tools:ignore="LockedOrientationActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".view.BikeDetailsActivity"
             android:screenOrientation="portrait"

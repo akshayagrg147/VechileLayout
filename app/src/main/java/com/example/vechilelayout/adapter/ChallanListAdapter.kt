@@ -11,30 +11,34 @@ import com.example.vechilelayout.model.VehicleListModel
 import com.example.vechilelayout.view.BikeDetailsActivity
 import kotlinx.android.synthetic.main.product_item.view.*
 
-class VehicleListAdapter(var context: Context, var list : ArrayList<VehicleListModel>) :
-    RecyclerView.Adapter<VehicleListAdapter.MyViewHolder>() {
+class ChallanListAdapter(var context: Context, var list : ArrayList<VehicleListModel>,var bool:Boolean) :
+    RecyclerView.Adapter<ChallanListAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        var view: View?=null
         val inflater: LayoutInflater = LayoutInflater.from(context)
-        val view: View = inflater.inflate(R.layout.product_item, parent,false)
+        view = if(bool)
+            inflater.inflate(R.layout.challan_layout_item, parent,false)
+        else
+            inflater.inflate(R.layout.recent_searches, parent,false)
         return MyViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.onbind(list[position])
-        holder.itemView.setOnClickListener {
-            context.startActivity(Intent(context,BikeDetailsActivity::class.java))
-        }
+//        holder.itemView.setOnClickListener {
+//            context.startActivity(Intent(context,BikeDetailsActivity::class.java))
+//        }
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return 3
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun onbind(vehicleListModel: VehicleListModel){
-            itemView.vehicleName.setText(vehicleListModel.bikeName)
+            //itemView.vehicleName.setText(vehicleListModel.bikeName)
         }
     }
 

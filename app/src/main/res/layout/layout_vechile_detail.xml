@@ -68,6 +68,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout1"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearLayout"
@@ -173,6 +174,7 @@
                     android:textSize="@dimen/_8sdp" />
             </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/linearLayout2"

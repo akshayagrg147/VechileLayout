@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_border_gray"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_button"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_tyres" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toEndOf="@id/icon"
+        android:fontFamily="@font/ginger_pro_semibold"
+        android:text="Registration Certificate"
+        android:textColor="@color/reminder_category_text"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_select_arrow" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_toEndOf="@id/icon"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:text="Save your vehicle RC for quick access anytime"
+        android:textColor="@color/grey_login_new"
+        android:textSize="@dimen/_8ssp" />
+
+    <TextView
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_title"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_toEndOf="@id/icon"
+        android:background="@drawable/bg_black_border_corner_"
+        android:fontFamily="@font/ginger_pro_regular"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_1sdp"
+        android:text="Upload"
+        android:textColor="@color/grey_login_new"
+        android:textSize="@dimen/_8ssp" />
+
+</RelativeLayout>
+

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--            <item >-->
+<!--                <bitmap android:gravity="bottom|right"-->
+<!--                    android:src="@drawable/ic_drop_down" />-->
+<!--            </item>-->
     <item><layer-list>
         <item>
             <shape>
@@ -19,9 +23,6 @@
                     android:color="@color/gray_707070"/>
             </shape>
         </item>
-<!--        <item >-->
-<!--            <bitmap android:gravity="bottom|right"-->
-<!--                android:src="@drawable/ic_drop_down" />-->
-<!--        </item>-->
+
     </layer-list></item>
 </selector>
